@@ -30,22 +30,24 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'simple_form'
-gem 'font-awesome-rails'
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'awesome_rails_console'
+gem 'bootstrap-sass' #美化 html
+gem 'devise' #login/logout
+gem 'simple_form' #美化form
+gem 'font-awesome-rails' #fa-icons
+gem 'carrierwave' #upload files
+gem 'mini_magick' #resize pics
+gem 'awesome_rails_console' #美化console
 gem 'rails-erd'
 gem 'letter_opener', group: :development
 gem 'aasm'
-gem 'figaro'
-gem 'fog'
+#gem 'figaro'
+#gem 'fog'
+gem 'ransack' #搜索
+gem 'will_paginate' #分頁
+gem 'will_paginate-bootstrap'# 美化分頁
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'pry'
+  gem 'pry' #用 binding.pry debug
   gem 'sqlite3'
 end
 
