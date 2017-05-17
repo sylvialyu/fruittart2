@@ -40,11 +40,12 @@ gem 'awesome_rails_console' #美化console
 gem 'rails-erd'
 gem 'letter_opener', group: :development
 gem 'aasm'
-#gem 'figaro'
-#gem 'fog'
+gem 'figaro'
+gem 'fog'
 gem 'ransack' #搜索
 gem 'will_paginate' #分頁
 gem 'will_paginate-bootstrap'# 美化分頁
+gem 'acts_as_list'
 
 group :development, :test do
   gem 'pry' #用 binding.pry debug
