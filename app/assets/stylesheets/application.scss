@@ -193,3 +193,30 @@ text-align: center;
 .bg-color5 {
   background: #70C1B3;
 }
+
+
+#wechat_pay_overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+#alipay_overlay{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
