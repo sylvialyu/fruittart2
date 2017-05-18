@@ -18,6 +18,11 @@
   <%= f.input :price %>
 </div>
 
+<div class="group"> <p><b>CountDownDate</b></p>
+  <%= f.datetime_field :countdown %><br>
+  <%= @product.countdown %>
+</div>
+
 <% if @product.photos.present? %>
   <span>目前商品圖</span> <br>
   <% @product.photos.each do |p| %>
