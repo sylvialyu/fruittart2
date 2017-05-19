@@ -2,7 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'products#index'
+  root 'welcome#index'
+  get 'products' => 'products#index'
+  get 'welcome' => 'welcome#index'
+  get 'about' => 'welcome#about'
+  get 'how' => 'welcome#how'
+  get 'branch' => 'welcome#branch'
 
   resources :carts do
     collection do
@@ -14,6 +19,9 @@ Rails.application.routes.draw do
   resources :products do
     member do
       post :add_to_cart
+    end
+    collection do
+      get :search
     end
   end
 
@@ -35,7 +43,7 @@ Rails.application.routes.draw do
         post :ship
         post :shipped
         post :return
-      end  
+      end
     end
   end
 
