@@ -56,13 +56,53 @@
     </div>
 
     <% if !@order.is_paid? %>
-    <div class="group pull-right">
-        <%= link_to("以微信支付", payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
-        <%= link_to("以支付宝支付", payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    <div class="group pull-right" >
+        <button onclick="we_on()" class="btn btn-danger">以微信支付
+          <div id="wechat_pay_overlay" onclick="we_off()">
+            <%= link_to(image_tag('https://ww4.sinaimg.cn/large/006tNbRwgy1ffphu2c3wej30b40b876m.jpg'),
+            payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+          </div>
+        </button>
+
+        <button onclick="ali_on()" class="btn btn-danger">以支付宝支付
+
+          <div id="alipay_overlay" onclick="ali_off()">
+            <%= link_to(image_tag('https://ww2.sinaimg.cn/large/006tNbRwgy1ffphwhqagkj30b40b1dig.jpg'),
+            payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+          </div>
+
+        </button>
+
     </div>
     <% else %>
         <p class="text-center"> 此订单已完成付款 </p>
     <% end %>
+
+
+    <!-- <div id="overlay" id="wechat" onclick="off()">
+      <%= link_to(image_tag('https://ww3.sinaimg.cn/large/006tNbRwgy1ffpe1hv284j30if0ilq5b.jpg'),
+      payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    </div>
+
+    <div id="overlay" id="alipay" onclick="off()">
+      <%= link_to(image_tag('https://ww4.sinaimg.cn/large/006tNbRwgy1ffoozh3pwyj30j60j1q5v.jpg'),
+      payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    </div> -->
+
+    <script>
+      function we_on() {
+      document.getElementById("wechat_pay_overlay").style.height = "100%";
+      }
+      function we_off() {
+      document.getElementById("wechat_pay_overlay").style.height = "0";
+      }
+      function ali_on() {
+      document.getElementById("alipay_overlay").style.height = "100%";
+      }
+      function ali_off() {
+      document.getElementById("alipay_overlay").style.height = "0";
+      }
+    </script>
 
   </div>
 </div>
