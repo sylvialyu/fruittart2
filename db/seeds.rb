@@ -16,19 +16,6 @@ end
 
 Product.create!(
   id: 1,
-  title: "Fresh banana cream and caramel coffee tart",
-  description: "Plenty of banana cream in moist and baked banana bread, a tart
-  spreading a sweet scent in every bite. The crispy texture of chopped
-  walnut and coffee beans with a fragrant aroma and thinly laid
-  chocolate is accented. Please enjoy with the source of caramel coffee",
-  price: 65,
-  quantity: 45,
-  )
-Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho1.jpg")))
-Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho2.jpg")))
-
-Product.create!(
-  id: 2,
   title: "Pineapple and avocado flavored cream cheese tart",
   description: "A rich cream cheese with avocado in a juicy pineapple, also a
 tart made with a gourmet additive avocado to a thoroughly baked
@@ -37,11 +24,11 @@ lime that made it work for cream cheese spread into the volume flavor",
   price: 68,
   quantity: 43,
   )
-Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple1.jpg")))
-Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple2.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple1.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple2.jpg")))
 
 Product.create!(
-  id: 3,
+  id: 2,
   title: "Grapefruit and Earl Gray Bavarian tart",
   description: "We combined grapefruit with plentiful flowers in motif and Bavarian
 tea that we carefully boiled Earl Gray 's tea leaves.
@@ -51,11 +38,11 @@ made Bavarian effect.",
   price: 70,
   quantity: 38,
   )
-Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit1.jpg")))
-Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit2.jpg")))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit1.jpg")))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit2.jpg")))
 
 Product.create!(
-  id: 4,
+  id: 3,
   title: "Matcha and soymilk tart",
   description: "Sprinkled redbeans into a crispy texture of tart fabrics, and
 superimposed soybean mousse finished in a rich flavored green tea
@@ -64,9 +51,21 @@ sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
   )
-Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha1.jpg")))
-Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha2.jpg")))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha1.jpg")))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha2.jpg")))
 
+Product.create!(
+  id: 4,
+  title: "Fresh banana cream and caramel coffee tart",
+  description: "Plenty of banana cream in moist and baked banana bread, a tart
+  spreading a sweet scent in every bite. The crispy texture of chopped
+  walnut and coffee beans with a fragrant aroma and thinly laid
+  chocolate is accented. Please enjoy with the source of caramel coffee",
+  price: 65,
+  quantity: 45,
+  )
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho1.jpg")))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho2.jpg")))
 
 Product.create!(
   id: 5,
@@ -116,8 +115,8 @@ baked carefully. Please enjoy it with the cherry blossoms of nectar.",
   price: 85,
   quantity: 27,
   )
-Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho1.jpg")))
-Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho2.jpg")))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/sakura1.jpg")))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/sakura2.jpg")))
 
 
 Product.create!(
@@ -147,19 +146,6 @@ Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 11,
-  title: "White chocolate and cream cheese souffle tart",
-  description: "Add white chocolate and moist and baked cheese souffle, it is tart
-finished vividly with sweet and sour sauce and red fruit. The
-combination of cheese rich and red fruit as good as acidity, and cream
-is exquisite.",
-  price: 69,
-  quantity: 8,
-  )
-Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw1.jpg")))
-Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw2.jpg")))
-
-Product.create!(
-  id: 12,
   title: "Seasonal fruit tart ~ Spring version ~",
   description: "For colorful fruits with luxury, there are plenty of sticking points,
 production places, cuts, arranging directions, as well as taste.
@@ -168,8 +154,21 @@ is the No. 1 Kilfevon popularity.",
   price: 88,
   quantity: 19,
   )
-Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/season1.jpg")))
-Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/season2.jpg")))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/season1.jpg")))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/season2.jpg")))
+
+Product.create!(
+  id: 12,
+  title: "White chocolate and cream cheese souffle tart",
+  description: "Add white chocolate and moist and baked cheese souffle, it is tart
+finished vividly with sweet and sour sauce and red fruit. The
+combination of cheese rich and red fruit as good as acidity, and cream
+is exquisite.",
+  price: 69,
+  quantity: 8,
+  )
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw1.jpg")))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw2.jpg")))
 
 Product.create!(
   id: 13,

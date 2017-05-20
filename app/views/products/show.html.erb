@@ -1,26 +1,110 @@
-<div class="row">
-  <div class="col-md-6">
-    <% if @photos.present? %>
-       <% @photos.each_with_index do |p, index| %>
-         <% if index == 0 %>
-          <%= image_tag p.avatar.medium.url %>
-            <div style="letter-spacing: -8px">
-             <% else %>
-               <%= image_tag p.avatar.thumb.url %>
-             <% end %>
-          <% end %>
+<div class="col-md-10 col-centered">
+  <!-- <div class="panel panel-default"> -->
+      <div class="panel-body">
+          <!-- <div class="row">
+            <div class="col-md-8"> -->
+
+
+              <!-- <div class="container">
+		<div class="card">
+			<div class="container-fliud"> -->
+				<!-- <div class="wrapper row"> -->
+					<div class="preview col-md-6">
+
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
+						  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
+						  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
+						  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
+              <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
+              <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
+            </ul>
+
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title"><%= @product.title %></h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div><br/>
+
+              <h4 class="price col-md-8">current price: <span>￥<%= @product.price %></span></h4><br/>
+              <p class="price col-md-4">quantity: <%= @product.quantity %></p><br/>
+
+
+            <div class="">
+              <div class="btn-group col-md-6" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">-</button>
+                <button type="button" class="btn btn-default"><%= "#" %></button>
+                <button type="button" class="btn btn-default">+</button>
+              </div>
+  						<div class="action col-md-6">
+  							<button class="add-to-cart btn btn-default" type="button">
+                  <% if @product.quantity.present? && @product.quantity > 0 %>
+                  <%= link_to("add to cart", add_to_cart_product_path(@product), method: :post) %>
+                  <% else %>
+                  Sold Out
+                  <% end %>
+                </button>
+  							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+  						</div>
             </div>
-         <% else %>
-         <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
-     <% end %>
+
+            <br/>
+
+            <div class="">
+              <% if @product.quantity.present? && @product.quantity > 0 %>
+              <%= link_to("Buy It At Once", add_to_cart_product_path(@product), method: :post, :class => "btn btn-block btn-default") %>
+              <% else %>
+              已销售一空，无法购买
+              <% end %>
+            </div>
+
+            <hr>
+
+            <p class="product-description"><%= @product.description %></p><br/>
+
+					</div>
+				<!-- </div> -->
+			</div>
+		<!-- </div>
+	</div> -->
+
+
+
+
+
+
+              <!-- <% if @photos.present? %>
+                 <% @photos.each_with_index do |p, index| %>
+                   <% if index == 0 %>
+                    <%= image_tag p.avatar.medium.url %>
+                      <div style="letter-spacing: -8px">
+                       <% else %>
+                         <%= image_tag p.avatar.thumb.url %>
+                       <% end %>
+                    <% end %>
+                      </div>
+                   <% else %>
+                   <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+               <% end %> -->
+            </div>
+      <!-- </div> -->
+    <!-- </div>
   </div>
-  <div class="col-md-6">
-    <h2> <%= @product.title %> </h2>
-    <div style="height:100px;">
-      <p>
-        <%= @product.description %>
-      </p>
-    </div>
+</div> -->
 
     <h4>
       <!-- Display the countdown timer in an element -->
@@ -45,13 +129,6 @@
         <div> Qty : <%= @product.quantity %> </div>
     </h4>
 
-    <div class="pull-right">
-      <% if @product.quantity.present? && @product.quantity > 0 %>
-      <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
-      <% else %>
-      已销售一空，无法购买
-      <% end %>
-    </div>
   </div>
 </div>
 
