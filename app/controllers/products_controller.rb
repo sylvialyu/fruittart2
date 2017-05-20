@@ -7,6 +7,7 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @photos = @product.photos.all
+    @cart_items = current_cart.cart_items
   end
 
   def destroy
