@@ -7,6 +7,8 @@
   $.src="https://v2.zopim.com/?4lnqU6BRohsq0C9cdpvkm0EE26fVmHHe";z.t=+new Date;$.
   type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
   </script>
+
+
   <!--End of Zendesk Chat Script-->
 </head>
 
@@ -20,7 +22,12 @@
           <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
         <% end %>
       <% end %>
-      <%= product.title %> ￥ <%= product.price %>
+      <%= product.title %>
+      <% if product.discount.present? %>
+        ￥ <%= product.price = product.price * product.discount/100 %>
+      <% else %>
+        ￥ <%= product.price %>
+      <% end %>
     </div>
   <% end %>
 </div>

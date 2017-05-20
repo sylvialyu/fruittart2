@@ -18,6 +18,10 @@
   <%= f.input :price %>
 </div>
 
+<div class="group">
+  <%= f.input :discount,:label => "Discount % (eg. $100 x 80% = $80)" %>
+</div>
+
 <div class="group"> <p><b>CountDownDate</b></p>
   <%= f.datetime_field :countdown %><br>
   <%= @product.countdown %>
