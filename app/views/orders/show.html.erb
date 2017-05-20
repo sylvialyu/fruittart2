@@ -61,6 +61,7 @@
           <div id="wechat_pay_overlay" onclick="we_off()">
             <%= link_to(image_tag('https://ww4.sinaimg.cn/large/006tNbRwgy1ffphu2c3wej30b40b876m.jpg'),
             payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+            <br><h3>～可隨意打賞，感恩～</h3>
           </div>
         </button>
 
@@ -69,6 +70,7 @@
           <div id="alipay_overlay" onclick="ali_off()">
             <%= link_to(image_tag('https://ww2.sinaimg.cn/large/006tNbRwgy1ffphwhqagkj30b40b1dig.jpg'),
             payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+            <br><h3>～可隨意打賞，感恩～</h3>
           </div>
 
         </button>
