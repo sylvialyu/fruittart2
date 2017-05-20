@@ -22,14 +22,29 @@
       </p>
     </div>
 
-    <!-- Display the countdown timer in an element -->
-    <% if @product.countdown.present?%>
-    <% closedate = DateTime.strptime(@product.countdown, "%FT%R") %>
-    Time left:<p id="timer"></p>
-    <% end %>
+    <h4>
+      <!-- Display the countdown timer in an element -->
+      <% if @product.countdown.present?%>
+      <% closedate = DateTime.strptime(@product.countdown, "%FT%R") %>
+      Time left:<p id="timer"></p>
+      <% end %>
+      <hr>
+      <!-- 如果有折扣 -->
+      <% if @product.discount.present? && @product.quantity > 0 %>
+        <!--  顯示折扣％ -->
+        <%= @product.discount %>% off
+        <!--  顯示原價，加上刪除線 -->
+        <s><div class="product-price"> ￥ <%= @product.price %> </div></s>
+        <!--  顯示優惠價 -->
+        <div class="product-price discount"> ￥<%= @product.price = @product.price * @product.discount/100 %></div>
+      <% else %>
+        <!-- 沒折扣 -->
+        <div class="product-price"> ￥ <%= @product.price %> </div>
+      <% end %>
+        <br>
+        <div> Qty : <%= @product.quantity %> </div>
+    </h4>
 
-    <div> 数量 : <%= @product.quantity %> </div>
-    <div class="product-price"> ￥ <%= @product.price %> </div>
     <div class="pull-right">
       <% if @product.quantity.present? && @product.quantity > 0 %>
       <%= link_to("加入购物车", add_to_cart_product_path(@product), method: :post, :class => "btn btn-primary btn-lg btn-danger") %>
