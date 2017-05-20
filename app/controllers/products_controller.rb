@@ -27,4 +27,11 @@ class ProductsController < ApplicationController
     redirect_to :back
   end
 
+  def discount_price
+    @product = Product.find(params[:id])
+    if @product.discount.present?
+      @product.price = @product.price * (@product.discount / 100 )
+    end
+  end
+
 end
