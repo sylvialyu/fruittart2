@@ -1,6 +1,19 @@
-<footer class="container" style="margin-top: 100px;">
-    <p class="text-center">
-      Copyright ©2017 JD Store
-      <br/>Designed by Sylvia Lyu
-    </p>
+<footer class="navbar-default ">
+   <div class="container-fluid">
+       <div class="row footer-below text-center">
+         <%= link_to "/about" do %>About Us<% end %> |
+         <%= link_to "/how#delivery" do %>Delivery<% end %> |
+         <%= link_to "/about#contact" do %>Contact Us <% end %> |
+         <%= link_to "https://goo.gl/78BMsw", target: :_blank do %>後端功能教學 <% end %> |
+         <%= link_to "https://goo.gl/4FXo3q", target: :_blank do %>Links<% end %><br>
+         Copyright ©2017 Sweet Sweet,
+         Designed by Sylvia &amp; Tim <br><br>
+         <%= link_to "https://github.com/sylvialyu/fruittart2", target: :_blank do %>
+         <span class="fa fa-github-alt fa-2x"></span><% end %>
+          | <%= link_to "https://goo.gl/4FXo3q", target: :_blank do %>
+          <span class="fa fa-caret-square-o-right fa-2x"></span><% end %> <br><br>
+          .
+       </div>
+   </div>
+
 </footer>

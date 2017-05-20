@@ -17,3 +17,232 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+/* login css */
+/*===== user ====*/
+.user_setup{
+    height: 750px;
+    background: image_url("user_background.jpg") no-repeat scroll top center/ cover;
+}
+
+.user_setup_content{
+    background: #fff;
+
+    margin-top: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 1px 3px 5px #333;
+
+    border: 5px solid #666;
+
+    border-radius: 25px;
+
+    opacity:0.95;
+    filter:alpha(opacity=95);
+
+    h2{
+      text-align: center;
+    }
+
+    .psw{
+      float: right;
+      margin-top: -33px;
+      position: relative;
+    }
+
+    .account{
+      text-align: center;
+    }
+
+    .form-inputs{
+      margin-top: 25px;
+    }
+
+    .form-actions{
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 25px;
+
+      .button{
+        color: #fff;
+
+        background-color: #4A6BB5;
+
+        border-color: #4A6BB5;
+
+        font-size: 16px;
+        letter-spacing: 1px;
+        width: 100%;
+      }
+      .button:hover{
+          background-color: #4A99B5;
+
+          border-color: #4A99B5;
+
+          color: #fff;
+
+      }
+    }
+}
+
+/*===== navbar網站logo大小 ====*/
+ .navbar-brand > img {
+     display: inline-block; //图片和链接文字显示在同一行
+     margin-right: 10px;
+     margin-bottom: -10px;  //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
+ }
+
+/*===== navbar底色透明 ====*/
+ .navbar-default {
+    background: transparent; //
+    border-color: transparent;
+    margin-bottom: 30px;
+    border-radius: 0;
+    height: 60px;
+}
+
+/*===== 首頁3張大圖 ====*/
+ .carousel-inner img {
+     -webkit-filter: grayscale(20%);
+     filter: grayscale(0%); /* make all photos black and white */
+     width: 100%; /* Set width to 100% */
+     margin: auto;
+ }
+
+ .carousel-caption h3 {
+     color: #fff !important;
+     padding-bottom: 150px;
+     font-size: 60px;
+ }
+
+ @media (max-width: 600px) {
+     .carousel-caption {
+         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+     }
+ }
+
+/*===== 所有頁面採用相同底圖 ====*/
+ body {
+    // background: url("https://ww4.sinaimg.cn/large/006tNbRwgy1ffbtqgk3kqj31hc11q7wh.jpg ");
+    //这个设定的背景图片可以应用到除了首页这类已经专门设定背景的所有网站页面，免去重复设定背景的烦恼。
+
+    background-size: cover;
+    //这段代码主要实现了图片不会被拉伸变现的效果
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ship-logo {
+    color: #f4511e;
+}
+
+.fchart{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*= 首頁下方「馬上購買」按鈕=*/
+.actiontrigger{
+display:block;
+background:linear-gradient(rgba(12,12,9,0.4), rgba(12,12,9,0.4)),
+url(http://i.imgur.com/CLNGzMr.jpg);
+background-position:center 80%;
+background-size:cover;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:20px; //跟footer留距離
+padding-top:60px; //按鈕下降
+width:100%;
+// min-width:960px;
+height:200px;
+position:relative;
+text-align: center;
+}
+
+.btn-actiontrigger {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/*測試用- 5种背景颜色*/
+.bg-color1 {
+  background: #50514F;
+}
+
+.bg-color2 {
+  background: #F25F5C;
+}
+
+.bg-color3 {
+  background: #FFE066;
+}
+
+.bg-color4 {
+  background: #247BA0;
+}
+
+.bg-color5 {
+  background: #70C1B3;
+}
+
+
+#wechat_pay_overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+#alipay_overlay{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+#timer{
+text-align: center;
+font-size: 30px;
+background-color:black;
+color: white;
+}
+
+.discount{
+  color: red;
+  font-size: 30px;
+}
+
+
+.about-us{
+  width: 100px;
+  height: 100px;
+}
+
+/*===== 常用项 ====*/
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+

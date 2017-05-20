@@ -22,9 +22,9 @@
         <td><%= product.id %></td>
         <td>
           <%= link_to product_path(product) do %>
-            <% if product.image.present? %>
-            <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-            <% else %>
+          <% if product.photos.present? %>
+            <%= image_tag(product.photos[0].avatar.thumb.url, class: "thumbnail") %>
+          <% else %>
             <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
             <% end %>
           <% end %>
@@ -34,6 +34,8 @@
         <td>
           <%= link_to("Edit", edit_admin_product_path(product)) %> |
           <%= link_to("Destroy", admin_product_path(product), method: :delete, data: { confirm: "Are you sure?" }) %>
+          <%= link_to("上移", move_up_admin_product_path(product), :method => :post) %>
+          <%= link_to("下移", move_down_admin_product_path(product), :method => :post) %>
         </td>
       </tr>
     <% end %>

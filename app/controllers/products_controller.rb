@@ -1,11 +1,13 @@
 class ProductsController < ApplicationController
 
   def index
-    @products = Product.all
+    @products = Product.all.order("position ASC")
   end
 
   def show
     @product = Product.find(params[:id])
+    @photos = @product.photos.all
+    @cart_items = current_cart.cart_items
   end
 
   def destroy
@@ -23,6 +25,13 @@ class ProductsController < ApplicationController
       flash[:warning] = "你的购物车内已有此物品"
     end
     redirect_to :back
+  end
+
+  def discount_price
+    @product = Product.find(params[:id])
+    if @product.discount.present?
+      @product.price = @product.price * (@product.discount / 100 )
+    end
   end
 
 end
