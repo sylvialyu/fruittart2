@@ -40,25 +40,49 @@
 							<span class="review-no">41 reviews</span>
 						</div><br/>
 
-              <h4 class="price col-md-8">current price: <span>￥<%= @product.price %></span></h4><br/>
-              <p class="price col-md-4">quantity: <%= @product.quantity %></p><br/>
+
+              <h4 class="price col-md-8">
+              <!-- 如果有倒計時   -->
+              <% if @product.countdown.present?%>
+              <!-- 倒計時間換成數字，北京時間與格林威治時間相差 (8/24) 天 -->
+              <% closedate = DateTime.strptime(@product.countdown, "%FT%R") -0.333333 %>
+              Time left:<p id="timer"></p>
+              <% end %>
+              <!-- 如果有折扣 -->
+              <% if @product.discount.present? && @product.quantity > 0 %>
+                <!--  顯示原價，加上刪除線 -->
+                <s><div class="product-price">origin price:<span>￥ <%= @product.price %></span></div></s>
+                <!--  顯示優惠價 -->
+                <div class="product-price discount">current price: ￥<%= @product.price = @product.price * @product.discount/100 %></div>
+              <% else %>
+                <!-- 沒折扣 -->
+                <div class="product-price"> ￥ <%= @product.price %> </div>
+              <% end %>
+                <br>
+                <div class="price col-md-4"> Qty : <%= @product.quantity %> </div>
+              </h4>
+
 
 
             <div class="">
-              <div class="btn-group col-md-6" role="group" aria-label="...">
+              <div class="btn-group col-md-4" role="group" aria-label="...">
                 <button type="button" class="btn btn-default">-</button>
-                <button type="button" class="btn btn-default"><%= "#" %></button>
+                <button type="button" class="btn btn-default">1</button>
                 <button type="button" class="btn btn-default">+</button>
+                <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button>
+
               </div>
-  						<div class="action col-md-6">
-  							<button class="add-to-cart btn btn-default" type="button">
+  						<div class="action col-md-8">
+
+  							<button class="add-to-cart btn btn-default pull-right" type="button">
                   <% if @product.quantity.present? && @product.quantity > 0 %>
                   <%= link_to("add to cart", add_to_cart_product_path(@product), method: :post) %>
                   <% else %>
                   Sold Out
                   <% end %>
                 </button>
-  							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+                <%= link_to("Checkout", checkout_carts_path, method: :post, class: "btn add-to-cart btn-default pull-right") %>
+
   						</div>
             </div>
 
@@ -66,7 +90,7 @@
 
             <div class="">
               <% if @product.quantity.present? && @product.quantity > 0 %>
-              <%= link_to("Buy It At Once", add_to_cart_product_path(@product), method: :post, :class => "btn btn-block btn-default") %>
+              <!-- <%= link_to("Buy It At Once", add_to_cart_product_path(@product), method: :post, :class => "btn btn-block btn-default") %> -->
               <% else %>
               已销售一空，无法购买
               <% end %>
@@ -106,28 +130,7 @@
   </div>
 </div> -->
 
-    <h4>
-      <!-- Display the countdown timer in an element -->
-      <% if @product.countdown.present?%>
-      <% closedate = DateTime.strptime(@product.countdown, "%FT%R") %>
-      Time left:<p id="timer"></p>
-      <% end %>
-      <hr>
-      <!-- 如果有折扣 -->
-      <% if @product.discount.present? && @product.quantity > 0 %>
-        <!--  顯示折扣％ -->
-        <%= @product.discount %>% off
-        <!--  顯示原價，加上刪除線 -->
-        <s><div class="product-price"> ￥ <%= @product.price %> </div></s>
-        <!--  顯示優惠價 -->
-        <div class="product-price discount"> ￥<%= @product.price = @product.price * @product.discount/100 %></div>
-      <% else %>
-        <!-- 沒折扣 -->
-        <div class="product-price"> ￥ <%= @product.price %> </div>
-      <% end %>
-        <br>
-        <div> Qty : <%= @product.quantity %> </div>
-    </h4>
+
 
   </div>
 </div>
