@@ -11,7 +11,6 @@ CarrierWave.configure do |config|
 
     StorageBucket = FogStorage.directories.new key: config["bucket"]
 
-
   else
     config.storage :file
   end
