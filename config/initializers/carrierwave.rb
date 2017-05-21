@@ -1,16 +1,15 @@
 CarrierWave.configure do |config|
   if Rails.env.production?
     config.fog_provider = 'fog'
-    config.fog_credentials = {
-      provider:              'GOOG',
-      goog_access_key_id:     ENV["GOOG_ACCESS_KEY_ID"],
+    config = Rails.application.config.x.settings["cloud_storage"]
 
-      goog_secret_access_key: ENV["GOOG_SECRET_ACCESS_KEY"],
+    FogStorage = Fog::Storage.new(
+      provider: "Google",
+      google_storage_access_key_id:     config["access_key_id"],
+      google_storage_secret_access_key: config["secret_access_key"]
+    )
 
-      region:                ENV["GOOG_REGION"]
-
-    }
-    config.fog_directory  = ENV["GOOG_BUCKET_NAME"]
+    StorageBucket = FogStorage.directories.new key: config["bucket"]
 
 
   else
