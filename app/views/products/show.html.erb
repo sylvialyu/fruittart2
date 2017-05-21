@@ -32,7 +32,7 @@
 					</div><br/>
 
 
-            <h4 class="price col-md-8">
+            <h4 class="price col-md-9">
             <!-- 如果有倒計時   -->
             <% if @product.countdown.present?%>
             <!-- 倒計時間換成數字，北京時間與格林威治時間相差 (8/24) 天 -->
@@ -50,7 +50,7 @@
               <div class="product-price"> ￥ <%= @product.price %> </div>
             <% end %>
               <br>
-              <div class="price col-md-4"> Qty : <%= @product.quantity %> </div>
+              <div class="price"> Qty : <%= @product.quantity %> </div>
             </h4>
 
 
