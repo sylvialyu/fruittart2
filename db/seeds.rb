@@ -24,8 +24,8 @@ lime that made it work for cream cheese spread into the volume flavor",
   price: 68,
   quantity: 43,
   )
-Photo.create!(product_id:1,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
-Photo.create!(product_id:1,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
+Photo.create!(product_id:1,avatar: image_tag('http://i.imgur.com/OVZjFhf.jpg'))
+Photo.create!(product_id:1,avatar: image_url('http://i.imgur.com/6iCSL9Q.jpg'))
 
 Product.create!(
   id: 2,
