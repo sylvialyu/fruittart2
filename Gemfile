@@ -42,6 +42,8 @@ gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'figaro'
 gem 'fog'
+gem 'fog-google'
+gem 'google-api-client', '~> 0.8.6'
 gem 'ransack' #搜索
 gem 'will_paginate' #分頁
 gem 'will_paginate-bootstrap'# 美化分頁
