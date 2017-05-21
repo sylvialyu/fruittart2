@@ -24,7 +24,7 @@
   <div class="panel-body">
       <div class="row">
         <% @products.each do |product| %>
-          <div class="box col-xs-12 col-md-4">
+          <div class="box col-xs-12 col-md-4 text-center">
           <%= link_to product_path(product) do %>
               <% if product.photos.present? %>
                   <%= image_tag(product.photos[0].avatar.medium.url) %>
@@ -34,7 +34,7 @@
               <% end %>
            <% end %>
             <h6><%= product.title %></h6>
-            <span>￥ <%= product.price %></span>
+            <h4>￥ <%= product.price %></h4>
           </div>
         <% end %>
       </div>
