@@ -7,5 +7,5 @@ CarrierWave.configure do |config|
   google_storage_secret_access_key_id: ENV["GOOGLE_ID"],
   google_storage_secret_access_key: ENV["GOOGLE_KEY"]
 )
-  end
+
 end
