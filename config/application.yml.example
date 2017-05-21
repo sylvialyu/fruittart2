@@ -9,3 +9,23 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
+
+production:
+
+  GOOG_ACCESS_KEY_ID: "GOOGJZ3TBX544SDCTXVU"
+
+  GOOG_SECRET_ACCESS_KEY: "8KV5Zmc9QesFwelTNzCBHJuUXCW5CaB8/O0td2cY"
+
+  GOOG_REGION: "asia-east1"
+
+  GOOG_BUCKET_NAME: "fullstack-tim"
+
+development:
+
+  GOOG_ACCESS_KEY_ID: "GOOGJZ3TBX544SDCTXVU"
+
+  GOOG_SECRET_ACCESS_KEY: "8KV5Zmc9QesFwelTNzCBHJuUXCW5CaB8/O0td2cY"
+
+  GOOG_REGION: "asia-east1"
+
+  GOOG_BUCKET_NAME: "fullstack-tim"
