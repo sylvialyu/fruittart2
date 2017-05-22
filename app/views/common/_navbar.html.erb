@@ -40,7 +40,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li>
               <%= link_to carts_path do  %>
-              Cart <i class="fa fa-shopping-cart"> </i> ( <%= current_cart.products.count %> )
+              Cart <i class="fa fa-shopping-cart fa-lg"> </i> ( <%= current_cart.products.count %> )
               <% end %>
             </li>
             <% if !current_user %>
@@ -54,11 +54,11 @@
                 </a>
                 <ul class="dropdown-menu">
                   <% if current_user && current_user.admin? %>
-                  <li><%= link_to(content_tag(:i, "Admin 选单", class: "fa fa-home"), admin_products_path) %></li>
-                  <li><%= link_to(content_tag(:i, "所有订单", class: "fa fa-user-circle-o"), admin_orders_path) %></li>
+                  <li><%= link_to(content_tag(:i, "Admin Panel", class: "fa fa-home"), admin_products_path) %></li>
+                  <li><%= link_to(content_tag(:i, "Purchase Orders", class: "fa fa-user-circle-o"), admin_orders_path) %></li>
                   <% end %>
-                  <li><%= link_to(content_tag(:i, "个人订单列表", class: "fa fa-credit-card-alt"), account_orders_path) %></li>
-                  <li><%= link_to(content_tag(:i, "退出", class: "fa fa-sign-out"), destroy_user_session_path, method: :delete) %></li>
+                  <li><%= link_to(content_tag(:i, "Your Orders", class: "fa fa-credit-card-alt"), account_orders_path) %></li>
+                  <li><%= link_to(content_tag(:i, "Log Out", class: "fa fa-sign-out"), destroy_user_session_path, method: :delete) %></li>
                 </ul>
               </li>
               <% end %>
