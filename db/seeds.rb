@@ -24,8 +24,9 @@ lime that made it work for cream cheese spread into the volume flavor",
   price: 68,
   quantity: 43,
   )
-Photo.create!(product_id:1,avatar: image_tag('http://i.imgur.com/OVZjFhf.jpg'))
-Photo.create!(product_id:1,avatar: image_url('http://i.imgur.com/6iCSL9Q.jpg'))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple1.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pianapple2.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 2,
@@ -38,8 +39,9 @@ made Bavarian effect.",
   price: 70,
   quantity: 38,
   )
-Photo.create!(product_id:2,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
-Photo.create!(product_id:2,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit1.jpg")))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/grapefruit2.jpg")))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 3,
@@ -51,8 +53,9 @@ sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
   )
-Photo.create!(product_id:3,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
-Photo.create!(product_id:3,avatar: open('http://i.imgur.com/BklBufL.jpg'))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha1.jpg")))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/macha2.jpg")))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 4,
@@ -64,8 +67,9 @@ Product.create!(
   price: 65,
   quantity: 45,
   )
-Photo.create!(product_id:4,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
-Photo.create!(product_id:4,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho1.jpg")))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/banacho2.jpg")))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 5,
@@ -77,8 +81,9 @@ melon. Please relish that elegant taste.",
   price: 75,
   quantity: 25,
   )
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
+Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/melon1.jpg")))
+Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/melon2.jpg")))
+Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
@@ -89,8 +94,9 @@ and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   price: 62,
   quantity: 19,
   )
-Photo.create!(product_id:6,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
-Photo.create!(product_id:6,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
+Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/lemon1.jpg")))
+Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/lemon2.jpg")))
+Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
@@ -102,8 +108,9 @@ flambooise, finished in a luxurious dish.",
   price: 80,
   quantity: 3,
   )
-Photo.create!(product_id:7,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
-Photo.create!(product_id:7,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
+Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/mango1.jpg")))
+Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/mango2.jpg")))
+Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
@@ -115,8 +122,9 @@ baked carefully. Please enjoy it with the cherry blossoms of nectar.",
   price: 85,
   quantity: 27,
   )
-Photo.create!(product_id:8,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
-Photo.create!(product_id:8,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/sakura1.jpg")))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/sakura2.jpg")))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
@@ -127,8 +135,9 @@ orange that is soaked in liqueur is a balanced tart.",
   price: 82,
   quantity: 44,
   )
-Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
-Photo.create!(product_id:9,avatar: open('http://i.imgur.com/s0vhXyD.jpg'))
+Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/orange1.jpg")))
+Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/orange2.jpg")))
+Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 10,
@@ -141,8 +150,9 @@ accents.",
   price: 70,
   quantity: 12,
   )
-Photo.create!(product_id:10,avatar: open('http://i.imgur.com/JuuX2CT.jpg'))
-Photo.create!(product_id:10,avatar: open('http://i.imgur.com/xXnnTgj.jpg'))
+Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/banana1.jpg")))
+Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/banana2.jpg")))
+Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 11,
@@ -154,8 +164,9 @@ is the No. 1 Kilfevon popularity.",
   price: 88,
   quantity: 19,
   )
-Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
-Photo.create!(product_id:11,avatar: open('http://i.imgur.com/OvKr1HO.jpg'))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/season1.jpg")))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/season2.jpg")))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 12,
@@ -167,8 +178,9 @@ is exquisite.",
   price: 69,
   quantity: 8,
   )
-Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
-Photo.create!(product_id:12,avatar: open('http://i.imgur.com/iApZlbD.jpg'))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw1.jpg")))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/straw2.jpg")))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 13,
@@ -179,8 +191,9 @@ overturning the image of past strawberries.",
   price: 86,
   quantity: 33,
   )
-Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
-Photo.create!(product_id:13,avatar: open('http://i.imgur.com/6zFOofk.jpg'))
+Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry1.jpg")))
+Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry2.jpg")))
+Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 14,
@@ -193,8 +206,9 @@ effective has become accent of taste.",
   price: 66,
   quantity: 3,
   )
-Photo.create!(product_id:14,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
-Photo.create!(product_id:14,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
+Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/thai1.jpg")))
+Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/thai2.jpg")))
+Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 15,
@@ -205,8 +219,9 @@ grain flour and decorated orange jelly.",
   price: 62,
   quantity: 11,
   )
-Photo.create!(product_id:15,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
-Photo.create!(product_id:15,avatar: open('http://i.imgur.com/88xacor.jpg'))
+Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/yuzu1.jpg")))
+Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/yuzu2.jpg")))
+Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
   id: 16,
@@ -220,5 +235,6 @@ sauce made with special soy sauce is delicious.",
   price: 84,
   quantity: 36,
   )
-Photo.create!(product_id:16,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
-Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
+Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/syoyu1.jpg")))
+Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/syoyu2.jpg")))
+Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))

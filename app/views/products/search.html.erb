@@ -1,14 +1,14 @@
 <div class="row">
   <% if @query_string.blank? %>
       <div class="search-info-title">
-        你没有输入东西，找不着商品啊
+        What are you looking for?
       </div>
 
     <% elsif @products.blank? %>
       <br>
-      <h2 class="search-info-title">沒有找到相关信息，请重新输入关键字搜索</h2>
+      <h2 class="search-info-title">Can't find related info, please try again</h2>
     <% else %>
-      <h2 class="search-info-title"> 有关"<%= @query_string %>"的產品信息 </h2>
+      <h2 class="search-info-title"> Result About "<%= @query_string %>" </h2>
 
       <div class="search-result">
         <% @products.each do |product| %>
