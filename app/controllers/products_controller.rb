@@ -34,4 +34,16 @@ class ProductsController < ApplicationController
     end
   end
 
+  def upcount
+    @product = Product.find(params[:id])
+    @product.counts.create
+    redirect_to product_path(@product)
+  end
+
+  def downcount
+    @product = Product.find(params[:id])
+    @product.counts.first.destroy
+    redirect_to product_path(@product)
+  end
+
 end

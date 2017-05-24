@@ -56,14 +56,14 @@
 
 
           <div class="">
-            <div class="btn-group col-md-4" role="group" aria-label="...">
-              <button type="button" class="btn btn-default">-</button>
-              <button type="button" class="btn btn-default">1</button>
-              <button type="button" class="btn btn-default">+</button>
+            <div class="btn-group col-md-5" role="group" aria-label="...">
+              <button type="button" class="btn btn-default"><%= link_to("-", downcount_product_path(@product), method: :post) %></button>
+              <button type="button" class="btn btn-default"><%= @product.counts.count %></button>
+              <button type="button" class="btn btn-default"><%= link_to("+", upcount_product_path(@product), method: :post) %></button>
               <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button>
             </div>
 
-						<div class="action col-md-8">
+						<div class="action col-md-7">
 							<button class="add-to-cart btn btn-default pull-right" type="button">
                 <% if @product.quantity.present? && @product.quantity > 0 %>
                 <%= link_to("add to cart", add_to_cart_product_path(@product), method: :post) %>

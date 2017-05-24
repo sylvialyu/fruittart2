@@ -1,0 +1,17 @@
+/*===== navbar網站logo大小 ====*/
+ .navbar-brand > img {
+     display: inline-block; //图片和链接文字显示在同一行
+     margin-right: 10px;
+     margin-bottom: -10px;  //图片和链接文字拉开一点距离
+     width: 32px; //定制图片宽度
+     height: 32px; //定制图片高度
+ }
+
+/*===== navbar底色透明 ====*/
+ .navbar-default {
+    background: transparent; //
+    border-color: transparent;
+    margin-bottom: 30px;
+    border-radius: 0;
+    height: 60px;
+}
