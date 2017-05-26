@@ -6,11 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheets" type="text/scss" href="welcome7s.scss">
 
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div class="row">
       <%= render "common/navbar" %>
       <%= render "common/flashes"%>
       <%= yield %>

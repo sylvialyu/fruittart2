@@ -1,23 +1,29 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-df navbar-fixed-top">
+  <div class="container">
     <div class="navbar-header">
+      <!--=== 右側下拉選單（移動端顯示） ===-->
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/"><img src='<%= image_url 'http://i.imgur.com/OsgEShZ.png' %>'>Sweet Sweet</a>
+      <!--=== Logo ===-->
+      <a class="navbar-brand logobox-1" href="/">
+        <img src='<%= image_url 'http://ww1.sinaimg.cn/large/006tKfTcgy1ffxk604u6nj301s01s0mp.jpg' %>'>
+      </a>
+      <a class="navbar-brand logobox-2" href="/">Sweet Sweet</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-left ">
         <li>  <%= link_to("Products", products_path) %></li>
         <li><%= link_to 'How to Buy', how_path %></li>
         <li class="dropdown">
-          <a href="/branch/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Branch Stores <span class="caret"></span></a>
+          <a href="/branch/" class="dropdown-toggle" data-toggle="dropdown">
+            Branch Stores <span class="caret"></span>
+          </a>
           <ul class="dropdown-menu">
             <li><a href="/branch/#shanghai"><span class='fa fa-dot-circle-o'> Shanghai</span></a></li>
             <li><a href="/branch/#tokyo"><span class='fa fa-dot-circle-o'> Tokyo</span></a></li>
@@ -57,11 +63,11 @@
                   <li><%= link_to(content_tag(:i, "Admin Panel", class: "fa fa-home"), admin_products_path) %></li>
                   <li><%= link_to(content_tag(:i, "Purchase Orders", class: "fa fa-user-circle-o"), admin_orders_path) %></li>
                   <% end %>
-                  <li><%= link_to(content_tag(:i, "Your Orders", class: "fa fa-credit-card-alt"), account_orders_path) %></li>
+                  <li><%= link_to(content_tag(:i, "My Order", class: "fa fa-credit-card-alt"), account_orders_path) %></li>
                   <li><%= link_to(content_tag(:i, "Log Out", class: "fa fa-sign-out"), destroy_user_session_path, method: :delete) %></li>
                 </ul>
               </li>
-              <% end %>
+            <% end %>
           </ul>
 
 

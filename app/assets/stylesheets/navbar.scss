@@ -1,17 +1,76 @@
-/*===== navbar網站logo大小 ====*/
- .navbar-brand > img {
-     display: inline-block; //图片和链接文字显示在同一行
-     margin-right: 10px;
-     margin-bottom: -10px;  //图片和链接文字拉开一点距离
-     width: 32px; //定制图片宽度
-     height: 32px; //定制图片高度
+/*===== navbar基本设置 ====*/
+.navbar {
+  padding-bottom: 1em;
+}
+
+ .navbar-df {
+    background: #fff;
+    border-color: #fff;
+    color: #f96277 !important;
+    border-radius: 0;
+    height: 70px; //设置 navbar 高度
+    margin-bottom: 20px;
+}
+
+
+/*===== logo 设置 ====*/
+.navbar-brand {
+  padding: 24px 23px;
+}
+
+.logobox-1 {
+  img {
+    display: inline-block; //图片和链接文字显示在同一行
+    margin-left: 10px;
+    margin-right: 0;
+    margin-top: -5px;  //图片和链接文字拉开一点距离
+    width: 32px; //定制图片宽度
+    height: 32px; //定制图片高度
+  }
+}
+
+.logobox-2 {
+  margin-left: -10px;
+  font-family: 'Dancing Script', cursive; //设置 logo "SweetSweet" 字体
+  color: #f96277;
+  font-size: 1.2em;
+}
+
+
+/*===== navbar 按钮 设置 ====*/
+ .navbar-df .navbar-nav > li > a{
+   color: #f96277;//
+   padding-top: 24px;
+   padding-bottom: 23px;
+
  }
 
-/*===== navbar底色透明 ====*/
- .navbar-default {
-    background: transparent; //
-    border-color: transparent;
-    margin-bottom: 30px;
-    border-radius: 0;
-    height: 60px;
+ .navbar-df .navbar-nav > li > a:hover,
+ .navbar-df .navbar-nav > li > a:focus {
+   color: #636262;
+
+   background-color: transparent;
+ }
+ .navbar-df .navbar-nav > .active > a,
+ .navbar-df .navbar-nav > .active > a:hover,
+ .navbar-df .navbar-nav > .active > a:focus {
+   color: #636262;
+
+   background-color: transparent;
+
+ }
+
+ .navbar-df .navbar-nav > .open > a,
+ .navbar-df .navbar-nav > .open > a:focus,
+ .navbar-df .navbar-nav > .open > a:hover {
+   color: #636262;
+
+   background-color: transparent;
+
+ }
+
+/*===== footer ====*/
+.footerpink {
+  background-color: #fff !important;
+  color: #f96277 !important;
 }
