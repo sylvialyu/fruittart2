@@ -60,7 +60,16 @@
               <button type="button" class="btn btn-default"><%= link_to("-", downcount_product_path(@product), method: :post) %></button>
               <button type="button" class="btn btn-default"><%= @product.counts.count %></button>
               <button type="button" class="btn btn-default"><%= link_to("+", upcount_product_path(@product), method: :post) %></button>
-              <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button>
+              <!-- <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button> -->
+
+              <span class="pull-left">
+                <% if current_user && !current_user.is_favoriter_of?(@product) %>
+                <%= link_to("", favorite_product_path(@product), method: :post, class: "fa fa-heart fa-2x", style: "color:red;") %>
+                <% else %>
+                <%= link_to("", unfavorite_product_path(@product), method: :post, class: "fa fa-heart-o fa-2x") %>
+                <% end %>
+              </span>
+
             </div>
 
 						<div class="action col-md-7">
