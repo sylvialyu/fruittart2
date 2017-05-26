@@ -29,7 +29,6 @@ html {
     overflow-x: hidden; overflow-y: auto; //网页在x轴上全屏显示，让横滚动轴消失
 }
 
-
  body {
    font-family: 'Open Sans', sans-serif;
    color: #636262;
@@ -44,10 +43,16 @@ html {
     // background-repeat: no-repeat;
 }
 
- //让内容剧中
+ //让内容居中
 .col-centered {
   float: none;
   margin: 0 auto;
+}
+
+//让内容与 navbar 拉开一段距离
+.main-sec {
+  margin-top: 8em;
+  margin-bottom: 7em;
 }
 
 
