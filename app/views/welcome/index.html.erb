@@ -1,6 +1,4 @@
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style: "opacity: 1">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -11,25 +9,25 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="http://i.imgur.com/eTd5XyS.jpg" alt="Landing1-straw" >
+        <img src="http://ww2.sinaimg.cn/large/006tKfTcgy1ffxek5bjnaj30w80hrtj1.jpg" alt="Landing1-straw" >
         <div class="carousel-caption">
-          <h3>The fruit tarts that you will never forget....</h3>
+          <h3 class="banner_text">A unique creation <br>special for you</h3>
           <p>...</p>
         </div>
       </div>
 
       <div class="item">
-        <img src="http://i.imgur.com/iDUypKT.jpg" alt="Landing2-grape" >
+        <img src="http://ww1.sinaimg.cn/large/006tKfTcgy1ffxespanw7j30w80hsadv.jpg" alt="Landing2-grape" >
         <div class="carousel-caption">
-          <h3>「It's like.... the taste from Heaven」</h3>
+          <h3 class="banner_text">Umh, it's just like.... <br>the taste from Heaven</h3>
           <p>...</p>
         </div>
       </div>
 
       <div class="item">
-        <img src="http://i.imgur.com/6fgxtBe.jpg" alt="Landing3-tea" >
+        <img src="http://ww2.sinaimg.cn/large/006tKfTcgy1ffxo1x0n84j30w80hs4c9.jpg" alt="Landing3-tea" >
         <div class="carousel-caption">
-          <h3>Even though the day was a mess, we can still have the best tea time.</h3>
+          <h3 class="banner_text">Amazing Tart<br>for the best party ever</h3>
           <p>...</p>
         </div>
       </div>
@@ -48,118 +46,254 @@
   </div>
 
 
-<div class="container-fluid text-center bg-grey">
-  <div class="col-md-offset-2 col-md-8">
-      <!-- product column -->
-      <h2>SECRET FLAVOURS</h2>
-      <h4>What we have created?</h4>
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/4">
-            <img src="http://i.imgur.com/Vw8LPk2.jpg" alt="Banacho"></a>
-            <p><strong>Fresh banana cream and caramel coffee tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
+  <!-- SS & You -->
+  <section class="sec-white">
+
+  <h1 class="title">Sweet Sweet & You</h1>
+  <p class="SStext">
+    SweetSweet is made with love. We remind you of the happiness in the old time.<br>
+    Life is tough, and we may feel lonely every now and then...
+    Just have a taste of SweetSweet, and share this wonderful moment with...
+  </p>
+
+  <div class="emotion col-md-8 col-centered">
+    <div class="row">
+      <div class="col-md-4 col-sm-4 col-xs-4">
+          <%= image_tag 'http://ww2.sinaimg.cn/large/006tNbRwgy1ffymvzh09fj303k03k743.jpg', class: "icon" %>
+          <h4 class="SStext">your family</h4>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <%= image_tag 'http://ww2.sinaimg.cn/large/006tNbRwgy1ffymtbc1eqj303k03k745.jpg', class: "icon" %>
+        <h4 class="SStext">your friends</h4>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <%= image_tag 'http://ww2.sinaimg.cn/large/006tNbRwgy1ffymtwu04aj303k03kdfo.jpg', class: "icon" %>
+        <h4 class="SStext">and the one you love</h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="why" class="col-md-10 col-centered">
+
+  <div class="content-section-a">
+      <div class="row">
+        <div class="col-md-5">
+          <h2 class="section-heading"> We create delicious memories</h2>
+          <p class="textbox">
+            If you've been tired of looking for a better partissere, come to us! Our partissere provides dessert with the best quality. It reminds you of some wonderful moments in life.
+          </p>
         </div>
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/7">
-            <img src="http://i.imgur.com/rfq7Wen.jpg" alt="Mango"></a>
-            <p><strong>Taiwan Mango tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/5">
-            <img src="http://i.imgur.com/SLPKbrL.jpg" alt="Melon"></a>
-            <p><strong>Crown melon tart </strong></p>
-            <p>Yes, we made it</p>
-          </div>
+        <div class="col-md-5 col-md-offset-2">
+          <%= image_tag 'http://3.bp.blogspot.com/-YJBzvBQvlr4/U2oKs0DOT5I/AAAAAAAADVs/WwWLuLOnMek/s1600/13003-0465.jpg', class: 'img-responsive' %>
         </div>
       </div>
+    </div>
 
-      <div class="row text-center">
-        <div class="col-sm-6">
-          <div class="thumbnail"><a href="/products/3">
-            <img src="http://i.imgur.com/0KbdaqQ.jpg" alt="Matcha"></a>
-            <p><strong>Matcha and soymilk tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
+  <div class="content-section-b">
+      <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-sm-push-6 col-sm-6">
+          <h2 class="section-heading">We have professional Pastry Chef</h2>
+          <p class="textbox">
+            Our Chef are from all over the world. They have rich work experience working for famous 5 star hotels.
+            In addition, they won many international competition Championships.
+          </p>
         </div>
-        <div class="col-sm-6">
-          <div class="thumbnail"><a href="/products/12">
-            <img src="http://i.imgur.com/EVVDJVH.jpg" alt="Straw"></a>
-            <p><strong>White chocolate and cream cheese souffle tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
+        <div class="col-md-5 col-sm-pull-6 col-sm-6">
+          <%= image_tag 'http://ww3.sinaimg.cn/large/006tKfTcgy1ffxkmm1glij30w80hsaer.jpg', class: 'img-responsive' %>
         </div>
       </div>
+  </div>
 
-      <div class="row text-center">
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/13">
-            <img src="http://i.imgur.com/9yI1dgY.jpg" alt="Strawberry"></a>
-            <p><strong>Tart of Momoka Strawberry</strong></p>
-            <p>Yes, we made it</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/10">
-            <img src="http://i.imgur.com/OVZjFhf.jpg" alt="Banana"></a>
-            <p><strong>Extra-Banana tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="thumbnail"><a href="/products/9">
-            <img src="http://i.imgur.com/RPaO0xj.jpg" alt="Orange"></a>
-            <p><strong>Orange tart</strong></p>
-            <p>Yes, we made it</p>
-          </div>
-        </div>
-      </div>
-      <!-- product column -->
+</div>
+</section>
 
-  <hr>
-    <!-- flow chart -->
+<!--- 尝试做一个 counterup 的 js 效果。目前还没成功，稍后看看能否做出来 ----->
+<!-- <div class="container">
+    <div class="row">
+        <div class="main_counter text-center">
+            <div class="col-md-3">
+                <div class="counter_item">
+                    <h2 class="statistic-counter"><em> 29 </em></h2>
+                    <div class="separator_small"></div>
+                    <h5>Projects Finished</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter_item sm-m-top-40">
+                    <h2 class="statistic-counter"><em>124</em></h2>
+                    <div class="separator_small"></div>
+                    <h5>Happy Clients</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter_item sm-m-top-40">
+                    <h2 class="statistic-counter"><em>76</em></h2>
+                    <div class="separator_small"></div>
+                    <h5>Hours of work</h5>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter_item sm-m-top-40">
+                    <h2 class="statistic-counter"><em>500</em> </h2>
+                    <div class="separator_small"></div>
+                    <h5>Cup of coffee</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--End off trial --> -->
+
+
+
+<!-- Recent Special -->
+<section class="sec-gray">
+  <h1 class="title">Recent Special</h1>
+
+  <div class="persona-grid">
+           <div class="container row-container">
+               <div class="row">
+                   <div class="col-sm-4">
+                       <div class="g10 persona-kira">
+                           <a class="persona-link" href="/products/3">
+                               <div class="info-peek">
+                                   <div class="info-default active">
+                                       <h4>Matcha & Soymilk Tart</h4>
+                                   </div>
+                               </div>
+                               <div class="overlay"></div>
+                               <img src="http://ww1.sinaimg.cn/large/006tKfTcgy1ffxlyar0krj30ki0bu45h.jpg" alt="Lights"  style="width:100%">
+                           </a>
+                       </div>
+                   </div>
+                   <div class="col-sm-4">
+                       <div class="g10 persona-kira">
+                           <a class="persona-link" href="/products/12">
+                               <div class="info-peek">
+                                   <div class="info-default active">
+                                       <h4>White chocolate & Cream Cheese Souffle Tart</h4>
+                                   </div>
+                               </div>
+                               <div class="overlay"></div>
+                               <img src="http://ww4.sinaimg.cn/large/006tKfTcgy1ffxmr19rhzj30ki0buag8.jpg" alt="Lights"  style="width:100%">
+                           </a>
+                       </div>
+                   </div>
+                   <div class="col-sm-4">
+                       <div class="g10 persona-kira">
+                           <a class="persona-link" href="/products/8">
+                               <div class="info-peek">
+                                   <div class="info-default active">
+                                       <h4>Cherry & Le Tecto Tart</h4>
+                                   </div>
+                               </div>
+                               <div class="overlay"></div>
+                               <img src="http://ww4.sinaimg.cn/large/006tKfTcgy1ffxpk46kjpj30ki0bugs8.jpg" alt="Lights"  style="width:100%">
+                           </a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+         </div>
+
+     <div class="persona-grid">
+        <div class="container row-container">
+           <div class="row">
+               <div class="col-sm-4">
+                   <div class="g10 persona-kira">
+                       <a class="persona-link" href="/products/4">
+                           <div class="info-peek">
+                               <div class="info-default active">
+                                   <h4>Fresh Banana Cream & Caramel Coffee Tart</h4>
+                               </div>
+                           </div>
+                           <div class="overlay"></div>
+                           <img src="http://ww3.sinaimg.cn/large/006tKfTcgy1ffxnbt4ep3j30ki0butln.jpg" alt="Lights"  style="width:100%">
+                       </a>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   <div class="g10 persona-kira">
+                       <a class="persona-link" href="/products/14">
+                           <div class="info-peek">
+                               <div class="info-default active">
+                                   <h4>Mahachanok Mango Tart</h4>
+                               </div>
+                           </div>
+                           <div class="overlay"></div>
+                           <img src="http://ww3.sinaimg.cn/large/006tKfTcgy1ffxnc7zx4ej30ki0bujxe.jpg" alt="Lights"  style="width:100%">
+                       </a>
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   <div class="g10 persona-kira">
+                       <a class="persona-link" href="/products/11">
+                           <div class="info-peek">
+                               <div class="info-default active">
+                                   <h4>Seasonal Fruit Tart ~ Spring Version ~</h4>
+                               </div>
+                           </div>
+                           <div class="overlay"></div>
+                           <img src="http://ww3.sinaimg.cn/large/006tKfTcgy1ffxnep46kuj30ki0buds9.jpg" alt="Lights"  style="width:100%">
+                       </a>
+                   </div>
+               </div>
+            </div>
+          </div>
+       </div>
+
+</section>
+<!-- End of Recent Special -->
+
+<!-- flow chart -->
+<section class="sec-white">
+  <!-- <div class="col-md-10 col-centered hidden-xs"> -->
+  <div class="col-md-10 col-centered  ">
     <div class="row fchart">
-      <div class="col-md-12 hidden-xs">
-        <h2>HOW TO PLACE ORDER?</h2>
+        <h1 class="title">Order Process</h1>
         <br><br>
-        <div class="col-md-offset-1 col-md-1"><span class="fa fa-question-circle-o fa-4x ship-logo"></span></div>
+        <!-- <div class="col-md-offset-1 col-md-1"><span class="fa fa-question-circle-o fa-4x ship-logo"></span></div> -->
+        <div class="col-md-2 col-sm-2">
+          <div class="col-md-6"><span class="fa fa-gratipay fa-4x ship-logo"></span>
+          </div>
+          <div class="col-md-6 hidden-sm"><span class="fa fa-long-arrow-right fa-4x ship-logo"></span></div>
+          <p class="order-text">choose the <br> tart you like</p>
+        </div>
         <div class="col-md-2">
-          <div class="col-md-6"><span class="fa fa-shopping-cart fa-4x ship-logo"></span></div>
-          <div class="col-md-6 hidden-sm"><span class="fa fa-arrow-right fa-4x ship-logo"></span></div>
-          <strong>put the tart you like inside<br> shopping cart</strong>
+          <div class="col-md-6"><span class="fa fa-shopping-cart fa-4x ship-logo"></span>
+          </div>
+          <div class="col-md-6 hidden-sm"><span class="fa fa-long-arrow-right fa-4x ship-logo"></span></div>
+          <p class="order-text">put it into the <br>shopping cart</p>
         </div>
         <div class="col-md-2">
           <div class="col-md-6"><span class="fa fa-pencil-square-o fa-4x ship-logo"></span></div>
-          <div class="col-md-6 hidden-sm"><span class="fa fa-arrow-right fa-4x ship-logo"></span></div>
-          <strong>write down shipping info</strong>
+          <div class="col-md-6 hidden-sm"><span class="fa fa-long-arrow-right fa-4x ship-logo"></span></div>
+          <p class="order-text">write down <br>shipping info</p>
         </div>
         <div class="col-md-2">
           <div class="col-md-6"><span class="fa fa-cny fa-4x ship-logo"></span></div>
-          <div class="col-md-6 hidden-sm"><span class="fa fa-arrow-right fa-4x ship-logo"></span></div>
-          <strong>pay for <br>the tart!</strong>
+          <div class="col-md-6 hidden-sm"><span class="fa fa-long-arrow-right fa-4x ship-logo"></span></div>
+          <p class="order-text">pay for the tart</p>
         </div>
         <div class="col-md-2">
           <div class="col-md-6"><span class="fa fa-truck fa-4x ship-logo"></span></div>
-          <div class="col-md-6 hidden-sm"><span class="fa fa-arrow-right fa-4x ship-logo"></span></div>
-          <strong>wait for <br>the delivery</strong>
+          <div class="col-md-6 hidden-sm"><span class="fa fa-long-arrow-right fa-4x ship-logo"></span></div>
+          <p class="order-text">wait for delivery</p>
         </div>
-        <div class="col-md-1"><span class="fa fa-gift fa-4x ship-logo"></span>
-        <br><strong>Enjoy!</strong></div>
+        <div class="col-md-2"><span class="fa fa-gift fa-4x ship-logo"></span>
+        <p class="order-text-2"> Enjoy!</p>
+      </div>
       </div>
     </div>
+</section>
 
   </div>
 </div>
 
-  <hr>
 
-
+<!-- Shop Now -->
   <div class="row">
       <div class="actiontrigger">
         <p></p>
-        <a class="btn btn-actiontrigger btn-lg" href="https://goo.gl/ivVB3e" target="_blank" >  Vote now  </a>
+        <a class="btn btn-actiontrigger btn-lg" href="http://ww2.sinaimg.cn/large/006tKfTcgy1ffwlnkt2r2j30nc0bo0wc.jpg" target="_blank" >  Shop now  </a>
       </div>
   </div>

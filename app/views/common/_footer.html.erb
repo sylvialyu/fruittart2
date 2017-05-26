@@ -8,21 +8,61 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zendesk Chat Script-->
 
-<footer class="navbar-default ">
-   <div class="container-fluid">
-       <div class="row footer-below text-center">
-         <%= link_to "/about" do %>About Us<% end %> |
-         <%= link_to "/how#delivery" do %>Delivery<% end %> |
-         <%= link_to "/about#contact" do %>Contact Us <% end %> |
-         <%= link_to "https://goo.gl/78BMsw", target: :_blank do %>后端功能教学 <% end %> |
-         <%= link_to "https://goo.gl/ivVB3e", target: :_blank do %>Links<% end %><br>
-         Copyright ©2017 Sweet Sweet,
-         Designed by Sylvia &amp; Tim <br><br>
-         <%= link_to "https://github.com/sylvialyu/fruittart2", target: :_blank do %>
-         <span class="fa fa-github-alt fa-2x"></span><% end %>
-          | <%= link_to "https://goo.gl/ivVB3e", target: :_blank do %>
-          <span class="fa fa-caret-square-o-right fa-2x"></span><% end %> <br><br>
-          .
-       </div>
-   </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-centered">
+        <div class="row">
+          <div class="col-md-4 col-xs-4">
+            <h4><%= t('Our Products') %></h4>
+            <ul class="list-unstyled">
+              <li><a href="/products"><%= t('Fruit Tart') %></a></li>
+              <li><a href="#s"><%= t('The Hottest') %></a></li>
+              <li><a href="#s"><%= t('Our Package') %></a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h4><%= t('Our Stories') %></h4>
+            <ul class="list-unstyled">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="https://goo.gl/78BMsw" target="_blank">后端功能教学</a></li>
+              <li><a href="https://goo.gl/ivVB3e" target="_blank">为我们投票</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-xs-4">
+            <h4><%= t('Customer Service') %></h4>
+            <ul class="list-unstyled">
+              <li><a href="/how#delivery">Delivery</a></li>
+              <li><a href="#s">FAQ</a></li>
+              <li><a href="#s">Guidelines</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+          <div class="col-md-10 col-xs-12 col-centered footer-box">
+            <div>
+              <a href="https://twitter.com/" target="_blank">
+                  <span class="fa fa-facebook"></span>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                  <span class="fa fa-twitter"></span>
+              </a>
+              <a href="https://www.instagram.com/?hl=zh-cn" target="_blank">
+                  <span class="fa fa-instagram"></span>
+              </a>
+              <a href="https://github.com/sylvialyu/fruittart2" target="_blank">
+                  <span class="fa fa-github-alt"></span>
+              </a>
+              <a href="https://fullstack.xinshengdaxue.com/works/560" target="_blank">
+                  <span class="fa fa-thumbs-o-up"></span>
+              </a>
+            </div>
+          </div>
+          <p>Copyright ©2017 Sweet Sweet Designed by Sylvia &amp; Tim</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 </footer>
