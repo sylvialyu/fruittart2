@@ -66,7 +66,64 @@
  }
 
 /*===== footer ====*/
-.footerpink {
-  background-color: #fff !important;
-  color: #f96277 !important;
+// .footer {
+//   background-color: #f96277 !important;
+//   color: #fff !important;
+//   font-size: 1em;
+//   text-align: center;
+//   min-height: 250px;
+// }
+
+/*===== Footer 页脚 ======*/
+.footer{
+  text-align: center;
+  min-height: 200px;
+  background-color: #ff7286;
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 0.5em;
+
+  h4 {
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  li {
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration:none;
+    color: #fff;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: #e5dada;
+    text-decoration: none;
+  }
+
+  // p {
+  //   margin-bottom: 0.5em;
+  // }
+}
+
+.footer-box {
+    text-align: center !important;
+    margin-top: 5px;
+
+    a {
+      span {
+        color: #fff;
+        font-size: 32px;
+        margin: 0.5em;
+      }
+      span:hover {
+        color: #e5dada;
+      }
+    }
 }
