@@ -23,9 +23,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 
+/*===== 基础设置 ====*/
+
 html {
     overflow-x: hidden; overflow-y: auto; //网页在x轴上全屏显示，让横滚动轴消失
 }
+
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   color: #636262;
+   font-size: 14px;
+    // background: url("https://ww4.sinaimg.cn/large/006tNbRwgy1ffbtqgk3kqj31hc11q7wh.jpg ");
+    //这个设定的背景图片可以应用到除了首页这类已经专门设定背景的所有网站页面，免去重复设定背景的烦恼。
+
+    // background-size: cover;
+    //这段代码主要实现了图片不会被拉伸变现的效果
+
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+}
+
+ //让内容剧中
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 
 /* login css */
 /*===== user ====*/
@@ -95,24 +119,7 @@ html {
 }
 
 
-/*===== 所有頁面採用相同底圖 ====*/
- body {
-    // background: url("https://ww4.sinaimg.cn/large/006tNbRwgy1ffbtqgk3kqj31hc11q7wh.jpg ");
-    //这个设定的背景图片可以应用到除了首页这类已经专门设定背景的所有网站页面，免去重复设定背景的烦恼。
-
-    // background-size: cover;
-    //这段代码主要实现了图片不会被拉伸变现的效果
-
-    // background-attachment: fixed;
-    // background-repeat: no-repeat;
-    font-family: 'Open Sans', sans-serif;
-    color: #636262;
-    font-size: 14px;
-}
-
-
-
-/*= 首頁下方「馬上購買」按鈕=*/
+/*= 首頁下方「Shop Now」按鈕=*/
 .actiontrigger{
 display:block;
 background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
@@ -209,10 +216,4 @@ color: white;
 .about-us{
   width: 100px;
   height: 100px;
-}
-
-/*===== 常用项 ====*/
-.col-centered {
-  float: none;
-  margin: 0 auto;
 }

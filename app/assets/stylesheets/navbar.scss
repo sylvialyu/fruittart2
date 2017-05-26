@@ -65,20 +65,28 @@
 
  }
 
-/*===== footer ====*/
-// .footer {
-//   background-color: #f96277 !important;
-//   color: #fff !important;
-//   font-size: 1em;
-//   text-align: center;
-//   min-height: 250px;
-// }
+
+/*===== search bar ======*/
+.search {
+  i {
+    color: #ff7286
+  }
+}
+
+
+/*===== 购物车及登录按钮 ======*/
+.nav navbar-nav navbar-right {
+  i {
+    padding-top: -300px;
+  }
+}
+
 
 /*===== Footer 页脚 ======*/
 .footer{
   text-align: center;
   min-height: 200px;
-  background-color: #ff7286;
+  background-color: #ff7a8d;
   color: #fff;
   font-size: 14px;
   padding-bottom: 0.5em;
@@ -106,10 +114,6 @@
     color: #e5dada;
     text-decoration: none;
   }
-
-  // p {
-  //   margin-bottom: 0.5em;
-  // }
 }
 
 .footer-box {
