@@ -5,7 +5,23 @@
 
 /*===== Product#Index 商品主页 ====*/
 .square {
-  margin: 2em auto;
+  // margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 1.6em;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
+
+  img {
+    color: #fff;
+    opacity: 0.9;
+  }
+}
+
+.square:hover {
+  color: #f96277;
+  background-color: #f9f9f9;
+  -webkit-transform: scale(1.05);
+  -webkit-transition: 1s;
 }
 
 .tartname {
