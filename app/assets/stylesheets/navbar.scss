@@ -4,12 +4,17 @@
 }
 
  .navbar-df {
-    background: #fff;
-    border-color: #fff;
-    color: #f96277 !important;
+    background: transparent;
+    border-color: transparent;
+    color: #fff;
     border-radius: 0;
     height: 70px; //设置 navbar 高度
     margin-bottom: 20px;
+
+    &.show_bgcolor {
+      background: #fff;
+      color: #f96277 !important;
+    }
 }
 
 

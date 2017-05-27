@@ -1,0 +1,2 @@
+class Tart < ApplicationRecord
+end

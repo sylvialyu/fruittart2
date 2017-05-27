@@ -16,7 +16,7 @@ end
 
 Product.create!(
   id: 1,
-  title: "Pineapple and avocado flavored cream cheese tart",
+  title: "Pineapple & Avocado Cheese Tart",
   description: "A rich cream cheese with avocado in a juicy pineapple, also a
 tart made with a gourmet additive avocado to a thoroughly baked
 Madeleine. The sweet smell of pineapple and a slight bitterness of
@@ -30,7 +30,7 @@ Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 2,
-  title: "Grapefruit and Earl Gray Bavarian tart",
+  title: "Grapefruit & Earl Gray Bavarian Tart",
   description: "We combined grapefruit with plentiful flowers in motif and Bavarian
 tea that we carefully boiled Earl Gray 's tea leaves.
 The taste of grapefruit full of fruit juice and black tea
@@ -45,7 +45,7 @@ Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 3,
-  title: "Matcha and soymilk tart",
+  title: "Matcha & Soymilk Tart",
   description: "Sprinkled redbeans into a crispy texture of tart fabrics, and
 superimposed soybean mousse finished in a rich flavored green tea
 Bavarian and creamy. If you put it in your mouth with cream of soft
@@ -59,7 +59,7 @@ Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 4,
-  title: "Fresh banana cream and caramel coffee tart",
+  title: "Banana cream & Caramel Coffee Tart",
   description: "Plenty of banana cream in moist and baked banana bread, a tart
   spreading a sweet scent in every bite. The crispy texture of chopped
   walnut and coffee beans with a fragrant aroma and thinly laid
@@ -73,7 +73,7 @@ Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 5,
-  title: "Crown melon tart",
+  title: "Crown Melon Tart",
   description: "Crown melon, the king of a melon drifting with a rich fragrance.
 Stuffed with mellow custard cream and sponge plus fresh creamy buttery
 rich tart, we combined a fragrant brandy very compatible with crown
@@ -88,7 +88,7 @@ Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 6,
-  title: "Honey and lemon tart",
+  title: "Honey & Lemon Tart",
   description: "To the mousse using fresh lemon juice, we mixed fragrant honey
 and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   price: 62,
@@ -101,7 +101,7 @@ Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 7,
-  title: "Taiwan Mango tart",
+  title: "Taiwan Mango Tart",
   description: "Sweetness, fragrance, nice tongue touch, rich taste Taiwan
 mango combined a mellow custard cream and sweet and sour
 flambooise, finished in a luxurious dish.",
@@ -115,7 +115,7 @@ Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 8,
-  title: "Cherry sugar and Le tecto tart",
+  title: "Cherry Sugar & Le Tecto Tart",
   description: "We combined Cherry Blossom Shoest with Le Rectier's compote. It is a
 perfect tart for spring, adding cherry flavor to brulee carefully
 baked carefully. Please enjoy it with the cherry blossoms of nectar.",
@@ -129,7 +129,7 @@ Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 9,
-  title: "Orange tart",
+  title: "Orange Tart",
   description: "Bitterness chocolate cream and cream rich in orange flavor, fresh
 orange that is soaked in liqueur is a balanced tart.",
   price: 82,
@@ -141,7 +141,7 @@ Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/image
 
 Product.create!(
   id: 10,
-  title: "Extra-banana tart",
+  title: "Extra-banana Tart",
   description: "It is a limited tart of the Taipei branch, using
 a banana, making plenty of fresh cream and a banana with an eating
 hint of dusty texture, a tart excellent for compatibility of smooth
@@ -156,7 +156,7 @@ Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 11,
-  title: "Seasonal fruit tart ~ Spring version ~",
+  title: "Seasonal Fruit Tart ~ Spring version ~",
   description: "For colorful fruits with luxury, there are plenty of sticking points,
 production places, cuts, arranging directions, as well as taste.
 Combination of fresh fruit and smooth custard cream, crispy pie cloth
@@ -170,7 +170,7 @@ Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 12,
-  title: "White chocolate and cream cheese souffle tart",
+  title: "White Chocolate & Cheese Souffle Tart",
   description: "Add white chocolate and moist and baked cheese souffle, it is tart
 finished vividly with sweet and sour sauce and red fruit. The
 combination of cheese rich and red fruit as good as acidity, and cream
@@ -197,7 +197,7 @@ Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 14,
-  title: "Mahachanok Mango's tart ~ yoghurt flavor from Thailand ~",
+  title: "Mahachanok Mango Tart ~ Yoghurt Flavor ~",
   description: "The rich fragrance and tight fruit pulp, rich flavor mango
 'Mahachanok' was used abundantly and it finished like a vivid flower
 blooming in Thailand. Please enjoy it with smooth yoghurt-flavored
@@ -212,7 +212,7 @@ Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 15,
-  title: "Yuzu and yoghurt tart",
+  title: "Yuzu & Yoghurt Tart",
   description: "Yuzu village, Tart with the fragrant yuzu juice of Majo village in
 Kochi prefecture. I shed a yoghurt mousse on crispy tart with whole
 grain flour and decorated orange jelly.",
@@ -225,7 +225,7 @@ Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/imag
 
 Product.create!(
   id: 16,
-  title: "Special selection soy sauce tart",
+  title: "Special Selection Soy Sauce Tart",
   description: "We made the tart by imagining a sweet salty sauce with a dusty texture
 and everyone's favorite Mitarashi dumplings. We put finning fertilizer
 in custard cream cooked with rice milk and finished with plenty of
