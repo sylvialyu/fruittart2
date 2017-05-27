@@ -4,20 +4,31 @@
   <div class="panel-body">
       <div class="row">
         <% @products.each do |product| %>
-          <div class="box col-xs-12 col-sm-4 col-md-4 text-center">
+          <div class="box col-xs-12 col-sm-4 col-md-4 square">
           <%= link_to product_path(product) do %>
               <% if product.photos.present? %>
-                  <%= image_tag(product.photos[0].avatar.medium.url) %>
+                  <%= image_tag(product.photos[0].avatar.large.url) %>
               <% else %>
                   <%= image_tag("http://placehold.it/200x200&text=No Pic") %>
               <% end %>
            <% end %>
-            <h6><%= product.title %></h6>
-            <h4>￥ <%= product.price %></h4>
+            <h6 class="tartname"><%= product.title %></h6>
+            <h6 class="tartname">￥ <%= product.price %></h6>
+
+              <div class="item-cart">
+              <% if product.quantity.present? && product.quantity > 0 %>
+                <%= link_to add_to_cart_product_path(product), class: "add-to-cart", :remote => true, :method => :post do %>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <% end %>
+              <% else %>
+                已销售一空，无法购买
+              <% end %>
+            </div>
+
           </div>
-        <% end %>
-      </div>
+            <% end %>
+          </div>
+
       </div>
     </div>
     </div>
-    <!-- </div> -->

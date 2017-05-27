@@ -15,3 +15,11 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require_tree .
+
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 50 ) {
+    $('#navbar').addClass('show_bgcolor')
+  } else {
+    $('#navbar').removeClass('show_bgcolor')
+  }
+})
