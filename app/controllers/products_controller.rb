@@ -49,7 +49,7 @@ class ProductsController < ApplicationController
 
   def favorite
     @product = Product.find(params[:id])
-    if current_user.is_favoriter_of?(@product)
+    if !current_user.is_favoriter_of?(@product)
       current_user.favorite!(@product)
     end
     redirect_to :back
@@ -57,7 +57,7 @@ class ProductsController < ApplicationController
 
   def unfavorite
     @product = Product.find(params[:id])
-      if !current_user.is_favoriter_of?(@product)
+      if current_user.is_favoriter_of?(@product)
         current_user.unfavorite!(@product)
       end
     redirect_to :back

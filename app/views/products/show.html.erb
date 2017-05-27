@@ -64,9 +64,9 @@
 
               <span class="pull-left">
                 <% if current_user && !current_user.is_favoriter_of?(@product) %>
-                <%= link_to("", favorite_product_path(@product), method: :post, class: "fa fa-heart fa-2x", style: "color:red;") %>
+                  <%= link_to("", favorite_product_path(@product), method: :post, class: "fa fa-heart-o fa-2x") %>
                 <% else %>
-                <%= link_to("", unfavorite_product_path(@product), method: :post, class: "fa fa-heart-o fa-2x") %>
+                  <%= link_to("", unfavorite_product_path(@product), method: :post, class: "fa fa-heart fa-2x", style: "color:red;") %>
                 <% end %>
               </span>
 
