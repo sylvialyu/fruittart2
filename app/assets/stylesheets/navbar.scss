@@ -27,10 +27,14 @@
 
 .logobox-2 {
   margin-left: -10px;
-  font-family: 'Dancing Script', cursive; //设置 logo "SweetSweet" 字体
+  font-family: 'Berkshire Swash', cursive; //设置 logo "Sweetart" 字体
   color: #f96277;
   font-size: 1.2em;
   margin-top: 10px;
+}
+
+.logobox-2:hover {
+  color: #636262
 }
 
 
@@ -86,10 +90,11 @@
 .footer{
   text-align: center;
   min-height: 200px;
-  background-color: #ff778b;
+  background-color: #f96277;
   color: #fff;
   font-size: 14px;
   padding-bottom: 0.5em;
+  opacity: 0.92;
   // margin-top: 30px;
 
   h4 {

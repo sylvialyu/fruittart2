@@ -18,6 +18,7 @@
 @import "bootstrap";
 @import "font-awesome";
 
+
 @import url('//fonts.googleapis.com/css?family=Dancing+Script:700');
 @import url('//fonts.googleapis.com/css?family=Berkshire+Swash');
 @import url('//fonts.googleapis.com/css?family=Open+Sans');
@@ -139,6 +140,7 @@ width:100%;
 height:200px;
 position:relative;
 text-align: center;
+font-family: 'Berkshire Swash', cursive;
 }
 
 .btn-actiontrigger {

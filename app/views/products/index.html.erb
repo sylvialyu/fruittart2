@@ -1,10 +1,10 @@
 <div class="main-sec">
-<div class="col-md-10 col-centered">
+<div class="col-md-10 col-xs-10 col-centered">
   <!-- <div class="panel panel-default"> -->
   <div class="panel-body">
       <div class="row">
         <% @products.each do |product| %>
-          <div class="box col-xs-12 col-md-4 text-center">
+          <div class="box col-xs-12 col-sm-4 col-md-4 text-center">
           <%= link_to product_path(product) do %>
               <% if product.photos.present? %>
                   <%= image_tag(product.photos[0].avatar.medium.url) %>
@@ -18,6 +18,6 @@
         <% end %>
       </div>
       </div>
+    </div>
+    </div>
     <!-- </div> -->
-    </div>
-    </div>
