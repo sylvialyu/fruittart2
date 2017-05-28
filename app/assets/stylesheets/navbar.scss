@@ -4,15 +4,17 @@
 }
 
  .navbar-df {
-    background: transparent;
-    border-color: transparent;
-    color: #fff;
+    background: #fff;
+    border-color: #fff;
+    color: #f96277;
+    opacity: 0.8;
     border-radius: 0;
     height: 70px; //设置 navbar 高度
     margin-bottom: 20px;
-
+    font-family: 'Open Sans', sans-serif;
     &.show_bgcolor {
       background: #fff;
+      opacity: 1;
       color: #f96277 !important;
     }
 }
@@ -48,6 +50,7 @@
    color: #f96277;//
    padding-top: 24px;
    padding-bottom: 23px;
+
  }
 
  .navbar-df .navbar-nav > li > a:hover,
