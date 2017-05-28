@@ -3,6 +3,9 @@
   <div class="col-md-4 col-md-offset-4 user_setup_content">
     <div class="col-md-10 col-md-offset-1">
       <h2>Log in</h2>
+      <%= link_to "Log in with Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-danger" %>
+      <%= link_to " Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary fa fa-facebook-square" %>
+      <%= link_to " Github", user_github_omniauth_authorize_path, class: "btn btn-default fa fa-github" %>
 
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
