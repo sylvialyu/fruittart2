@@ -23,6 +23,8 @@ Bavarian and creamy. If you put it in your mouth with cream of soft
 sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
+  discount: 88,
+  friendly_id: "matcha-soymilk-tart",
   )
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/BklBufL.jpg'))
@@ -37,6 +39,9 @@ perfect tart for spring, adding cherry flavor to brulee carefully
 baked carefully. Please enjoy it with the cherry blossoms of nectar.",
   price: 85,
   quantity: 27,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "cherry-sugar-tart",
   )
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
@@ -52,6 +57,8 @@ rich tart, we combined a fragrant brandy very compatible with crown
 melon. Please relish that elegant taste.",
   price: 75,
   quantity: 25,
+  discount: 88,
+  friendly_id: "crown-melon-tart",
   )
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
@@ -68,6 +75,9 @@ is compatible. Please enjoy with a refreshing scent of cardamom that
 made Bavarian effect.",
   price: 70,
   quantity: 38,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "grapefruit-bavarian-tart",
   )
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
@@ -83,6 +93,8 @@ Madeleine. The sweet smell of pineapple and a slight bitterness of
 lime that made it work for cream cheese spread into the volume flavor",
   price: 68,
   quantity: 43,
+  discount: 88,
+  friendly_id: "pineapple-avocado-cheese-tart",
   )
 Photo.create!(product_id:5,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
 Photo.create!(product_id:5,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
@@ -98,6 +110,9 @@ Product.create!(
   chocolate is accented. Please enjoy with the source of caramel coffee",
   price: 65,
   quantity: 45,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "banana-caramel-coffee-tart",
   )
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
@@ -111,6 +126,8 @@ Product.create!(
 and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   price: 62,
   quantity: 19,
+  discount: 88,
+  friendly_id: "honey-lemon-tart",
   )
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
@@ -125,6 +142,9 @@ mango combined a mellow custard cream and sweet and sour
 flambooise, finished in a luxurious dish.",
   price: 80,
   quantity: 3,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "taiwan-mango-tart",
   )
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
@@ -138,6 +158,8 @@ Product.create!(
 orange that is soaked in liqueur is a balanced tart.",
   price: 82,
   quantity: 44,
+  discount: 88,
+  friendly_id: "orange-tart",
   )
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/s0vhXyD.jpg'))
@@ -153,6 +175,9 @@ pink pudding with a tongue Praline (almond) paste has become a taste
 accents.",
   price: 70,
   quantity: 12,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "extra-banana-tart",
   )
 Photo.create!(product_id:10,avatar: open('http://i.imgur.com/JuuX2CT.jpg'))
 Photo.create!(product_id:10,avatar: open('http://i.imgur.com/xXnnTgj.jpg'))
@@ -167,6 +192,9 @@ Combination of fresh fruit and smooth custard cream, crispy pie cloth
 is the No. 1 Kilfevon popularity.",
   price: 88,
   quantity: 19,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "seasonal-fruit-tart",
   )
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/OvKr1HO.jpg'))
@@ -181,6 +209,9 @@ combination of cheese rich and red fruit as good as acidity, and cream
 is exquisite.",
   price: 69,
   quantity: 8,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "white-chocolate-cheese-souffle-tart",
   )
 Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
 Photo.create!(product_id:12,avatar: open('http://i.imgur.com/iApZlbD.jpg'))
@@ -194,6 +225,8 @@ if its name is as sweet as peach, fresh and crispy, strawberry
 overturning the image of past strawberries.",
   price: 86,
   quantity: 33,
+  discount: 88,
+  friendly_id: "tart-of-momoka",
   )
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/6zFOofk.jpg'))
@@ -208,6 +241,9 @@ Kochi prefecture. I shed a yoghurt mousse on crispy tart with whole
 grain flour and decorated orange jelly.",
   price: 62,
   quantity: 11,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "yuzu-yoghurt-tart",
   )
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/88xacor.jpg'))
@@ -224,6 +260,8 @@ taste of Tamba's squeezed beans and the delicious accent that Mitara
 sauce made with special soy sauce is delicious.",
   price: 84,
   quantity: 36,
+  discount: 88,
+  friendly_id: "special-soy-sauce-tart",
   )
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
@@ -240,6 +278,9 @@ mousse, buttery flavored saucepan pie cloth. Mint liqueur made honedly
 effective has become accent of taste.",
   price: 66,
   quantity: 3,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "mahachanok-mango-tart",
   )
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
