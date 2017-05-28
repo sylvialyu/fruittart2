@@ -1,5 +1,6 @@
 <div class="main-sec">
   <div class="row">
+      <div class="col-md-8 col-centered">
   <% if @query_string.blank? %>
       <div class="search-info-title">
         What are you looking for?
@@ -30,5 +31,6 @@
         <%= will_paginate(@products, renderer: BootstrapPagination::Rails) %>
       </div>
     <% end %>
+  </div>
 </div>
 </div>

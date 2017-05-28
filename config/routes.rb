@@ -21,6 +21,8 @@ Rails.application.routes.draw do
       post :add_to_cart
       post :upcount
       post :downcount
+      post :favorite
+      post :unfavorite
     end
     collection do
       get :search

@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_user!, only: [:favorite, :unfavorite]
 
   def index
     @products = Product.all.order("position ASC")
@@ -44,6 +45,22 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.counts.first.destroy
     redirect_to product_path(@product)
+  end
+
+  def favorite
+    @product = Product.find(params[:id])
+    if !current_user.is_favoriter_of?(@product)
+      current_user.favorite!(@product)
+    end
+    redirect_to :back
+  end
+
+  def unfavorite
+    @product = Product.find(params[:id])
+      if current_user.is_favoriter_of?(@product)
+        current_user.unfavorite!(@product)
+      end
+    redirect_to :back
   end
 
 end

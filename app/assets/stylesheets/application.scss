@@ -19,6 +19,11 @@
 @import "font-awesome";
 
 
+@import url('//fonts.googleapis.com/css?family=Dancing+Script:700');
+@import url('//fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+
+
 /*===== 基础设置 ====*/
 
 html {
@@ -218,4 +223,14 @@ color: white;
 .about-us{
   width: 100px;
   height: 100px;
+}
+
+.search-middle{
+  position: absolute;
+  width:220px;
+  top:17px;
+  right:0;
+  // bottom:0;
+  left:0;
+  margin:auto;
 }

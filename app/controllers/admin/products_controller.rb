@@ -1,5 +1,5 @@
 class Admin::ProductsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy, :favorite, :unfavorite]
   before_action :require_is_admin
   layout "admin"
 
@@ -21,7 +21,7 @@ class Admin::ProductsController < ApplicationController
     if @product.save
       if params[:photos] != nil
        params[:photos]['avatar'].each do |a|
-         @photo = @product.photoss.create(:avatar => a)
+         @photo = @product.photos.create(:avatar => a)
       end
     end
       redirect_to admin_products_path
