@@ -8,7 +8,7 @@ class Admin::ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
   end
 
   def new
@@ -31,11 +31,11 @@ class Admin::ProductsController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
   end
 
   def update
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
     if params[:photos] != nil
       @product.photos.destroy_all #need to destroy old pics first
 
@@ -55,19 +55,19 @@ class Admin::ProductsController < ApplicationController
   end
 
   def destroy
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
     @product.destroy
     redirect_to admin_products_path, alert: "Product Deleted"
   end
 
   def move_up
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
     @product.move_higher
     redirect_to :back
   end
 
   def move_down
-    @product = Product.find(params[:id])
+    @product = Product.find_by_friendly_id!(params[:id])
     @product.move_lower
     redirect_to :back
   end
@@ -75,7 +75,7 @@ class Admin::ProductsController < ApplicationController
   private
 
   def product_params
-    params.require(:product).permit(:title, :description, :price, :quantity, :image, :countdown, :discount)
+    params.require(:product).permit(:title, :description, :price, :quantity, :image, :countdown, :discount, :friendly_id)
   end
 
 

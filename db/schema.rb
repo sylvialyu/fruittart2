@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170526113758) do
+ActiveRecord::Schema.define(version: 20170528164530) do
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -25,6 +25,12 @@ ActiveRecord::Schema.define(version: 20170526113758) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "counts", force: :cascade do |t|
     t.integer  "product_id"
     t.datetime "created_at", null: false
@@ -34,6 +40,14 @@ ActiveRecord::Schema.define(version: 20170526113758) do
   create_table "favorites", force: :cascade do |t|
     t.integer  "product_id"
     t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "identifies", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "provider"
+    t.string   "uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -81,6 +95,9 @@ ActiveRecord::Schema.define(version: 20170526113758) do
     t.integer  "position"
     t.string   "countdown"
     t.integer  "discount"
+    t.integer  "category_id"
+    t.string   "friendly_id"
+    t.index ["friendly_id"], name: "index_products_on_friendly_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|
@@ -97,8 +114,11 @@ ActiveRecord::Schema.define(version: 20170526113758) do
     t.datetime "created_at",                             null: false
     t.datetime "updated_at",                             null: false
     t.boolean  "is_admin",               default: false
+    t.string   "username"
+    t.string   "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
 end
