@@ -16,20 +16,50 @@ end
 
 Product.create!(
   id: 1,
-  title: "Pineapple & Avocado Cheese Tart",
-  description: "A rich cream cheese with avocado in a juicy pineapple, also a
-tart made with a gourmet additive avocado to a thoroughly baked
-Madeleine. The sweet smell of pineapple and a slight bitterness of
-lime that made it work for cream cheese spread into the volume flavor",
+  title: "Matcha & Soymilk Tart",
+  description: "Sprinkled redbeans into a crispy texture of tart fabrics, and
+superimposed soybean mousse finished in a rich flavored green tea
+Bavarian and creamy. If you put it in your mouth with cream of soft
+sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
-  quantity: 43,
+  quantity: 55,
   )
-Photo.create!(product_id:1,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
-Photo.create!(product_id:1,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
+Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
+Photo.create!(product_id:1,avatar: open('http://i.imgur.com/BklBufL.jpg'))
 Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
 
 Product.create!(
   id: 2,
+  title: "Cherry Sugar & Le Tecto Tart",
+  description: "We combined Cherry Blossom Shoest with Le Rectier's compote. It is a
+perfect tart for spring, adding cherry flavor to brulee carefully
+baked carefully. Please enjoy it with the cherry blossoms of nectar.",
+  price: 85,
+  quantity: 27,
+  )
+Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
+Photo.create!(product_id:2,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
+
+Product.create!(
+  id: 3,
+  title: "Crown Melon Tart",
+  description: "Crown melon, the king of a melon drifting with a rich fragrance.
+Stuffed with mellow custard cream and sponge plus fresh creamy buttery
+rich tart, we combined a fragrant brandy very compatible with crown
+melon. Please relish that elegant taste.",
+  price: 75,
+  quantity: 25,
+  )
+Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
+Photo.create!(product_id:3,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
+
+Product.create!(
+  id: 4,
   title: "Grapefruit & Earl Gray Bavarian Tart",
   description: "We combined grapefruit with plentiful flowers in motif and Bavarian
 tea that we carefully boiled Earl Gray 's tea leaves.
@@ -39,26 +69,28 @@ made Bavarian effect.",
   price: 70,
   quantity: 38,
   )
-Photo.create!(product_id:2,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
-Photo.create!(product_id:2,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
-Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
+Photo.create!(product_id:4,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
 
 Product.create!(
-  id: 3,
-  title: "Matcha & Soymilk Tart",
-  description: "Sprinkled redbeans into a crispy texture of tart fabrics, and
-superimposed soybean mousse finished in a rich flavored green tea
-Bavarian and creamy. If you put it in your mouth with cream of soft
-sweet green tea, deep flavor like elegant Japanese sweets will spread.",
+  id: 5,
+  title: "Pineapple & Avocado Cheese Tart",
+  description: "A rich cream cheese with avocado in a juicy pineapple, also a
+tart made with a gourmet additive avocado to a thoroughly baked
+Madeleine. The sweet smell of pineapple and a slight bitterness of
+lime that made it work for cream cheese spread into the volume flavor",
   price: 68,
-  quantity: 55,
+  quantity: 43,
   )
-Photo.create!(product_id:3,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
-Photo.create!(product_id:3,avatar: open('http://i.imgur.com/BklBufL.jpg'))
-Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:5,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
+Photo.create!(product_id:5,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
+Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
 
 Product.create!(
-  id: 4,
+  id: 6,
   title: "Banana cream & Caramel Coffee Tart",
   description: "Plenty of banana cream in moist and baked banana bread, a tart
   spreading a sweet scent in every bite. The crispy texture of chopped
@@ -67,40 +99,26 @@ Product.create!(
   price: 65,
   quantity: 45,
   )
-Photo.create!(product_id:4,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
-Photo.create!(product_id:4,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
-Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
-
-Product.create!(
-  id: 5,
-  title: "Crown Melon Tart",
-  description: "Crown melon, the king of a melon drifting with a rich fragrance.
-Stuffed with mellow custard cream and sponge plus fresh creamy buttery
-rich tart, we combined a fragrant brandy very compatible with crown
-melon. Please relish that elegant taste.",
-  price: 75,
-  quantity: 25,
-  )
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
-Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
+Photo.create!(product_id:6,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
+Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
-  id: 6,
+  id: 7,
   title: "Honey & Lemon Tart",
   description: "To the mousse using fresh lemon juice, we mixed fragrant honey
 and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   price: 62,
   quantity: 19,
   )
-Photo.create!(product_id:6,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
-Photo.create!(product_id:6,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
-Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
+Photo.create!(product_id:7,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
+Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
 Product.create!(
-  id: 7,
+  id: 8,
   title: "Taiwan Mango Tart",
   description: "Sweetness, fragrance, nice tongue touch, rich taste Taiwan
 mango combined a mellow custard cream and sweet and sour
@@ -108,22 +126,8 @@ flambooise, finished in a luxurious dish.",
   price: 80,
   quantity: 3,
   )
-Photo.create!(product_id:7,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
-Photo.create!(product_id:7,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
-Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
-
-
-Product.create!(
-  id: 8,
-  title: "Cherry Sugar & Le Tecto Tart",
-  description: "We combined Cherry Blossom Shoest with Le Rectier's compote. It is a
-perfect tart for spring, adding cherry flavor to brulee carefully
-baked carefully. Please enjoy it with the cherry blossoms of nectar.",
-  price: 85,
-  quantity: 27,
-  )
-Photo.create!(product_id:8,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
-Photo.create!(product_id:8,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
+Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
+Photo.create!(product_id:8,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
 Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 
@@ -195,23 +199,9 @@ Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/6zFOofk.jpg'))
 Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
-Product.create!(
-  id: 14,
-  title: "Mahachanok Mango Tart ~ Yoghurt Flavor ~",
-  description: "The rich fragrance and tight fruit pulp, rich flavor mango
-'Mahachanok' was used abundantly and it finished like a vivid flower
-blooming in Thailand. Please enjoy it with smooth yoghurt-flavored
-mousse, buttery flavored saucepan pie cloth. Mint liqueur made honedly
-effective has become accent of taste.",
-  price: 66,
-  quantity: 3,
-  )
-Photo.create!(product_id:14,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
-Photo.create!(product_id:14,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
-Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
-  id: 15,
+  id: 14,
   title: "Yuzu & Yoghurt Tart",
   description: "Yuzu village, Tart with the fragrant yuzu juice of Majo village in
 Kochi prefecture. I shed a yoghurt mousse on crispy tart with whole
@@ -219,12 +209,12 @@ grain flour and decorated orange jelly.",
   price: 62,
   quantity: 11,
   )
-Photo.create!(product_id:15,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
-Photo.create!(product_id:15,avatar: open('http://i.imgur.com/88xacor.jpg'))
-Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
+Photo.create!(product_id:14,avatar: open('http://i.imgur.com/88xacor.jpg'))
+Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
 
 Product.create!(
-  id: 16,
+  id: 15,
   title: "Special Selection Soy Sauce Tart",
   description: "We made the tart by imagining a sweet salty sauce with a dusty texture
 and everyone's favorite Mitarashi dumplings. We put finning fertilizer
@@ -235,6 +225,22 @@ sauce made with special soy sauce is delicious.",
   price: 84,
   quantity: 36,
   )
-Photo.create!(product_id:16,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
-Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
+Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
+Photo.create!(product_id:15,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
+Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
+
+Product.create!(
+  id: 16,
+  title: "Mahachanok Mango Tart ~ Yoghurt Flavor ~",
+  description: "The rich fragrance and tight fruit pulp, rich flavor mango
+'Mahachanok' was used abundantly and it finished like a vivid flower
+blooming in Thailand. Please enjoy it with smooth yoghurt-flavored
+mousse, buttery flavored saucepan pie cloth. Mint liqueur made honedly
+effective has become accent of taste.",
+  price: 66,
+  quantity: 3,
+  )
+Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
+Photo.create!(product_id:16,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
 Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
