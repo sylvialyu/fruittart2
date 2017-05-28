@@ -12,10 +12,14 @@
                   <%= image_tag("http://placehold.it/200x200&text=No Pic") %>
               <% end %>
            <% end %>
-            <h6 class="tartname"><%= product.title %></h6>
-            <h6 class="tartname">￥ <%= product.price %></h6>
 
-              <div class="item-cart">
+           <div>
+
+            <div><h6 class="tartname"><%= product.title %></h6></div>
+            <div class="row">
+              <h6 class="tartname col-md-3 col-xs-3">￥ <%= product.price %></h6>
+
+              <div class="item-cart col-md-3 col-md-offset-5 col-xs-3 col-xs-offset-5">
               <% if product.quantity.present? && product.quantity > 0 %>
                 <%= link_to add_to_cart_product_path(product), class: "add-to-cart", :remote => true, :method => :post do %>
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -24,6 +28,9 @@
                 Sold Out
               <% end %>
             </div>
+
+            </div>
+          </div>
 
           </div>
             <% end %>

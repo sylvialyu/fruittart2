@@ -18,7 +18,6 @@
 }
 
 .square:hover {
-  color: #f96277;
   background-color: #f9f9f9;
   -webkit-transform: scale(1.05);
   -webkit-transition: 1s;
@@ -38,7 +37,7 @@ position: absolute;
 width: 100%;
 height:10px;
 cursor: pointer;
-text-align: center;
+text-align: right;
 font-size: 2em;
 transition: all 0.2s ease-out;
 display: none;
@@ -51,20 +50,27 @@ transition: all 0.2s ease-out;
 display: block;
 }
 
-.item-cart> p.actions {
-text-align: right !important;
-a.add-to-cart{
- color:rgb(245,190,126);
- padding-right:10px;
- font-size: 28px;
-}
-}
-
 a.add-to-cart {
   background: #f9f9f9;
-  color: #ff7286;
+  color: #9b9b9b;
 }
 
+a.add-to-cart:hover {
+  background: #f9f9f9;
+  color: #f96277;
+}
+
+.square:hover {
+  background-color: #f9f9f9;
+  -webkit-transform: scale(1.05);
+  -webkit-transition: 1s;
+  box-shadow: 10px 10px 50px 1px #d8d8d8;
+}
+
+.tartname {
+  text-align: left;
+  font-size: 1.05em;
+}
 
 /*===== Product#Show 商品详情页面 ====*/
 
