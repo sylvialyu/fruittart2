@@ -2,6 +2,8 @@
 if User.find_by(email: "a@a.com").nil?
   u = User.new
   u.email = "a@a.com"           # 可以改成自己的 email
+  u.username = "Admin"
+  u.image = ""
   u.password = "123456"                # 最少要六码
   u.password_confirmation = "123456"   # 最少要六码
   u.is_admin = true
@@ -10,7 +12,6 @@ if User.find_by(email: "a@a.com").nil?
 else
   puts "Admin 已经建立过了，脚本跳过该步骤。"
 end
-
 
 # Initialize Product
 
