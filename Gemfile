@@ -40,14 +40,18 @@ gem 'awesome_rails_console' #美化console
 gem 'rails-erd'
 gem 'letter_opener', group: :development
 gem 'aasm'
-gem 'figaro'
+gem 'figaro' #密碼管理
 gem 'fog'
-gem 'carrierwave-qiniu'
-gem 'qiniu-rs'
+gem 'carrierwave-qiniu' #七牛上傳
+gem 'qiniu-rs' #七牛雲
 gem 'ransack' #搜索
 gem 'will_paginate' #分頁
 gem 'will_paginate-bootstrap'# 美化分頁
-gem 'acts_as_list'
+gem 'acts_as_list' #上下排列
+gem 'omniauth' #授權
+gem 'omniauth-google-oauth2' #授權Google
+gem 'omniauth-facebook' #授權FB
+gem 'omniauth-github' #授權Github
 
 group :development, :test do
   gem 'pry' #用 binding.pry debug
