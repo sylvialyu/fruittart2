@@ -1,36 +1,28 @@
 <div class="main-sec">
   <div class="col-md-10 col-centered">
-    <div class="panel-body">
-				<div class="preview col-md-6">
 
-					<div class="preview-pic tab-content">
-					  <div class="tab-pane active" id="pic-1"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
-            <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					</div>
-					<ul class="preview-thumbnail nav nav-tabs">
-					  <li class="active"><a data-target="#pic-1" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
-            <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-          </ul>
+    <!-- 商品圖片 -->
+      <div class='col-xs-12 col-md-7'>
+        <div class="row">
+          <% if @product.photos.present? %>
+          <!-- 显示大图尺寸 -->
+          <div class="col-md-12">
+            <%= image_tag(@product.photos[0].avatar.large.url, class: 'main-image thumbnail') %>
+          </div>
+            <% @product.photos.each do |p| %>
+              <!-- 显示小图尺寸 -->
+              <div class="col-md-3 col-sm-4 col-xs-6 image-box">
+                <%= image_tag(p.avatar.large.url, class: 'list-image') %>
+              </div>
+            <% end %>
+          <% else %>
+            <%= image_tag('http://placehold.it/400x400&text=No Pic', class: 'thumbnail') %>
+          <% end %>
+        </div>
+      </div>
 
-				</div>
-				<div class="details col-md-6">
-					<h3 class="product-title"><%= @product.title %></h3>
-					<div class="rating">
-						<div class="stars">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-						</div>
-						<span class="review-no">41 reviews</span>
-					</div><br/>
+	</div>
+</div>
 
 
             <h4 class="price col-md-9">
@@ -98,10 +90,8 @@
           <hr>
           <p class="product-description"><%= @product.description %></p><br/>
 
-				</div>
 
 		</div>
-</div>
 </div>
 
 

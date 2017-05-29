@@ -24,11 +24,13 @@ sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
   discount: 88,
+  countdown: "2017-06-12T01:00",
   friendly_id: "matcha-soymilk-tart",
   )
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/BklBufL.jpg'))
-Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -45,7 +47,8 @@ baked carefully. Please enjoy it with the cherry blossoms of nectar.",
   )
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
-Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -58,11 +61,13 @@ melon. Please relish that elegant taste.",
   price: 75,
   quantity: 25,
   discount: 88,
+  countdown: "2017-06-12T01:00",
   friendly_id: "crown-melon-tart",
   )
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
-Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -81,7 +86,8 @@ made Bavarian effect.",
   )
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
-Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -98,7 +104,8 @@ lime that made it work for cream cheese spread into the volume flavor",
   )
 Photo.create!(product_id:5,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
 Photo.create!(product_id:5,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
-Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -116,7 +123,8 @@ Product.create!(
   )
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
-Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -131,7 +139,8 @@ and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   )
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
-Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -148,7 +157,8 @@ flambooise, finished in a luxurious dish.",
   )
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
-Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -163,7 +173,9 @@ orange that is soaked in liqueur is a balanced tart.",
   )
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/s0vhXyD.jpg'))
-Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 10,
@@ -181,7 +193,9 @@ accents.",
   )
 Photo.create!(product_id:10,avatar: open('http://i.imgur.com/JuuX2CT.jpg'))
 Photo.create!(product_id:10,avatar: open('http://i.imgur.com/xXnnTgj.jpg'))
-Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 11,
@@ -198,7 +212,9 @@ is the No. 1 Kilfevon popularity.",
   )
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/OvKr1HO.jpg'))
-Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 12,
@@ -215,7 +231,9 @@ is exquisite.",
   )
 Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
 Photo.create!(product_id:12,avatar: open('http://i.imgur.com/iApZlbD.jpg'))
-Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 13,
@@ -230,7 +248,8 @@ overturning the image of past strawberries.",
   )
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/6zFOofk.jpg'))
-Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -247,7 +266,9 @@ grain flour and decorated orange jelly.",
   )
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/88xacor.jpg'))
-Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 15,
@@ -265,7 +286,8 @@ sauce made with special soy sauce is delicious.",
   )
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
-Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -284,4 +306,5 @@ effective has become accent of taste.",
   )
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
-Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/other.jpg")))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
