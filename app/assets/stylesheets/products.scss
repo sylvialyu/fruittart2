@@ -69,9 +69,13 @@ a.add-to-cart:hover {
 }
 
 /*===== Product#Show 商品详情页面 ====*/
+.product-box {
+  margin-bottom: 3em;
+}
+
 .main-image {
   width: 100%;
-  margin-bottom: 0.08em;
+  margin-bottom: 1.5em;
 }
 
 .list-image-active {
