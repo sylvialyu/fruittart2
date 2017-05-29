@@ -44,6 +44,11 @@ html {
     // background-repeat: no-repeat;
 }
 
+//让 提示 不被 navbar 遮盖
+.alert {
+  margin-top: 70px;
+  padding-left: 30px;
+}
 
  //让内容居中
 .col-centered {
