@@ -286,3 +286,35 @@ effective has become accent of taste.",
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
 Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
+Product.create!(
+  id: 17,
+  title: "Crystal Garden Orange Bavarian Fruit Tart",
+  description: "I decorated a plenty of fruits in an orange flavor of Annin Bavaro.
+  The flavorful flavor that marinated mandarin lecutchee and the richness of apricot
+  Bavarois are well matched. Please enjoy the scent of fruits spreading throughout the mouth.",
+  price: 78,
+  quantity: 13,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "crystal-orange-tart",
+  )
+Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/946w.jpg'))
+Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/946c.jpg'))
+Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+
+Product.create!(
+  id: 18,
+  title: "Pudding and Strawberry Tart",
+  description: "Boiled thoroughly and politely, gently sweet blue soybean 'Akita Midori'
+  was made a rich pudding, and a sweet and sour juicy strawberry was decorated with tarts all over.
+  Please enjoy elegant and tasty flavors of grilled blue soybeans and drunk texture of custard.",
+  price: 69,
+  quantity: 8,
+  discount: 88,
+  countdown: "2017-06-12T01:00",
+  friendly_id: "pudding-strawberry-tart",
+  )
+Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858w.jpg'))
+Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858c.jpg'))
+Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
