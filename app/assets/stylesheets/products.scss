@@ -68,6 +68,7 @@ a.add-to-cart:hover {
   font-size: 1.05em;
 }
 
+
 /*===== Product#Show 商品详情页面 ====*/
 .product-box {
   margin-bottom: 3em;
@@ -80,4 +81,30 @@ a.add-to-cart:hover {
 
 .list-image-active {
   box-shadow: 1.5px 1.5px 1.5px #666;
+}
+
+.product-title {
+  font-size: 1.5em;
+  text-transform: UPPERCASE;
+}
+
+.product-title, .rating, .price, .timeleft, .quantity  {
+  margin-bottom: 1em;
+}
+
+.checked {
+  color: #ff9f1a;
+}
+
+.product-price {
+  font: 1.2em;
+}
+
+.discount {
+  font: #f96277;
+}
+
+#timer {
+  width: 100%;
+  font-size: 1em;
 }
