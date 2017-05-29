@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170528083634) do
+
+ActiveRecord::Schema.define(version: 20170528164530) do
+
 
   create_table "cart_items", force: :cascade do |t|
     t.integer  "cart_id"
@@ -89,6 +91,8 @@ ActiveRecord::Schema.define(version: 20170528083634) do
     t.integer  "position"
     t.string   "countdown"
     t.integer  "discount"
+    t.string   "friendly_id"
+    t.index ["friendly_id"], name: "index_products_on_friendly_id", unique: true
   end
 
   create_table "users", force: :cascade do |t|
