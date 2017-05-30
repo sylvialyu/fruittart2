@@ -62,6 +62,11 @@ html {
   margin-bottom: 7em;
 }
 
+.btn {
+  border-radius: 0;
+  border: 1px solid #9b9b9b;
+}
+
 
 /* login css */
 /*===== user ====*/
@@ -211,18 +216,6 @@ height: 0;
 transition: .5s ease;
 background-color: rgba(0,0,0,0.8);
 cursor: pointer;
-}
-
-#timer{
-text-align: center;
-font-size: 30px;
-background-color:black;
-color: white;
-}
-
-.discount{
-  color: red;
-  // font-size: 30px;
 }
 
 

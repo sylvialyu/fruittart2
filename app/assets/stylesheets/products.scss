@@ -71,7 +71,7 @@ a.add-to-cart:hover {
 
 /*===== Product#Show 商品详情页面 ====*/
 .product-box {
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 .main-image {
@@ -88,23 +88,94 @@ a.add-to-cart:hover {
   text-transform: UPPERCASE;
 }
 
-.product-title, .rating, .price, .timeleft, .quantity  {
-  margin-bottom: 1em;
+.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select  {
+  margin-bottom: 1.8em;
 }
 
 .checked {
   color: #ff9f1a;
 }
 
-.product-price {
-  font: 1.3em;
+.product-price, .timeleft, .quantity, .btn-group {
+  font-size: 1em;
 }
 
 .discount {
   color: #f96277;
 }
 
-#timer {
-  width: 100%;
-  font-size: 1em;
+#timer{
+text-align: center;
+font-size: 1.1em;
+background-color: #fff;
+color:#636262;
+border: 1px solid #9b9b9b;
+}
+
+.btn-df {
+  color: #636262;
+  background-color: #fff;
+  width: 3em;
+ }
+
+ .product-num {
+   border: 1px solid #9b9b9b;
+   width: 3.5em;
+   background-color: #fff;
+ }
+
+
+ .heart {
+   padding-left: 1em;
+   padding-top: 0.3em;
+
+   .heart-yes {
+     border: 1px solid #f96277;
+   }
+
+   .heart-no {
+     color: #f96277;
+   }
+ }
+
+ .fa-lg:hover {
+   text-decoration: none;
+ }
+
+ .buy {
+   width: 12em;
+   background-color: #fff;
+   border: 1px solid #9b9b9b;
+   color: #636262;
+   padding: 6px 12px;
+   line-height: 1.42857143;
+   display: inline-block;
+   text-align: center;
+   border-radius: 0;
+   font-size: 1.1em;
+ }
+
+ .buy:hover,
+ .buy:focus {
+   background-color: #fff;
+   color: #f96277;
+   border: 1px solid #f96277;
+   text-decoration: none;
+ }
+
+.quantity {
+  padding-top: 0.2em;
+}
+
+.description {
+  border: 1px solid #dddddd;
+  margin-bottom: 5em;
+
+  p {
+    padding-top: 3em;
+  }
+
+  p.package {
+    font-size: 1.1em;
+  }
 }
