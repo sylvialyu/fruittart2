@@ -25,11 +25,13 @@ sweet green tea, deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
   discount: 88,
+  countdown: "2017-06-12T01:00",
   friendly_id: "matcha-soymilk-tart",
   )
-Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/BklBufL.jpg'))
-Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
+Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:1,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -44,9 +46,10 @@ baked carefully. Please enjoy it with the cherry blossoms of nectar.",
   countdown: "2017-06-12T01:00",
   friendly_id: "cherry-sugar-tart",
   )
-Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/aMMehqd.jpg'))
-Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
+Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:2,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -59,11 +62,13 @@ melon. Please relish that elegant taste.",
   price: 75,
   quantity: 25,
   discount: 88,
+  countdown: "2017-06-12T01:00",
   friendly_id: "crown-melon-tart",
   )
-Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
-Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
+Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:3,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -80,26 +85,30 @@ made Bavarian effect.",
   countdown: "2017-06-12T01:00",
   friendly_id: "grapefruit-bavarian-tart",
   )
-Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/YayAkWP.jpg'))
-Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
+Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:4,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
   id: 5,
-  title: "Pineapple & Avocado Cheese Tart",
-  description: "A rich cream cheese with avocado in a juicy pineapple, also a
-tart made with a gourmet additive avocado to a thoroughly baked
-Madeleine. The sweet smell of pineapple and a slight bitterness of
-lime that made it work for cream cheese spread into the volume flavor",
-  price: 68,
-  quantity: 43,
+  title: "Extra-banana Tart",
+  description: "It is a limited tart of the Taipei branch, using
+a banana, making plenty of fresh cream and a banana with an eating
+hint of dusty texture, a tart excellent for compatibility of smooth
+pink pudding with a tongue Praline (almond) paste has become a taste
+accents.",
+  price: 70,
+  quantity: 12,
   discount: 88,
-  friendly_id: "pineapple-avocado-cheese-tart",
+  countdown: "2017-06-12T01:00",
+  friendly_id: "extra-banana-tart",
   )
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
-Photo.create!(product_id:5,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
-Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+  Photo.create!(product_id:5,avatar: open('http://i.imgur.com/6iCSL9Q.jpg'))
+  Photo.create!(product_id:5,avatar: open('http://i.imgur.com/OVZjFhf.jpg'))
+  Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+  Photo.create!(product_id:5,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -115,10 +124,10 @@ Product.create!(
   countdown: "2017-06-12T01:00",
   friendly_id: "banana-caramel-coffee-tart",
   )
-Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/MHtRV6g.jpg'))
-Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
-
+Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
+Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:6,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 Product.create!(
   id: 7,
@@ -130,9 +139,10 @@ and mellow fresh cream. Please enjoy the refreshing lemon scent.",
   discount: 88,
   friendly_id: "honey-lemon-tart",
   )
-Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/FkzHW37.jpg'))
-Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
+Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:7,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -147,9 +157,10 @@ flambooise, finished in a luxurious dish.",
   countdown: "2017-06-12T01:00",
   friendly_id: "taiwan-mango-tart",
   )
-Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/9RmVNZl.jpg'))
-Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
+Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:8,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -162,27 +173,29 @@ orange that is soaked in liqueur is a balanced tart.",
   discount: 88,
   friendly_id: "orange-tart",
   )
-Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/s0vhXyD.jpg'))
-Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
+Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:9,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
+
 
 Product.create!(
   id: 10,
-  title: "Extra-banana Tart",
-  description: "It is a limited tart of the Taipei branch, using
-a banana, making plenty of fresh cream and a banana with an eating
-hint of dusty texture, a tart excellent for compatibility of smooth
-pink pudding with a tongue Praline (almond) paste has become a taste
-accents.",
-  price: 70,
-  quantity: 12,
+  title: "Pineapple & Avocado Cheese Tart",
+  description: "A rich cream cheese with avocado in a juicy pineapple, also a
+tart made with a gourmet additive avocado to a thoroughly baked
+Madeleine. The sweet smell of pineapple and a slight bitterness of
+lime that made it work for cream cheese spread into the volume flavor",
+  price: 68,
+  quantity: 43,
   discount: 88,
-  countdown: "2017-06-12T01:00",
-  friendly_id: "extra-banana-tart",
+  friendly_id: "pineapple-avocado-cheese-tart",
   )
-Photo.create!(product_id:10,avatar: open('http://i.imgur.com/JuuX2CT.jpg'))
-Photo.create!(product_id:10,avatar: open('http://i.imgur.com/xXnnTgj.jpg'))
-Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+  Photo.create!(product_id:10,avatar: open('http://i.imgur.com/xXnnTgj.jpg'))
+  Photo.create!(product_id:10,avatar: open('http://i.imgur.com/JuuX2CT.jpg'))
+  Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+  Photo.create!(product_id:10,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
+
 
 Product.create!(
   id: 11,
@@ -197,9 +210,11 @@ is the No. 1 Kilfevon popularity.",
   countdown: "2017-06-12T01:00",
   friendly_id: "seasonal-fruit-tart",
   )
-Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/OvKr1HO.jpg'))
-Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
+Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:11,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
+
 
 Product.create!(
   id: 12,
@@ -214,9 +229,11 @@ is exquisite.",
   countdown: "2017-06-12T01:00",
   friendly_id: "white-chocolate-cheese-souffle-tart",
   )
-Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
 Photo.create!(product_id:12,avatar: open('http://i.imgur.com/iApZlbD.jpg'))
-Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 13,
@@ -229,9 +246,10 @@ overturning the image of past strawberries.",
   discount: 88,
   friendly_id: "tart-of-momoka",
   )
-Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
 Photo.create!(product_id:13,avatar: open('http://i.imgur.com/6zFOofk.jpg'))
-Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
+Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
 
 Product.create!(
@@ -246,9 +264,11 @@ grain flour and decorated orange jelly.",
   countdown: "2017-06-12T01:00",
   friendly_id: "yuzu-yoghurt-tart",
   )
-Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/88xacor.jpg'))
-Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
+Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:14,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
+
 
 Product.create!(
   id: 15,
@@ -264,9 +284,10 @@ sauce made with special soy sauce is delicious.",
   discount: 88,
   friendly_id: "special-soy-sauce-tart",
   )
-Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/Y33vgOX.jpg'))
-Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
+Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:15,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
 
 
 Product.create!(
@@ -283,9 +304,11 @@ effective has become accent of taste.",
   countdown: "2017-06-12T01:00",
   friendly_id: "mahachanok-mango-tart",
   )
-Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/CumOtnR.jpg'))
-Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
+Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+Photo.create!(product_id:16,avatar: open('http://ww4.sinaimg.cn/large/006tKfTcgy1fg2f98cfrbj30w80hswhy.jpg'))
+
 
 Product.create!(
   id: 17,
@@ -299,9 +322,11 @@ Product.create!(
   countdown: "2017-06-12T01:00",
   friendly_id: "crystal-orange-tart",
   )
-Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/946w.jpg'))
 Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/946c.jpg'))
-Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/946w.jpg'))
+Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
 
 Product.create!(
   id: 18,
@@ -315,6 +340,8 @@ Product.create!(
   countdown: "2017-06-12T01:00",
   friendly_id: "pudding-strawberry-tart",
   )
-Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858w.jpg'))
 Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858c.jpg'))
-Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/pinklove.jpg")))
+Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858w.jpg'))
+Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
+Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+

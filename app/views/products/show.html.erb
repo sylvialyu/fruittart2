@@ -1,108 +1,123 @@
 <div class="main-sec">
   <div class="col-md-10 col-centered">
-    <div class="panel-body">
-				<div class="preview col-md-6">
 
-					<div class="preview-pic tab-content">
-					  <div class="tab-pane active" id="pic-1"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					  <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[1].avatar.medium.url) %></div>
-            <div class="tab-pane" id="pic-2"><%= image_tag(@product.photos[0].avatar.medium.url) %></div>
-					</div>
-					<ul class="preview-thumbnail nav nav-tabs">
-					  <li class="active"><a data-target="#pic-1" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-					  <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[1].avatar.medium.url) %></a></li>
-            <li><a data-target="#pic-2" data-toggle="tab"><%= image_tag(@product.photos[0].avatar.medium.url) %></a></li>
-          </ul>
+    <!-- 商品圖片 -->
+      <div class='col-xs-12 col-md-6'>
+        <div class="row product-box">
+          <% if @product.photos.present? %>
+          <!-- 显示大图尺寸 -->
+          <div class="col-md-12">
+            <%= image_tag(@product.photos[1].avatar.large.url, class: 'main-image ') %>
+          </div>
+            <% @product.photos.each do |p| %>
+              <!-- 显示小图尺寸 -->
+              <div class="col-md-3 col-sm-6 col-xs-6 image-box">
+                <%= image_tag(p.avatar.large.url, class: 'list-image ') %>
+              </div>
+            <% end %>
+          <% else %>
+            <%= image_tag('http://placehold.it/400x400&text=No Pic', class: 'thumbnail') %>
+          <% end %>
+        </div>
+      </div>
 
-				</div>
-				<div class="details col-md-6">
-					<h3 class="product-title"><%= @product.title %></h3>
-					<div class="rating">
-						<div class="stars">
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star checked"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
+      <!-- 商品描述 -->
+      <div class="col-md-6 col-xs-12">
+        <div class="col-md-12">
+						<h4 class="product-title"><%= @product.title %></h4>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
 						</div>
-						<span class="review-no">41 reviews</span>
-					</div><br/>
 
 
-            <h4 class="price col-md-9">
-            <!-- 如果有倒計時   -->
-            <% if @product.countdown.present?%>
-            <!-- 倒計時間換成數字，北京時間與格林威治時間相差 (8/24) 天 -->
-            <% closedate = DateTime.strptime(@product.countdown, "%FT%R") -0.333333 %>
-            Time left:<p id="timer"></p>
-            <% end %>
-            <!-- 如果有折扣 -->
-            <% if @product.discount.present? && @product.quantity > 0 %>
-              <!--  顯示原價，加上刪除線 -->
-              <s><div class="product-price">origin price:<span>￥ <%= @product.price %></span></div></s>
-              <!--  顯示優惠價 -->
-              <div class="product-price discount">current price: ￥<%= @product.price = @product.price * @product.discount/100 %></div>
-            <% else %>
-              <!-- 沒折扣 -->
-              <div class="product-price"> ￥ <%= @product.price %> </div>
-            <% end %>
-              <br>
-              <div class="price"> Qty : <%= @product.quantity %> </div>
-            </h4>
+            <div class="price">
+              <!-- 如果有折扣 -->
+              <% if @product.discount.present? && @product.quantity > 0 %>
+                <!--  顯示原價，加上刪除線 -->
+                <s><div class="product-price">Origin Price:<span>￥ <%= @product.price %></span></div></s>
+                <!--  顯示優惠價 -->
+                <div class="product-price discount">Current Price: ￥<%= @product.price = @product.price * @product.discount/100 %></div>
+              <% else %>
+                <!-- 沒折扣 -->
+                <div class="product-price"> ￥ <%= @product.price %> </div>
+              <% end %>
+            </div>
 
+            <div class="timeleft">
+              <!-- 如果有倒計時   -->
+              <% if @product.countdown.present?%>
+              <!-- 倒計時間換成數字，北京時間與格林威治時間相差 (8/24) 天 -->
+              <% closedate = DateTime.strptime(@product.countdown, "%FT%R") -0.333333 %>
+              Time left:<p id="timer"></p>
+              <% end %>
+            </div>
 
+            <div class="quantity">
+              <div class="price"> Quantity : <%= @product.quantity %> </div>
+            </div>
 
-          <div class="">
-            <div class="btn-group col-md-5" role="group" aria-label="...">
-              <button type="button" class="btn btn-default"><%= link_to("-", downcount_product_path(@product), method: :post) %></button>
-              <button type="button" class="btn btn-default"><%= @product.counts.count %></button>
-              <button type="button" class="btn btn-default"><%= link_to("+", upcount_product_path(@product), method: :post) %></button>
-              <!-- <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button> -->
-
-              <span class="pull-right">
-                <% if current_user && !current_user.is_favoriter_of?(@product) %>
-                  <%= link_to("", favorite_product_path(@product), method: :post, class: "btn btn-default fa fa-heart-o fa-lg") %>
-                <% else %>
-                  <%= link_to("", unfavorite_product_path(@product), method: :post, class: "btn btn-default fa fa-heart fa-lg", style: "color:red;") %>
-                <% end %>
-              </span>
 
             </div>
 
-						<div class="action col-md-7">
-							<button class="add-to-cart btn btn-default pull-right" type="button">
-                <% if @product.quantity.present? && @product.quantity > 0 %>
-                <%= link_to("add to cart", add_to_cart_product_path(@product), method: :post) %>
-                <% else %>
-                Sold Out
-                <% end %>
-              </button>
-              <%= link_to("Checkout", checkout_carts_path, method: :post, class: "btn add-to-cart btn-default pull-right") %>
-						</div>
-          </div>
 
-          <br/>
 
-          <div class="">
-            <% if @product.quantity.present? && @product.quantity > 0 %>
-            <!-- <%= link_to("Buy It At Once", add_to_cart_product_path(@product), method: :post, :class => "btn btn-block btn-default") %> -->
+      <div class="">
+        <div class="btn-group col-md-5" role="group" aria-label="...">
+          <button type="button" class="btn btn-default"><%= link_to("-", downcount_product_path(@product), method: :post) %></button>
+          <button type="button" class="btn btn-default"><%= @product.counts.count %></button>
+          <button type="button" class="btn btn-default"><%= link_to("+", upcount_product_path(@product), method: :post) %></button>
+          <!-- <button class="like btn btn-default pull-right" type="button"><span class="fa fa-heart"></span></button> -->
+
+          <span class="pull-right">
+            <% if current_user && !current_user.is_favoriter_of?(@product) %>
+              <%= link_to("", favorite_product_path(@product), method: :post, class: "btn btn-default fa fa-heart-o fa-lg") %>
             <% else %>
-            已销售一空，无法购买
+              <%= link_to("", unfavorite_product_path(@product), method: :post, class: "btn btn-default fa fa-heart fa-lg", style: "color:red;") %>
             <% end %>
-          </div>
+          </span>
 
-          <hr>
-          <p class="product-description"><%= @product.description %></p><br/>
+        </div>
 
-				</div>
+        <div class="action col-md-7">
+          <button class="add-to-cart btn btn-default pull-right" type="button">
+            <% if @product.quantity.present? && @product.quantity > 0 %>
+            <%= link_to("add to cart", add_to_cart_product_path(@product), method: :post) %>
+            <% else %>
+            Sold Out
+            <% end %>
+          </button>
+          <%= link_to("Checkout", checkout_carts_path, method: :post, class: "btn add-to-cart btn-default pull-right") %>
+        </div>
+      </div>
 
-		</div>
+      <br/>
+
+      <div class="">
+        <% if @product.quantity.present? && @product.quantity > 0 %>
+        <!-- <%= link_to("Buy It At Once", add_to_cart_product_path(@product), method: :post, :class => "btn btn-block btn-default") %> -->
+        <% else %>
+        已销售一空，无法购买
+        <% end %>
+      </div>
+
+      <hr>
+      <p class="product-description"><%= @product.description %></p><br/>
+
+      </div>
+
+	</div>
 </div>
 </div>
+
+
+
 
 
 <script> // countdown

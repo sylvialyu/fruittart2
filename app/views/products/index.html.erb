@@ -7,7 +7,7 @@
           <div class="box col-xs-12 col-sm-4 col-md-4 square">
           <%= link_to product_path(product) do %>
               <% if product.photos.present? %>
-                  <%= image_tag(product.photos[0].avatar.large.url) %>
+                  <%= image_tag(product.photos[1].avatar.large.url) %>
               <% else %>
                   <%= image_tag("http://placehold.it/200x200&text=No Pic") %>
               <% end %>
