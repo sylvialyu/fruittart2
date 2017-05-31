@@ -1,92 +1,41 @@
 <div class="main-sec">
-  <div class="container-fluid text-center">
-<!-- <h1>About Us</h1>
-<br><br>
-<div id="why" class="container-fluid">
-<div class="content-section-a">
-  <div class="container">
+  <div class="col-md-8 col-centered">
+
+    <br>
+
     <div class="row">
-      <div class="col-lg-5 col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="section-heading">Are You Tired Looking for a Better Partissere? </h2>
-        <p class="lead">Now that you have found it, our partissere provides best quality dessert,and chef from France and Japan.
-</p>
-      </div>
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-        <%= image_tag 'http://3.bp.blogspot.com/-YJBzvBQvlr4/U2oKs0DOT5I/AAAAAAAADVs/WwWLuLOnMek/s1600/13003-0465.jpg', class: 'img-responsive' %>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="content-section-b">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-        <hr class="section-heading-spacer">
-        <div class="clearfix"></div>
-        <h2 class="section-heading">Professional Pastry Chef</h2>
-        <p class="lead">Our Chef are from all over the world, have work experiences for famous 5 star hotels,
-          and have won many international competition Championships.</p>
-      </div>
-      <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-        <%= image_tag 'https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg', class: 'img-responsive' %>
-      </div>
-    </div>
-  </div>
-</div> -->
-<br><br><br>
-<hr>
-<br>
-
-<div id="contact"></div>
-<h1>Our Founders</h1>
-  <h2>～ Tim &amp; Sylvia ～</h2>
-  <br><br><br>
-  <div class="row">
-  <div class="col-md-offset-2 col-md-8">
-      <div class="col-sm-4">
-        <h4><span class="glyphicon glyphicon-off"></span>Tim</h4>
-        <p><%= image_tag("https://s3.amazonaws.com/logdown-production/system/blog/24325/og_image/dora.jpg", class: "about-us") %></p>
-      </div>
-
-      <div class="col-sm-4">
-        <h3><span class="fa fa-chain-broken"></span>About Tim</h3>
-        <p>來自台北<br>
-          曾於加拿大，台北，東京，大阪，上海等地工作<br>
-          熱愛旅遊，熱愛讀書，熱愛學習<br>
-        希望能認識志同道合的你</p>
-      </div>
-      <div class="col-sm-4">
-        <h4><span class="fa fa-wechat"></span>Wechat ID: </h4>
-        <p><%= image_tag("https://ww2.sinaimg.cn/large/006tNbRwgy1ffruwtwhjyj30e80e8ta4.jpg", class: "about-us") %></p>
-
-    </div>
-  </div>
-  </div>
-    <br><br>
-
-  <div class="row">
-  <div class="col-md-offset-2 col-md-8">
-      <div class="col-sm-4">
-        <h4><span class="glyphicon glyphicon-off"></span>Sylvia</h4>
-        <p><%= image_tag("http://ww3.sinaimg.cn/large/006tNbRwgy1ffz2557uf9j30jg0jgacu.jpg", class: "about-us") %></p>
-      </div>
-      <div class="col-sm-4">
-        <h3><span class="fa fa-pagelines"></span>About Sylvia</h3>
-        <p>來自广东佛山<br>
-          语言控，喜欢交朋友。<br>
-          朋友圈包括美英法加意大利西班牙巴西古巴南非等世界各地的歪果仁<br>
-          希望与你认识，共同成长进步。
+        <div class="col-md-4">
+            <h3><%= image_tag("https://s3.amazonaws.com/logdown-production/system/blog/24325/og_image/dora.jpg", class: "about-us") %></h3>
+        </div>
+        <div class="col-md-8">
+          <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.1em;">Tim</h3>
+          <p class="intro">來自台北，曾於加拿大，台北，東京，大阪，上海等地工作<br>
+            熱愛旅遊，熱愛讀書，熱愛學習<br>
+          希望能認識志同道合的你<br><br>
+          微信: yitihua1320<br>
+          Slack: @timc-2
         </p>
-      </div>
-      <div class="col-sm-4">
-        <h4><span class="fa fa-wechat"></span>Wechat ID: </h4>
-        <p><%= image_tag("https://ww3.sinaimg.cn/large/006tNc79gy1fft5yz31pyj3095099q3x.jpg", class: "about-us") %></p>
-      </div>
-  </div>
-  </div>
+        </div>
+        </div>
 
-</div>
-</div>
+        <hr>
+
+        <div class="row">
+          <div class="col-md-4 col-md-push-8">
+            <h3><%= image_tag("http://ww3.sinaimg.cn/large/006tNbRwgy1ffz2557uf9j30jg0jgacu.jpg", class: "about-us") %></h3>
+          </div>
+            <div class="col-md-8 col-md-pull-4">
+              <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.1em;">Sylvia</h3>
+              <p class="intro">來自广东佛山，语言控<br>
+                喜欢天文和电影，常和来自世界各地的歪果仁生活和工作<br>
+                希望与你认识，共同成长进步<br><br>
+                微信: sylvia_lyu<br>
+                Slack:  @sylvia
+              </p>
+            </div>
+        </div>
+
+
+
+            </div>
+        </div>

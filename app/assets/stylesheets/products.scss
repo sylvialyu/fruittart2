@@ -172,10 +172,20 @@ border: 1px solid #9b9b9b;
   margin-bottom: 5em;
 
   p {
-    padding-top: 3em;
+    padding: 2.5em 8em;
+    line-height: 2em;
+    // font-family: 'Berkshire Swash', cursive;
+    font-size: 1.1em;
+
   }
 
   p.package {
-    font-size: 1.1em;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .pacimg {
+    padding: 1em;
   }
 }

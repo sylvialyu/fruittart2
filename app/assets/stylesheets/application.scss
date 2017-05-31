@@ -220,8 +220,15 @@ cursor: pointer;
 
 
 .about-us{
-  width: 100px;
-  height: 100px;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.intro {
+  padding-top: 1.2em;
+  letter-spacing: 0.3em;
+  line-height: 1.5em;
 }
 
 .search-middle{
