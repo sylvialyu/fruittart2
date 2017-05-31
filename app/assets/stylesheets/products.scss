@@ -129,12 +129,22 @@ border: 1px solid #9b9b9b;
    padding-left: 1em;
    padding-top: 0.3em;
 
-   .heart-yes {
-     border: 1px solid #f96277;
+   a.heart-yes {
+     color: #f96277;
    }
 
-   .heart-no {
+   a.heart-yes:hover,
+   a.heart-yes:focus {
+     text-decoration: none;
+   }
+
+   a.heart-no {
      color: #f96277;
+   }
+
+   a.heart-no:hover,
+   a.hert-no:focus {
+     text-decoration: none;
    }
  }
 
