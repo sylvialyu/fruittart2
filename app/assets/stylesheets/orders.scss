@@ -5,9 +5,9 @@
 
 .pt-checkout {
   width: 12em;
-  background-color: #f96277;
+  background-color: #fff;
   border: 1px solid #f96277;
-  color: #fff;
+  color: #f96277;
   padding: 6px 12px;
   line-height: 1.42857143;
   display: inline-block;
@@ -18,8 +18,8 @@
 
 .pt-checkout:hover,
 .pt-checkout:focus {
-  background-color: #fff;
-  color: #f96277;
+  background-color: #f96277;
+  color: #fff;
   border: 1px solid #f96277;
   text-decoration: none;
 }
