@@ -1,11 +1,7 @@
 <div class="main-sec">
-<div class="row user_setup">
-   <div class="col-md-4 col-md-offset-4 user_setup_content">
-     <div class="col-md-10 col-md-offset-1">
-      <h2>Sign up</h2>
-      <%= link_to "Sign up with Google", user_google_oauth2_omniauth_authorize_path, class: "btn btn-danger" %>
-      <%= link_to " Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary fa fa-facebook-square" %>
-      <%= link_to " Github", user_github_omniauth_authorize_path, class: "btn btn-default fa fa-github" %>
+<div class="col-md-4 col-centered user_setup">
+   <div class="user_setup_content">
+      <h3>Sign up</h3>
 
       <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
         <%= f.error_notification %>
@@ -17,14 +13,24 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Sign up" %>
+          <%= f.button :submit, "Sign up", class: "submit" %>
         </div>
       <% end %>
-      <hr />
+
         <div class="account">
-          <%= link_to "Alredy have account, login now", new_session_path(resource_name) %><br />
+          <%= link_to "Alredy have an account? Login now.", new_session_path(resource_name) %><br />
         </div>
-      </div>
+
+        <hr>
+
+        <p class="in-other-account">Sign Up with Other Accounts</p>
+
+        <div class="other-group">
+            <%= link_to "", user_google_oauth2_omniauth_authorize_path, class: "fa fa-google other-1" %>
+            <%= link_to "", user_facebook_omniauth_authorize_path, class: "fa fa-facebook other-2" %>
+            <%= link_to "", user_github_omniauth_authorize_path, class: "fa fa-github-alt other-1" %>
+        </div>
+
       </div>
 </div>
 </div>
