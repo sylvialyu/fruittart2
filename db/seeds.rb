@@ -18,10 +18,10 @@ end
 Product.create!(
   id: 1,
   title: "Matcha & Soymilk Tart",
-  description: "Sprinkled redbeans into a crispy texture of tart fabrics, and
-superimposed soybean mousse finished in a rich flavored green tea
-Bavarian and creamy. If you put it in your mouth with cream of soft
-sweet green tea, deep flavor like elegant Japanese sweets will spread.",
+  description: "Sprinkled redbeans into a crispy texture of tart fabrics,
+  and superimposed soybean mousse finished in a rich flavored green tea Bavarian and cream.
+  If you put it in your mouth with cream of soft sweet green tea,
+  deep flavor like elegant Japanese sweets will spread.",
   price: 68,
   quantity: 55,
   discount: 88,
@@ -37,9 +37,9 @@ Photo.create!(product_id:1,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 2,
   title: "Cherry Sugar & Le Tecto Tart",
-  description: "We combined Cherry Blossom Shoest with Le Rectier's compote. It is a
-perfect tart for spring, adding cherry flavor to brulee carefully
-baked carefully. Please enjoy it with the cherry blossoms of nectar.",
+  description: "We combined Cherry Blossom Shoest with Le Rectier's compote.
+  It is a perfect tart for spring, adding cherry flavor to brulee carefully baked carefully.
+  Please enjoy it with the cherry blossoms of nectar.",
   price: 85,
   quantity: 27,
   discount: 88,
@@ -56,9 +56,9 @@ Product.create!(
   id: 3,
   title: "Crown Melon Tart",
   description: "Crown melon, the king of a melon drifting with a rich fragrance.
-Stuffed with mellow custard cream and sponge plus fresh creamy buttery
-rich tart, we combined a fragrant brandy very compatible with crown
-melon. Please relish that elegant taste.",
+  Stuffed with mellow custard cream and sponge plus fresh creamy buttery rich tart.
+  We combined a fragrant brandy very compatible with crown melon.
+  Please relish that elegant taste.",
   price: 75,
   quantity: 25,
   discount: 88,
@@ -75,10 +75,9 @@ Product.create!(
   id: 4,
   title: "Grapefruit & Earl Gray Bavarian Tart",
   description: "We combined grapefruit with plentiful flowers in motif and Bavarian
-tea that we carefully boiled Earl Gray 's tea leaves.
-The taste of grapefruit full of fruit juice and black tea
-is compatible. Please enjoy with a refreshing scent of cardamom that
-made Bavarian effect.",
+  tea that we carefully boiled Earl Gray 's tea leaves.
+  The taste of grapefruit full of fruit juice and black tea is compatible.
+  Please enjoy with a refreshing scent of cardamom that made Bavarian special.",
   price: 70,
   quantity: 38,
   discount: 88,
@@ -94,11 +93,11 @@ Photo.create!(product_id:4,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 5,
   title: "Extra-banana Tart",
-  description: "It is a limited tart of the Taipei branch, using
-a banana, making plenty of fresh cream and a banana with an eating
-hint of dusty texture, a tart excellent for compatibility of smooth
-pink pudding with a tongue Praline (almond) paste has become a taste
-accents.",
+  description: "It is a limited tart of the Taipei branch,
+  making plenty of fresh cream and a banana with an eating hint of dusty texture,
+  a tart excellent for compatibility of smooth pink pudding
+  with a tongue Praline (almond) paste
+  has become a taste accents.",
   price: 70,
   quantity: 12,
   discount: 88,
@@ -114,10 +113,11 @@ accents.",
 Product.create!(
   id: 6,
   title: "Banana cream & Caramel Coffee Tart",
-  description: "Plenty of banana cream in moist and baked banana bread, a tart
-  spreading a sweet scent in every bite. The crispy texture of chopped
-  walnut and coffee beans with a fragrant aroma and thinly laid
-  chocolate is accented. Please enjoy with the source of caramel coffee",
+  description: "Plenty of banana cream in moist and baked banana bread,
+  a tart spreading sweet scent in every bite.
+  The crispy texture of chopped walnut and coffee beans
+  with a fragrant aroma and thinly laid chocolate is accented.
+  Please enjoy with the source of caramel coffee",
   price: 65,
   quantity: 45,
   discount: 88,
@@ -132,8 +132,9 @@ Photo.create!(product_id:6,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 7,
   title: "Honey & Lemon Tart",
-  description: "To the mousse using fresh lemon juice, we mixed fragrant honey
-and mellow fresh cream. Please enjoy the refreshing lemon scent.",
+  description: "We use fresh lemon juice for the mousse.
+  We mixed fragrant honey and mellow fresh cream.
+  Please enjoy the refreshing lemon scent.",
   price: 62,
   quantity: 19,
   discount: 88,
@@ -148,9 +149,9 @@ Photo.create!(product_id:7,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 8,
   title: "Taiwan Mango Tart",
-  description: "Sweetness, fragrance, nice tongue touch, rich taste Taiwan
-mango combined a mellow custard cream and sweet and sour
-flambooise, finished in a luxurious dish.",
+  description: "Sweetness, fragrance, nice tongue touch, and rich taste.
+  Taiwan mango combines a mellow custard cream and sweet and sour flambooise,
+  finishing in a luxurious dish.",
   price: 80,
   quantity: 3,
   discount: 88,
@@ -166,8 +167,8 @@ Photo.create!(product_id:8,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 9,
   title: "Orange Tart",
-  description: "Bitterness chocolate cream and cream rich in orange flavor, fresh
-orange that is soaked in liqueur is a balanced tart.",
+  description: "Bitter chocolate cream and cream rich in orange flavor,
+  fresh orange that is soaked in liqueur is a balanced tart.",
   price: 82,
   quantity: 44,
   discount: 88,
@@ -182,10 +183,10 @@ Photo.create!(product_id:9,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 10,
   title: "Pineapple & Avocado Cheese Tart",
-  description: "A rich cream cheese with avocado in a juicy pineapple, also a
-tart made with a gourmet additive avocado to a thoroughly baked
-Madeleine. The sweet smell of pineapple and a slight bitterness of
-lime that made it work for cream cheese spread into the volume flavor",
+  description: "A rich cream cheese with avocado in a juicy pineapple,
+  also a tart made with a gourmet additive avocado to a thoroughly baked Madeleine.
+  The sweet smell of pineapple and a slight bitterness of lime
+  makes it work for cream cheese spread into the volume flavor.",
   price: 68,
   quantity: 43,
   discount: 88,
@@ -201,9 +202,9 @@ Product.create!(
   id: 11,
   title: "Seasonal Fruit Tart ~ Spring version ~",
   description: "For colorful fruits with luxury, there are plenty of sticking points,
-production places, cuts, arranging directions, as well as taste.
-Combination of fresh fruit and smooth custard cream, crispy pie cloth
-is the No. 1 Kilfevon popularity.",
+  production places, cuts, arranging directions, as well as taste.
+  Combination of fresh fruit and smooth custard cream, crispy pie cloth
+  is the No. 1 Kilfevon popularity.",
   price: 88,
   quantity: 19,
   discount: 88,
@@ -219,10 +220,10 @@ Photo.create!(product_id:11,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 12,
   title: "White Chocolate & Cheese Souffle Tart",
-  description: "Add white chocolate and moist and baked cheese souffle, it is tart
-finished vividly with sweet and sour sauce and red fruit. The
-combination of cheese rich and red fruit as good as acidity, and cream
-is exquisite.",
+  description: "Add white chocolate and moist and baked cheese souffle.
+  It is a tart finished vividly with sweet and sour sauce and red fruit.
+  The combination of cheese rich and red fruit as good as acidity,
+  and the cream is exquisite.",
   price: 69,
   quantity: 8,
   discount: 88,
@@ -238,9 +239,9 @@ Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/imag
 Product.create!(
   id: 13,
   title: "Tart of Momoka (Strawberry)",
-  description: "We made the tart that used the luxuriously used strawberry Momoka, as
-if its name is as sweet as peach, fresh and crispy, strawberry
-overturning the image of past strawberries.",
+  description: "We made the tart that used the luxuriously used strawberry Momoka,
+  as if its name is as sweet as peach, fresh and crispy, strawberry
+  overturning the image of past strawberries.",
   price: 86,
   quantity: 33,
   discount: 88,
@@ -255,9 +256,10 @@ Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/imag
 Product.create!(
   id: 14,
   title: "Yuzu & Yoghurt Tart",
-  description: "Yuzu village, Tart with the fragrant yuzu juice of Majo village in
-Kochi prefecture. I shed a yoghurt mousse on crispy tart with whole
-grain flour and decorated orange jelly.",
+  description: "Yuzu village, Tart with the fragrant yuzu juice
+  of Majo village in Kochi prefecture.
+  I shed a yoghurt mousse on crispy tart
+  with whole grain flour and decorated orange jelly.",
   price: 62,
   quantity: 11,
   discount: 88,
@@ -274,11 +276,11 @@ Product.create!(
   id: 15,
   title: "Special Selection Soy Sauce Tart",
   description: "We made the tart by imagining a sweet salty sauce with a dusty texture
-and everyone's favorite Mitarashi dumplings. We put finning fertilizer
-in custard cream cooked with rice milk and finished with plenty of
-cream combined with special selection soy sauce born in Osaka. The
-taste of Tamba's squeezed beans and the delicious accent that Mitara
-sauce made with special soy sauce is delicious.",
+and everyone's favorite Mitarashi dumplings.
+We put finning fertilizer in custard cream cooked with rice milk and finished with plenty of cream
+combined with special selection soy sauce born in Osaka.
+The taste of Tamba's squeezed beans and the delicious accent
+that Mitara sauce made with special soy sauce is delicious.",
   price: 84,
   quantity: 36,
   discount: 88,
@@ -293,11 +295,10 @@ Photo.create!(product_id:15,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 Product.create!(
   id: 16,
   title: "Mahachanok Mango Tart ~ Yoghurt Flavor ~",
-  description: "The rich fragrance and tight fruit pulp, rich flavor mango
-'Mahachanok' was used abundantly and it finished like a vivid flower
-blooming in Thailand. Please enjoy it with smooth yoghurt-flavored
-mousse, buttery flavored saucepan pie cloth. Mint liqueur made honedly
-effective has become accent of taste.",
+  description: "The rich fragrance and tight fruit pulp, rich flavor mango 'Mahachanok' was used abundantly
+  and it finished like a vivid flower blooming in Thailand.
+  Please enjoy it with smooth yoghurt-flavored mousse, buttery flavored saucepan pie cloth.
+  Mint liqueur made honedly effective has become accent of taste.",
   price: 66,
   quantity: 3,
   discount: 88,
@@ -314,8 +315,8 @@ Product.create!(
   id: 17,
   title: "Crystal Garden Orange Bavarian Fruit Tart",
   description: "I decorated a plenty of fruits in an orange flavor of Annin Bavaro.
-  The flavorful flavor that marinated mandarin lecutchee and the richness of apricot
-  Bavarois are well matched. Please enjoy the scent of fruits spreading throughout the mouth.",
+  The flavorful flavor that marinated mandarin lecutchee and the richness of apricot Bavarois are well matched.
+  Please enjoy the scent of fruits spreading throughout the mouth.",
   price: 78,
   quantity: 13,
   discount: 88,
@@ -331,8 +332,8 @@ Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/imag
 Product.create!(
   id: 18,
   title: "Pudding and Strawberry Tart",
-  description: "Boiled thoroughly and politely, gently sweet blue soybean 'Akita Midori'
-  was made a rich pudding, and a sweet and sour juicy strawberry was decorated with tarts all over.
+  description: "Boiled thoroughly and politely, gently sweet blue soybean 'Akita Midori' was made a rich pudding,
+  and a sweet and sour juicy strawberry was decorated with tarts all over.
   Please enjoy elegant and tasty flavors of grilled blue soybeans and drunk texture of custard.",
   price: 69,
   quantity: 8,

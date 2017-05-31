@@ -50,6 +50,10 @@ html {
   padding-left: 30px;
 }
 
+.alert-dismissable {
+  margin-bottom: 0;
+}
+
  //让内容居中
 .col-centered {
   float: none;
@@ -62,72 +66,104 @@ html {
   margin-bottom: 7em;
 }
 
+.btn {
+  border-radius: 0;
+  border: 1px solid #9b9b9b;
+}
+
 
 /* login css */
 /*===== user ====*/
 .user_setup{
-    height: 750px;
+    height: 650px;
+    margin-top: 9em;
     background: image_url("user_background.jpg") no-repeat scroll top center/ cover;
 }
 
 .user_setup_content{
-    background: #fff;
+    background: #fcf9f9;
+    padding: 1.6em 1.6em 3em 1.6em;
+    width: 35em;
+    box-shadow: 1px 5px 50px #fcf9f9;
 
-    margin-top: 55px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    box-shadow: 1px 3px 5px #333;
-
-    border: 5px solid #666;
-
-    border-radius: 25px;
-
-    opacity:0.95;
-    filter:alpha(opacity=95);
-
-    h2{
+    h3{
       text-align: center;
     }
 
     .psw{
       float: right;
-      margin-top: -33px;
       position: relative;
     }
 
-    .account{
-      text-align: center;
+    .form-inputs{
+      margin-top: 2.5em;
+      padding-left: 2.1em;
     }
 
-    .form-inputs{
-      margin-top: 25px;
+    .form-control {
+      border-radius: 0;
+      width: 28em;
     }
 
     .form-actions{
       text-align: center;
-      margin-top: 35px;
+      margin-top: 4em;
       margin-bottom: 25px;
-
-      .button{
-        color: #fff;
-
-        background-color: #4A6BB5;
-
-        border-color: #4A6BB5;
-
-        font-size: 16px;
-        letter-spacing: 1px;
-        width: 100%;
-      }
-      .button:hover{
-          background-color: #4A99B5;
-
-          border-color: #4A99B5;
-
-          color: #fff;
-
-      }
     }
+
+      .submit {
+        width: 28em;
+        color: #f96277;
+        border: 1px solid #f96277;
+      }
+
+      .submit:hover {
+        color: #fff;
+        background-color: #f96277;
+        opacity: 0.9;
+      }
+
+      .account{
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      .in-other-account {
+        text-align: center;
+        margin-bottom: 1.2em;
+      }
+
+      .other-group {
+        text-align: center;
+      }
+
+      .other-1 {
+        font-size: 2em;
+        color: #f96277;
+        border-radius: 50%;
+        border: 1px solid #f96277;
+        padding: 0.6em;
+        margin: auto 1em;
+      }
+
+      .other-2 {
+        font-size: 2em;
+        color: #f96277;
+        border-radius: 50%;
+        border: 1px solid #f96277;
+        padding: 0.6em 0.8em;
+        margin: auto 1em;
+      }
+
+      .other-1:hover,
+      .other-1:focus,
+      .other-2:hover,
+      .other-2:focus {
+        text-decoration: none;
+        color: #fff;
+        background-color: #f96277;
+      }
+
 }
 
 
@@ -213,22 +249,17 @@ background-color: rgba(0,0,0,0.8);
 cursor: pointer;
 }
 
-#timer{
-text-align: center;
-font-size: 30px;
-background-color:black;
-color: white;
-}
-
-.discount{
-  color: red;
-  // font-size: 30px;
-}
-
 
 .about-us{
-  width: 100px;
-  height: 100px;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.intro {
+  padding-top: 1.2em;
+  letter-spacing: 0.3em;
+  line-height: 1.5em;
 }
 
 .search-middle{
