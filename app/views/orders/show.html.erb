@@ -1,14 +1,15 @@
-<div class="row">
-  <div class="col-md-12">
+<div class="main-sec">
+  <div class="row">
+  <div class="col-md-offset-2 col-md-8">
 
-    <h2>订单明细</h2>
+    <h2>Your Order</h2>
 
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="80%">商品明细</th>
-          <th>单价</th>
-          <th>数量</th>
+          <th width="80%">Product Detail</th>
+          <th>Price</th>
+          <th>Quantity</th>
         </tr>
       </thead>
       <tbody>
@@ -24,24 +25,24 @@
 
     <div class="total clearfix">
       <span class="pull-right">
-        总计 <%= @order.total %> CNY
+        $ <%= @order.total %> in Total
       </span>
     </div>
 
     <hr>
 
-    <h2>寄送资讯</h2>
+    <h2>Shipping information</h2>
 
     <table class="table table-striped table-bordered">
       <tbody>
         <tr>
-          <td>订购人</td>
+          <td>Billing Address</td>
         </tr>
         <tr>
           <td> <%= @order.billing_name %> - <%= @order.billing_address %> </td>
         </tr>
         <tr>
-          <td>收件人</td>
+          <td>Shipping Address</td>
         </tr>
         <tr>
           <td> <%= @order.shipping_name %> - <%= @order.shipping_address %> </td>
@@ -56,13 +57,56 @@
     </div>
 
     <% if !@order.is_paid? %>
-    <div class="group pull-right">
-        <%= link_to("以微信支付", payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
-        <%= link_to("以支付宝支付", payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    <div class="group pull-right" >
+        <button onclick="we_on()" class="btn btn-danger">以微信支付
+          <div id="wechat_pay_overlay" onclick="we_off()">
+            <%= link_to(image_tag('https://ww4.sinaimg.cn/large/006tNbRwgy1ffphu2c3wej30b40b876m.jpg'),
+            payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+            <br><h3>～可隨意打賞，感恩～</h3>
+          </div>
+        </button>
+
+        <button onclick="ali_on()" class="btn btn-danger">以支付宝支付
+
+          <div id="alipay_overlay" onclick="ali_off()">
+            <%= link_to(image_tag('https://ww2.sinaimg.cn/large/006tNbRwgy1ffphwhqagkj30b40b1dig.jpg'),
+            payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+            <br><h3>～可隨意打賞，感恩～</h3>
+          </div>
+
+        </button>
+
     </div>
     <% else %>
-        <p class="text-center"> 此订单已完成付款 </p>
+        <p class="text-center"> It is alredy PAID </p>
     <% end %>
 
+
+    <!-- <div id="overlay" id="wechat" onclick="off()">
+      <%= link_to(image_tag('https://ww3.sinaimg.cn/large/006tNbRwgy1ffpe1hv284j30if0ilq5b.jpg'),
+      payment_with_wechat_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    </div>
+
+    <div id="overlay" id="alipay" onclick="off()">
+      <%= link_to(image_tag('https://ww4.sinaimg.cn/large/006tNbRwgy1ffoozh3pwyj30j60j1q5v.jpg'),
+      payment_with_alipay_order_path(@order.token), method: :post, class: "btn btn-danger") %>
+    </div> -->
+
+    <script>
+      function we_on() {
+      document.getElementById("wechat_pay_overlay").style.height = "100%";
+      }
+      function we_off() {
+      document.getElementById("wechat_pay_overlay").style.height = "0";
+      }
+      function ali_on() {
+      document.getElementById("alipay_overlay").style.height = "100%";
+      }
+      function ali_off() {
+      document.getElementById("alipay_overlay").style.height = "0";
+      }
+    </script>
+
   </div>
+</div>
 </div>

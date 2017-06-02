@@ -17,3 +17,261 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+
+@import url('//fonts.googleapis.com/css?family=Dancing+Script:700');
+@import url('//fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('//fonts.googleapis.com/css?family=Open+Sans');
+
+
+/*===== 基础设置 ====*/
+
+html {
+  overflow-x: hidden; overflow-y: auto; //网页在x轴上全屏显示，让横滚动轴消失
+}
+
+ body {
+   font-family: 'Open Sans', sans-serif;
+   color: #636262;
+   font-size: 14px;
+    // background: url("https://ww4.sinaimg.cn/large/006tNbRwgy1ffbtqgk3kqj31hc11q7wh.jpg ");
+    //这个设定的背景图片可以应用到除了首页这类已经专门设定背景的所有网站页面，免去重复设定背景的烦恼。
+
+    // background-size: cover;
+    //这段代码主要实现了图片不会被拉伸变现的效果
+
+    // background-attachment: fixed;
+    // background-repeat: no-repeat;
+}
+
+//让 提示 不被 navbar 遮盖
+.alert {
+  margin-top: 70px;
+  padding-left: 30px;
+}
+
+.alert-dismissable {
+  margin-bottom: 0;
+}
+
+ //让内容居中
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+//让内容与 navbar 拉开一段距离
+.main-sec {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.btn {
+  border-radius: 0;
+  border: 1px solid #9b9b9b;
+}
+
+
+/* login css */
+/*===== user ====*/
+.user_setup{
+    height: 650px;
+    margin-top: 9em;
+    background: image_url("user_background.jpg") no-repeat scroll top center/ cover;
+}
+
+.user_setup_content{
+    background: #fcf9f9;
+    padding: 1.6em 1.6em 3em 1.6em;
+    width: 35em;
+    box-shadow: 1px 5px 50px #fcf9f9;
+
+    h3{
+      text-align: center;
+    }
+
+    .psw{
+      float: right;
+      position: relative;
+    }
+
+    .form-inputs{
+      margin-top: 2.5em;
+      padding-left: 2.1em;
+    }
+
+    .form-control {
+      border-radius: 0;
+      width: 28em;
+    }
+
+    .form-actions{
+      text-align: center;
+      margin-top: 4em;
+      margin-bottom: 25px;
+    }
+
+      .submit {
+        width: 28em;
+        color: #f96277;
+        border: 1px solid #f96277;
+      }
+
+      .submit:hover {
+        color: #fff;
+        background-color: #f96277;
+        opacity: 0.9;
+      }
+
+      .account{
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      .in-other-account {
+        text-align: center;
+        margin-bottom: 1.2em;
+      }
+
+      .other-group {
+        text-align: center;
+      }
+
+      .other-1 {
+        font-size: 2em;
+        color: #f96277;
+        border-radius: 50%;
+        border: 1px solid #f96277;
+        padding: 0.6em;
+        margin: auto 1em;
+      }
+
+      .other-2 {
+        font-size: 2em;
+        color: #f96277;
+        border-radius: 50%;
+        border: 1px solid #f96277;
+        padding: 0.6em 0.8em;
+        margin: auto 1em;
+      }
+
+      .other-1:hover,
+      .other-1:focus,
+      .other-2:hover,
+      .other-2:focus {
+        text-decoration: none;
+        color: #fff;
+        background-color: #f96277;
+      }
+
+}
+
+
+/*= 首頁下方「Shop Now」按鈕=*/
+.actiontrigger{
+display:block;
+background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+url(http://ww2.sinaimg.cn/large/006tKfTcgy1ffxek5bjnaj30w80hrtj1.jpg);
+background-position: bottom center;
+background-size:cover;
+margin-left:auto;
+margin-right:auto;
+padding-top:60px; //按鈕下降
+width:100%;
+// min-width:960px;
+height:200px;
+position:relative;
+text-align: center;
+font-family: 'Berkshire Swash', cursive;
+}
+
+.btn-actiontrigger {
+    background-color: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding: 10px 20px;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.btn-actiontrigger:hover,
+.btn-actiontrigger:focus {
+  color: #f96277;
+  box-shadow: rgba(242, 242, 242, 0.5) 0 0px 0px 4em inset;
+  text-decoration: none;
+}
+
+/*測試用- 5种背景颜色*/
+.bg-color1 {
+  background: #50514F;
+}
+
+.bg-color2 {
+  background: #F25F5C;
+}
+
+.bg-color3 {
+  background: #FFE066;
+}
+
+.bg-color4 {
+  background: #247BA0;
+}
+
+.bg-color5 {
+  background: #70C1B3;
+}
+
+
+#wechat_pay_overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+#alipay_overlay{
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+background-color: rgba(0,0,0,0.8);
+cursor: pointer;
+}
+
+
+.about-us{
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.intro {
+  padding-top: 1.2em;
+  letter-spacing: 0.3em;
+  line-height: 1.5em;
+}
+
+.search-middle{
+  position: absolute;
+  width:220px;
+  top:17px;
+  right:0;
+  // bottom:0;
+  left:0;
+  margin:auto;
+}
+
+.result {
+  height: 500px;
+}

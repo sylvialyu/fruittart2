@@ -1,3 +1,201 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/*===== Product#Index 商品主页 ====*/
+img {
+  max-width: 100%; }
+
+  .square {
+  // margin-bottom: 2em;
+  padding-top: 2em;
+  padding-bottom: 1.3em;
+  padding-left: 0.05em;
+  padding-right: 0.05em;
+
+  img {
+    color: #fff;
+    opacity: 0.87;
+  }
+}
+
+.square:hover {
+  background-color: #f9f9f9;
+  -webkit-transform: scale(1.03);
+  -webkit-transition: 0.2s;
+  box-shadow: 10px 10px 50px 1px #d8d8d8;
+}
+
+.tartname {
+  text-align: left;
+  font-size: 1.05em;
+}
+
+.item-cart {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+height:10px;
+cursor: pointer;
+text-align: right;
+font-size: 2em;
+transition: all 0.2s ease-out;
+display: none;
+}
+
+.square:hover .item-cart{
+bottom: -1px;
+right: 0;
+transition: all 0.2s ease-out;
+display: block;
+}
+
+a.add-to-cart {
+  background: #f9f9f9;
+  color: #9b9b9b;
+}
+
+a.add-to-cart:hover {
+  background: #f9f9f9;
+  color: #f96277;
+}
+
+.tartname {
+  text-align: left;
+  font-size: 1.05em;
+}
+
+
+/*===== Product#Show 商品详情页面 ====*/
+.product-box {
+  margin-bottom: 5em;
+}
+
+.main-image {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.list-image-active {
+  box-shadow: 1.5px 1.5px 1.5px #666;
+}
+
+.product-title {
+  font-size: 1.5em;
+  text-transform: UPPERCASE;
+}
+
+.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select  {
+  margin-bottom: 1.8em;
+}
+
+.checked {
+  color: #ff9f1a;
+}
+
+.product-price, .timeleft, .quantity, .btn-group {
+  font-size: 1em;
+}
+
+.discount {
+  color: #f96277;
+}
+
+#timer{
+text-align: center;
+font-size: 1.1em;
+background-color: #fff;
+color:#636262;
+border: 1px solid #9b9b9b;
+}
+
+.btn-df {
+  color: #636262;
+  background-color: #fff;
+  width: 3em;
+ }
+
+ .product-num {
+   border: 1px solid #9b9b9b;
+   width: 3.5em;
+   background-color: #fff;
+ }
+
+
+ .heart {
+   padding-left: 1em;
+   padding-top: 0.3em;
+
+   a.heart-yes {
+     color: #f96277;
+   }
+
+   a.heart-yes:hover,
+   a.heart-yes:focus {
+     text-decoration: none;
+   }
+
+   a.heart-no {
+     color: #f96277;
+   }
+
+   a.heart-no:hover,
+   a.hert-no:focus {
+     text-decoration: none;
+   }
+ }
+
+ .fa-lg:hover {
+   text-decoration: none;
+ }
+
+ .buy {
+   width: 12em;
+   background-color: #fff;
+   border: 1px solid #f96277;
+   color: #f96277;
+   padding: 6px 12px;
+   line-height: 1.42857143;
+   display: inline-block;
+   text-align: center;
+   border-radius: 0;
+   font-size: 1.1em;
+ }
+
+ .buy:hover,
+ .buy:focus {
+   background-color: #f96277;
+   color: #fff;
+   border: 1px solid #f96277;
+   text-decoration: none;
+ }
+
+.quantity {
+  padding-top: 0.2em;
+}
+
+.description {
+  border: 1px solid #dddddd;
+  margin-bottom: 5em;
+
+  p {
+    padding: 2.5em 8em 0.5em 8em;
+    line-height: 2em;
+    // font-family: 'Berkshire Swash', cursive;
+    font-size: 1.1em;
+
+  }
+
+  p.package {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .pacimg {
+    padding: 1em;
+  }
+}

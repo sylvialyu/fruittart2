@@ -1,0 +1,21 @@
+<div class="row user_setup">
+  <div class="col-md-4 col-centered user_setup_content">
+      <h3>Forgot your password?</h3>
+
+      <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= f.error_notification %>
+
+        <div class="form-inputs">
+          <%= f.input :email, required: true, autofocus: true %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Send me reset password instructions", class: "submit" %>
+        </div>
+      <% end %>
+      <hr />
+        <div class="account">
+          <%= link_to "Alredy have an account? Login now", new_session_path(resource_name) %><br />
+        </div>
+  </div>
+</div>

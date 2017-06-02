@@ -1,16 +1,16 @@
 <div class="row">
   <div class="col-md-12">
 
-    <h2>订单明细（<%= render_order_paid_state(@order) %>）</h2>
+    <h2>Order Detail（<%= render_order_paid_state(@order) %>）</h2>
 
     <%= render "admin/orders/state_option", order: @order %>
 
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="70%">商品明细</th>
-          <th>单价</th>
-          <th>数量</th>
+          <th width="70%">Product Detail</th>
+          <th>Price</th>
+          <th>Quantity</th>
         </tr>
       </thead>
       <tbody>
@@ -26,24 +26,24 @@
 
     <div class="clearfix">
       <span class="pull-right">
-        总计 <%= @order.total %> CNY
+        $ <%= @order.total %> in Total
       </span>
     </div>
 
     <hr>
 
-    <h2>寄送资讯</h2>
+    <h2>Shipping Information</h2>
 
     <table class="table table-striped table-bordered">
       <tbody>
         <tr>
-          <td>订购人</td>
+          <td>Billing Address</td>
         </tr>
         <tr>
           <td><%= @order.billing_name %> - <%= @order.billing_address %></td>
         </tr>
         <tr>
-          <td>收件人</td>
+          <td>Shipping Address</td>
         </tr>
         <tr>
           <td><%= @order.shipping_name %> - <%= @order.shipping_address %></td>

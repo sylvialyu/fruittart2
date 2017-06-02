@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <div class="main-sec">
+
     <div class="container">
       <%= render "common/navbar" %>
       <%= render "common/flashes" %>
@@ -25,7 +27,10 @@
           <%= yield %>
         </div>
       </div>
+      <%= render "common/flashes" %>
     </div>
+
+  </div>
   </body>
 
 </html>

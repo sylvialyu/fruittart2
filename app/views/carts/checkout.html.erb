@@ -1,20 +1,27 @@
+<div class="main-sec">
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-8 col-centered">
 
-    <h2>购物明细</h2>
+    <h2>Order Detail</h2>
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th width="80%">商品明细</th>
-          <th>单价</th>
-          <th>数量</th>
+          <th width="80%">Order List</th>
+          <th>Price</th>
+          <th>Quantity</th>
         </tr>
       </thead>
       <tbody>
         <% current_cart.cart_items.each do |cart_item| %>
         <tr>
           <td><%= link_to(cart_item.product.title, product_path(cart_item.product)) %></td>
-          <td><%= cart_item.product.price %></td>
+
+          <% if cart_item.product.discount.present? %>
+            <td><%= cart_item.product.price * cart_item.product.discount / 100 %></td>
+          <% else %>
+            <td><%= cart_item.product.price %></td>
+          <% end %>
+
           <td><%= cart_item.quantity %></td>
         </tr>
         <% end %>
@@ -23,35 +30,35 @@
 
     <div class="total clearfix">
       <span class="pull-right">
-        总计 <%= render_cart_total_price(current_cart) %> CNY
+        $ <%= render_cart_total_price(current_cart) %> in Total
       </span>
     </div>
 
     <hr>
 
-    <h2>订单资讯</h2>
+    <h2>Order Info</h2>
     <div class="order-form">
 
       <%= simple_form_for @order do |f| %>
 
-      <legend>订购人</legend>
+      <legend>Billing Info</legend>
       <div class="form-group col-lg-6">
-        <%= f.input :billing_name %>
+        <%= f.input :billing_name, input_html: { value: "123 Street, XJP, China" } %>
       </div>
       <div class="form-gropu col-lg-6">
-        <%= f.input :billing_address %>
+        <%= f.input :billing_address, input_html: { value: "123 Street, XJP, China" } %>
       </div>
 
-      <legend>收货人</legend>
+      <legend>Shipping Info</legend>
       <div class="form-group col-lg-6">
-        <%= f.input :shipping_name %>
+        <%= f.input :shipping_name, input_html: { value: "123 Street, XJP, China" } %>
       </div>
       <div class="form-group col-lg-6">
-        <%= f.input :shipping_address %>
+        <%= f.input :shipping_address, input_html: { value: "123 Street, XJP, China" } %>
       </div>
 
       <div class="checkout">
-        <%= f.submit "生成订单", class:"btn btn-lg btn-danger pull-right", data: { disable_with: "Submitting..." } %>
+        <%= f.submit "Proceed to Checkout", class:"pt-checkout pull-right", data: { disable_with: "Submitting..." } %>
       </div>
 
       <% end %>
@@ -59,4 +66,6 @@
     </div>
 
   </div>
+</div>
+
 </div>

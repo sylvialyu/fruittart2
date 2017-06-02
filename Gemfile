@@ -19,7 +19,7 @@ gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -30,22 +30,31 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'bootstrap-sass'
-gem 'devise'
-gem 'simple_form'
-gem 'font-awesome-rails'
-gem 'carrierwave'
-gem 'mini_magick'
-gem 'awesome_rails_console'
+gem 'bootstrap-sass' #美化 html
+gem 'devise' #login/logout
+gem 'simple_form' #美化form
+gem 'font-awesome-rails' #fa-icons
+gem 'carrierwave' #upload files
+gem 'mini_magick' #resize pics
+gem 'awesome_rails_console' #美化console
 gem 'rails-erd'
 gem 'letter_opener', group: :development
 gem 'aasm'
-gem 'figaro'
+gem 'figaro' #密碼管理
 gem 'fog'
+gem 'carrierwave-qiniu' #七牛上傳
+gem 'qiniu-rs' #七牛雲
+gem 'ransack' #搜索
+gem 'will_paginate' #分頁
+gem 'will_paginate-bootstrap'# 美化分頁
+gem 'acts_as_list' #上下排列
+gem 'omniauth' #授權
+gem 'omniauth-google-oauth2' #授權Google
+gem 'omniauth-facebook' #授權FB
+gem 'omniauth-github' #授權Github
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'pry'
+  gem 'pry' #用 binding.pry debug
   gem 'sqlite3'
 end
 

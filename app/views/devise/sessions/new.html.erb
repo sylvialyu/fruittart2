@@ -1,0 +1,35 @@
+<div class="main-sec">
+<div class="col-md-4 col-centered user_setup">
+  <div class="user_setup_content">
+      <h3>Log in</h3>
+
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-inputs">
+          <%= f.input :email, required: false, autofocus: true %>
+          <%= f.input :password, required: false %>
+          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, "Log in", class: "submit" %>
+        </div>
+      <% end %>
+
+        <div class="account">
+          <%= link_to "Do not have an account? Sign in", new_user_registration_path %><br />
+          <%= link_to "Forget password？", new_password_path(resource_name) %>
+        </div>
+
+        <hr>
+
+        <p class="in-other-account">Sign Up with Other Accounts</p>
+
+        <div class="other-group">
+          <%= link_to "", user_google_oauth2_omniauth_authorize_path, class: "fa fa-google other-1" %>
+          <%= link_to "", user_facebook_omniauth_authorize_path, class: "fa fa-facebook other-2" %>
+          <%= link_to "", user_github_omniauth_authorize_path, class: "fa fa-github-alt other-1" %>
+        </div>
+
+  </div>
+</div>
+</div>

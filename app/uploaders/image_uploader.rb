@@ -6,10 +6,11 @@ class ImageUploader < CarrierWave::Uploader::Base
 
   # Choose what kind of storage to use for this uploader:
   # storage :file
-  # storage :fog
+
+  # storage :qiniu
 
   if Rails.env.production?
-    storage :fog
+    storage :qiniu
   elsif Rails.env.development?
     storage :file
   end
@@ -24,6 +25,10 @@ class ImageUploader < CarrierWave::Uploader::Base
 
  version :thumb do
    process resize_to_fill: [200,200]
+ end
+
+ version :main do
+   process resize_to_fill: [738,426]
  end
 
  version :medium do

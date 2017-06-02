@@ -1,14 +1,41 @@
-<div class="row">
-  <% @products.each do |product| %>
-    <div class="col-xs-6 col-md-3">
-      <%= link_to product_path(product) do %>
-        <% if product.image.present? %>
-          <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-        <% else %>
-          <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
-        <% end %>
-      <% end %>
-      <%= product.title %> ￥ <%= product.price %>
+<div class="main-sec">
+<div class="col-md-10 col-xs-10 col-centered">
+  <!-- <div class="panel panel-default"> -->
+  <div class="panel-body">
+      <div class="row">
+        <% @products.each do |product| %>
+          <div class="box col-xs-12 col-sm-4 col-md-4 square">
+          <%= link_to product_path(product) do %>
+              <% if product.photos.present? %>
+                  <%= image_tag(product.photos[1].avatar.large.url) %>
+              <% else %>
+                  <%= image_tag("http://placehold.it/200x200&text=No Pic") %>
+              <% end %>
+           <% end %>
+
+           <div>
+
+            <div><h6 class="tartname"><%= product.title %></h6></div>
+            <div class="row">
+              <h6 class="tartname col-md-3 col-xs-3">￥ <%= product.price %></h6>
+
+              <div class="item-cart col-md-3 col-md-offset-5 col-xs-3 col-xs-offset-5">
+              <% if product.quantity.present? && product.quantity > 0 %>
+                <%= link_to add_to_cart_product_path(product), class: "add-to-cart", :remote => true, :method => :post do %>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <% end %>
+              <% else %>
+                Sold Out
+              <% end %>
+            </div>
+
+            </div>
+          </div>
+
+          </div>
+            <% end %>
+          </div>
+
+      </div>
     </div>
-  <% end %>
-</div>
+    </div>

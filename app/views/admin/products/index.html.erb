@@ -1,7 +1,7 @@
 <h2>Product List</h2>
 
 <div class="pull-right" style="padding-bottom: 20px;">
-  <%= link_to("新增产品", new_admin_product_path, class: "btn btn-primary btn-sm") %>
+  <%= link_to("Add New Product", new_admin_product_path, class: "btn btn-primary btn-sm") %>
 </div>
 
 <table class="table table-bordered">
@@ -22,19 +22,22 @@
         <td><%= product.id %></td>
         <td>
           <%= link_to product_path(product) do %>
-            <% if product.image.present? %>
-            <%= image_tag(product.image.thumb.url, class: "thumbnail") %>
-            <% else %>
-            <%= image_tag("http://placehold.it/400x400&text=No Pic", class: "thumbnail") %>
+          <% if product.photos.present? %>
+            <%= image_tag(product.photos[1].avatar.thumb.url) %>
+          <% else %>
+            <%= image_tag("http://placehold.it/400x400&text=No Pic") %>
             <% end %>
           <% end %>
         </td>
         <td><%= product.title %></td>
-        <td><%= product.price %></td>
-        <td>
-          <%= link_to("Edit", edit_admin_product_path(product)) %> |
-          <%= link_to("Destroy", admin_product_path(product), method: :delete, data: { confirm: "Are you sure?" }) %>
-        </td>
+        <td>$ <%= product.price %></td>
+        <td><center>
+          <%= link_to(move_up_admin_product_path(product), :method => :post) do %> <i class="fa fa-arrow-up fa-lg"></i><% end %> |
+          <%= link_to(move_down_admin_product_path(product), :method => :post) do %><i class="fa fa-arrow-down fa-lg"></i><% end %>
+          <br><br>
+          <%= link_to(edit_admin_product_path(product)) do %><i class="fa fa-edit fa-lg"></i><% end %> |
+          <%= link_to(admin_product_path(product), method: :delete, data: { confirm: "Are you sure?" }) do %><i class="fa fa-trash fa-lg"></i><% end %>
+        </td></center>
       </tr>
     <% end %>
   </tbody>
