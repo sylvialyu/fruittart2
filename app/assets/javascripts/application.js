@@ -62,7 +62,7 @@ $('.star-price').raty({
       }
 });
 $('#star-freshness').raty({
-path: '/assets/',
+path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
 scoreName: 'review[freshness]'
 });
 $('#star-look').raty({
