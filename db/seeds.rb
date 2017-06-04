@@ -13,6 +13,18 @@ else
   puts "Admin 已经建立过了，脚本跳过该步骤。"
 end
 
+comment_info = [
+	 ["Amazing! it's so great"],
+   ["looks good"],
+   ["好吃！"],
+   ["can't wait to eat it"],
+   ["期待新產品！"],
+   ["I'm telling my friend about this"],
+   ["不该睡前来看的，好饿啊！忍不住买了！"],
+   ["bought for my familt and they all love it!!"],
+   ["XDDDDD"]
+ ]
+
 # Initialize Product
 
 Product.create!(
@@ -34,6 +46,10 @@ Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))
 Photo.create!(product_id:1,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 1, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 2,
@@ -52,6 +68,10 @@ Photo.create!(product_id:2,avatar: open('http://i.imgur.com/kLCvF8t.jpg'))
 Photo.create!(product_id:2,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:2,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 2, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 3,
@@ -71,6 +91,10 @@ Photo.create!(product_id:3,avatar: open('http://i.imgur.com/SLPKbrL.jpg'))
 Photo.create!(product_id:3,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 3, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 4,
@@ -90,6 +114,10 @@ Photo.create!(product_id:4,avatar: open('http://i.imgur.com/0dQpF2p.jpg'))
 Photo.create!(product_id:4,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:4,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 4, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 5,
@@ -110,6 +138,10 @@ Product.create!(
   Photo.create!(product_id:5,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
   Photo.create!(product_id:5,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+  for i in 1..rand(2..16) do
+    	com=comment_info[rand(0..8)]
+    Review.create!(product_id: 5, body:com[0], freshness: rand(3..5))
+  end
 
 Product.create!(
   id: 6,
@@ -130,6 +162,11 @@ Photo.create!(product_id:6,avatar: open('http://i.imgur.com/Vw8LPk2.jpg'))
 Photo.create!(product_id:6,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:6,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 6, body:com[0], freshness: rand(3..5))
+end
+
 Product.create!(
   id: 7,
   title: "Honey & Lemon Tart",
@@ -146,6 +183,10 @@ Photo.create!(product_id:7,avatar: open('http://i.imgur.com/mM4nxc4.jpg'))
 Photo.create!(product_id:7,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:7,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 7, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 8,
@@ -164,6 +205,10 @@ Photo.create!(product_id:8,avatar: open('http://i.imgur.com/rfq7Wen.jpg'))
 Photo.create!(product_id:8,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:8,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 8, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 9,
@@ -180,6 +225,10 @@ Photo.create!(product_id:9,avatar: open('http://i.imgur.com/RPaO0xj.jpg'))
 Photo.create!(product_id:9,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:9,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+  	com=comment_info[rand(0..8)]
+  Review.create!(product_id: 9, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 10,
@@ -198,6 +247,10 @@ Product.create!(
   Photo.create!(product_id:10,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
   Photo.create!(product_id:10,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+  for i in 1..rand(2..16) do
+    	com=comment_info[rand(0..8)]
+    Review.create!(product_id: 10, body:com[0], freshness: rand(3..5))
+  end
 
 Product.create!(
   id: 11,
@@ -217,6 +270,10 @@ Photo.create!(product_id:11,avatar: open('http://i.imgur.com/4of4vD1.jpg'))
 Photo.create!(product_id:11,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:11,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 11, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 12,
@@ -236,6 +293,10 @@ Photo.create!(product_id:12,avatar: open('http://i.imgur.com/EVVDJVH.jpg'))
 Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
 Photo.create!(product_id:12,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 12, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 13,
@@ -253,6 +314,10 @@ Photo.create!(product_id:13,avatar: open('http://i.imgur.com/9yI1dgY.jpg'))
 Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
 Photo.create!(product_id:13,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 13, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 14,
@@ -272,6 +337,10 @@ Photo.create!(product_id:14,avatar: open('http://i.imgur.com/sMqKASB.jpg'))
 Photo.create!(product_id:14,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:14,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 14, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 15,
@@ -292,6 +361,10 @@ Photo.create!(product_id:15,avatar: open('http://i.imgur.com/79dfK9m.jpg'))
 Photo.create!(product_id:15,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:15,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 15, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 16,
@@ -311,6 +384,10 @@ Photo.create!(product_id:16,avatar: open('http://i.imgur.com/Q4aEiRq.jpg'))
 Photo.create!(product_id:16,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 Photo.create!(product_id:16,avatar: open('http://i.imgur.com/VLuJ1LV.jpg'))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 16, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 17,
@@ -329,6 +406,10 @@ Photo.create!(product_id:17,avatar: open('http://www.quil-fait-bon.com/imgdata/o
 Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
 Photo.create!(product_id:17,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
 
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 17, body:com[0], freshness: rand(3..5))
+end
 
 Product.create!(
   id: 18,
@@ -346,3 +427,8 @@ Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/o
 Photo.create!(product_id:18,avatar: open('http://www.quil-fait-bon.com/imgdata/omn/858w.jpg'))
 Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/strawberry.jpg")))
 Photo.create!(product_id:18,avatar: open(File.join(Rails.root, "/app/assets/images/products/various.jpg")))
+
+for i in 1..rand(2..16) do
+    com=comment_info[rand(0..8)]
+  Review.create!(product_id: 18, body:com[0], freshness: rand(3..5))
+end

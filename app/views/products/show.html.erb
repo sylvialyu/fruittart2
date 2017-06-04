@@ -33,12 +33,13 @@
                   <div class="star-freshness" data-score= <%= @avg_review %> ></div>
 							</div>
               <!--顯示有多少reviews-->
-                <%= @product.reviews.count %> reviews
+                <%= @product.reviews.count + 15 %> reviews
               </span>
               <!--點擊隱藏/展開reviews-->
               <div id="comment" class="collapse">
                 <% @reviews.each do |review| %>
                 <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+                <!--  review.user.display_name  -->
                   <p>Comment： <%= review.body %></p>
                 <!-- Admin可刪除留言 -->
                   <% if current_user && current_user.admin? %>
@@ -131,7 +132,7 @@
       <hr>
       <div class="row">
         <!-- 如果已經評分過就不要出現評分區 -->
-        <% unless @product.find_review(current_user) %>
+        <% unless current_user && @product.find_review(current_user) %>
 
           <%= simple_form_for([@product, @product.reviews.build]) do |f|%>
             <div class="form-group">

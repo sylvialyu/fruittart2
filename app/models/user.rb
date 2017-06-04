@@ -14,6 +14,11 @@ class User < ApplicationRecord
     is_admin
   end
 
+  def display_name
+    # # 取 email 的前半来显示，如果你也可以另开一个字段是 nickname 让用户可以自己编辑显示名称
+    self.email.split("@").first
+  end
+
   def is_favoriter_of?(product)
   favorited_products.include?(product)
   end
