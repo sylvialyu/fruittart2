@@ -21,12 +21,12 @@ class ReviewsController < ApplicationController
 
   def edit
     @product = Product.find_by_friendly_id!(params[:product_id])
-    @review = Review.find(params[:product_id])
+    @review = Review.find(params[:id])
   end
 
   def update
     @product = Product.find_by_friendly_id!(params[:product_id])
-    @review = Review.find(params[:product_id])
+    @review = Review.find(params[:id])
 
     if @review.update(review_params)
       redirect_to product_path(@product), notice: "Update successfully"
@@ -37,7 +37,7 @@ class ReviewsController < ApplicationController
 
   def destroy
     @product = Product.find_by_friendly_id!(params[:product_id])
-    @review = Review.find(params[:product_id])
+    @review = Review.find(params[:id])
     @review.destroy
     redirect_to product_path(@product), alert: "You have deleted the review successfully"
   end
