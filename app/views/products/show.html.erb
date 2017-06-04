@@ -45,7 +45,7 @@
                   <% if current_user && current_user.admin? %>
                     <%= link_to("Delete", product_review_path(@product, review), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-sm pull-right") %>
                   <% end %>
-                </p>
+                  </p>
                 <% end %>
               </div>
 
@@ -104,10 +104,6 @@
             <!-- https://github.com/huacnlee/social-share-button -->
             <div class="col-md-3 pull-right">
               <%= social_share_button_tag(@product.title, :allow_sites => %w(wechat facebook email)) %>
-
-            <div class="col-md-4 quantity">
-              <div> Quantity: <%= @product.quantity %></div>
-            </div>
 
             <div class="col-md-3 quantity">
               <div> Quantity: <%= @product.quantity %></div>

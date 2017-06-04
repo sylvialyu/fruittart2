@@ -47,37 +47,14 @@ $('.star-freshness').raty({
         return $(this).attr('data-score');
       }
 });
-$('.star-look').raty({
-      path: '/assets/',
-          readOnly: true,
-          score: function() {
-        return $(this).attr('data-score');
-      }
-});
-$('.star-price').raty({
-      path: '/assets/',
-          readOnly: true,
-          score: function() {
-        return $(this).attr('data-score');
-      }
-});
+
 $('#star-freshness').raty({
 path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
 scoreName: 'review[freshness]'
 });
-$('#star-look').raty({
-path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
-scoreName: 'review[look]'
-});
-$('#star-price').raty({
-    path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
-    scoreName: 'review[price]'
-});
 
 $('#star-freshness img').eq(0).trigger('click')
-$('#star-look img').eq(0).trigger('click')
-$('#star-price img').eq(0).trigger('click')
-=======
+
 
 /*===== 加入购物车动效 =====*/
 $(function() {
@@ -104,4 +81,4 @@ $(function() {
             }
         });
     });
-}); 
+});
