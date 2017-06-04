@@ -275,3 +275,14 @@ cursor: pointer;
 .result {
   height: 500px;
 }
+
+
+
+
+
+
+
+
+.u-flyer{display: block;width: 50px;height: 50px;border-radius: 50px;position: fixed;z-index: 9999;}
+
+#msg{position:fixed; top:300px; right:35px; z-index:10000; width:1px; height:52px; line-height:52px; font-size:20px; text-align:center; color:#fff; background:#360; display:none}
