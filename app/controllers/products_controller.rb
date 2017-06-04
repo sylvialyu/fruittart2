@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
         @avg_look = 0
         @avg_price = 0
       else
-        @avg_review = @reviews.average(:freshness).round(2)
+        @avg_review = @reviews.average(:freshness)
 
       end
   end
