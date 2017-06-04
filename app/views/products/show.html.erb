@@ -40,12 +40,12 @@
                 <% @reviews.each do |review| %>
                 <div class="star-freshness" data-score= <%= review.freshness %> ></div>
                 <!--  review.user.display_name  -->
-                  <p>Comment： <%= review.body %></p>
+                  <p>Comment： <%= review.body %>
                 <!-- Admin可刪除留言 -->
                   <% if current_user && current_user.admin? %>
                     <%= link_to("Delete", product_review_path(@product, review), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-sm pull-right") %>
                   <% end %>
-
+                </p>
                 <% end %>
               </div>
 
