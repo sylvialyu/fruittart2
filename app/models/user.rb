@@ -8,6 +8,7 @@ class User < ApplicationRecord
   has_many :orders
   has_many :favorites
   has_many :favorited_products, :through => :favorites, :source => :product
+  has_many :reviews
 
   def admin?
     is_admin

@@ -6,6 +6,8 @@ class Product < ApplicationRecord
   has_many :favorites
   has_many :favoriters, through: :favorites, source: :user
   accepts_nested_attributes_for :photos
+  has_many :reviews
+
   acts_as_list
   validates_numericality_of :discount, :greater_than => 0, :less_than => 100, :allow_blank => true
   validates_presence_of :friendly_id
@@ -17,6 +19,10 @@ class Product < ApplicationRecord
    self.friendly_id
   end
 
+  def find_review(user)
+    self.reviews.where( :user_id => user.id ).first
+  end
+  
   protected
 
   def generate_friendly_id

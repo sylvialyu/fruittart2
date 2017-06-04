@@ -36,3 +36,42 @@ $(document).on('mouseover', '.list-image', function () {
   $('.list-image').removeClass('list-image-active') //其他圖片移除鎖定狀態
   $(this).addClass('list-image-active') //當前圖片新增鎖定狀態
 })
+
+/*===== 評分系統=======*/
+$('.star-freshness').raty({
+      path: '/assets/',
+          readOnly: true,
+          score: function() {
+        return $(this).attr('data-score');
+      }
+});
+$('.star-look').raty({
+      path: '/assets/',
+          readOnly: true,
+          score: function() {
+        return $(this).attr('data-score');
+      }
+});
+$('.star-price').raty({
+      path: '/assets/',
+          readOnly: true,
+          score: function() {
+        return $(this).attr('data-score');
+      }
+});
+$('#star-freshness').raty({
+path: '/assets/',
+scoreName: 'review[freshness]'
+});
+$('#star-look').raty({
+path: '/assets/',
+scoreName: 'review[look]'
+});
+$('#star-price').raty({
+    path: '/assets/',
+    scoreName: 'review[price]'
+});
+
+$('#star-freshness img').eq(0).trigger('click')
+$('#star-look img').eq(0).trigger('click')
+$('#star-price img').eq(0).trigger('click')

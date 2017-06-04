@@ -27,6 +27,7 @@ Product.create!(
   discount: 88,
   countdown: "2017-06-12T01:00",
   friendly_id: "matcha-soymilk-tart",
+
   )
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/BklBufL.jpg'))
 Photo.create!(product_id:1,avatar: open('http://i.imgur.com/0KbdaqQ.jpg'))

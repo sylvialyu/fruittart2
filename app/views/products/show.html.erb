@@ -27,14 +27,22 @@
       <div class="col-md-5 col-xs-12">
 						<h4 class="product-title"><%= @product.title %></h4>
 						<div class="rating">
+              <span class="review-no" data-toggle="collapse" data-target="#comment">
+              <!--对商品评星-->
 							<div class="stars">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
+                  <div class="star-freshness" data-score= <%= @avg_review %> ></div>
 							</div>
-							<span class="review-no">41 reviews</span>
+              <!--顯示有多少reviews-->
+                <%= @product.reviews.count %> reviews
+              </span>
+              <!--點擊隱藏/展開reviews-->
+              <div id="comment" class="collapse">
+                <% @reviews.each do |review| %>
+                Comment： <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+                  <p><%= review.body %></p>
+                <% end %>
+              </div>
+
 						</div>
 
             <div class="price">
@@ -50,6 +58,12 @@
               <% end %>
             </div>
 
+            <!--对商品评论以及评星-->
+            <!-- <div class="text-center">
+              <h3>综合评价</h3>
+              新鲜： <div class="star-freshness" data-score= <%= @avg_review %> ></div>
+              <%= link_to("Rate Now",new_product_review_path(@product), :class => "btn btn-lg btn-info") %>
+            </div> -->
 
             <div class="timeleft">
               <!-- 如果有倒計時   -->
@@ -103,6 +117,28 @@
         </div>
 
       </div>
+      <!--对商品评论以及评星-->
+      <hr>
+      <div class="row">
+        <!-- 如果已經評分過就不要出現評分區 -->
+        <% unless @product.find_review(current_user) %>
+
+          <%= simple_form_for([@product, @product.reviews.build]) do |f|%>
+            <div class="form-group">
+              <%= f.input :body, label: "Please tell us what you think ", input_html: { class: "form-control"} %>
+            </div>
+
+            <div class="form-actions pull-right">
+              <%= f.submit "Comment", disable_with: "Submiting...", class: "buy"%>
+            </div>
+            <div class=" clearfix pull-left">
+              <div id="star-freshness">Rate Now： </div>
+            </div>
+          <% end %>
+          
+        <% end %>
+      </div>
+
     </div>
 
     </div>
@@ -110,10 +146,8 @@
 
       <%= render "details" %>
 
+
 	</div>
-
-
-
 
 
 
@@ -148,3 +182,5 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
+<script src="/assets/application.js"></script>
