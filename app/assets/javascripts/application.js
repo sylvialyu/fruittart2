@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap/alert
 //= require bootstrap/dropdown
+//= require social-share-button
+//= require social-share-button/wechat
 //= require_tree .
 
 /*===== Welcome#index - 首頁導航列變化 =====*/
