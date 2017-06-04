@@ -41,7 +41,7 @@ $(document).on('mouseover', '.list-image', function () {
 
 /*===== 評分系統=======*/
 $('.star-freshness').raty({
-      path: '/assets/',
+      path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
           readOnly: true,
           score: function() {
         return $(this).attr('data-score');
@@ -66,11 +66,11 @@ path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/r
 scoreName: 'review[freshness]'
 });
 $('#star-look').raty({
-path: '/assets/',
+path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
 scoreName: 'review[look]'
 });
 $('#star-price').raty({
-    path: '/assets/',
+    path: 'https://raw.githubusercontent.com/wazery/ratyrate/master/lib/generators/ratyrate/templates/',
     scoreName: 'review[price]'
 });
 
