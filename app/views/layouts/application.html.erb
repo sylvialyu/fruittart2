@@ -30,6 +30,7 @@
 
   <body>
     <div class="row">
+      <header class="header">
       <%= render "common/navbar" %>
       <%= render "common/flashes"%>
       <%= yield %>
@@ -38,4 +39,17 @@
     <%= render "common/footer" %>
 
   </body>
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$('.header').circleMagic({
+            elem: '.header',
+            radius: 35,
+            densety: .3,
+            color: 'rgba(255,255,255, .4)',
+            //color: 'random',
+            clearOffset: .3
+        });
+</script>
+<script src='https://freak19.github.io/circlemagic.github.io/dest/circleMagic.min.js'></script>
 </html>
