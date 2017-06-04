@@ -9,12 +9,12 @@
           <% if @product.photos.present? %>
           <!-- 显示大图尺寸 -->
           <div class="col-md-12">
-            <%= image_tag(@product.photos[1].avatar.large.url, class: 'main-image ') %>
+            <%= image_tag(@product.photos[1].avatar.large.url, class: 'main-image img') %>
           </div>
             <% @product.photos.each do |p| %>
               <!-- 显示小图尺寸 -->
               <div class="col-md-3 col-sm-6 col-xs-6 image-box">
-                <%= image_tag(p.avatar.large.url, class: 'list-image ') %>
+                <%= image_tag(p.avatar.large.url, class: 'list-image img') %>
               </div>
             <% end %>
           <% else %>
@@ -63,7 +63,7 @@
 
             <div class="select row">
 
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="btn-group" role="group" aria-label="...">
                 <%= link_to(content_tag(:i, "", class: "fa fa-minus btn btn-df"), downcount_product_path(@product), method: :post) %>
                   <button class="product-num"><%= @product.counts.count %></button>
@@ -79,7 +79,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 quantity">
+            <div class="col-md-4 quantity">
               <div> Quantity: <%= @product.quantity %></div>
             </div>
 
@@ -88,7 +88,7 @@
         <div class="row">
           <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
-          <%= link_to("Add to Cart", add_to_cart_product_path(@product), method: :post, class: "buy") %>
+          <%= link_to("Add to Cart", add_to_cart_product_path(@product), method: :post, class: "buy button orange addcar", id: "end") %>
           <% else %>
           Sorry! It's sold out!
           <% end %>
