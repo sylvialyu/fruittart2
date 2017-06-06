@@ -25,7 +25,9 @@
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               <% end %>
               <% else %>
-                Sold Out
+                <% if product.quantity <= 0 %>
+                  <b class="product-item-sellout">Sold Out</b>
+                <% end %>
               <% end %>
             </div>
 
