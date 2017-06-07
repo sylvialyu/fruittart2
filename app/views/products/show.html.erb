@@ -111,8 +111,6 @@
         <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
           <%= link_to("Checkout", checkout_carts_path, method: :post, class: "buy") %>
-          <% else %>
-          ""
           <% end %>
         </div>
       </div>

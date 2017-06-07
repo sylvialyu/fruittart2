@@ -81,9 +81,7 @@ Product.create!(
   We combined a fragrant brandy very compatible with crown melon.
   Please relish that elegant taste.",
   price: 75,
-  quantity: 25,
-  discount: 88,
-  countdown: "2017-06-12T01:00",
+  quantity: 0,
   friendly_id: "crown-melon-tart",
   )
 Photo.create!(product_id:3,avatar: open('http://i.imgur.com/89bkLvP.jpg'))
@@ -152,8 +150,7 @@ Product.create!(
   with a fragrant aroma and thinly laid chocolate is accented.
   Please enjoy with the source of caramel coffee",
   price: 65,
-  quantity: 45,
-  discount: 88,
+  quantity: 0,
   countdown: "2017-06-12T01:00",
   friendly_id: "banana-caramel-coffee-tart",
   )
