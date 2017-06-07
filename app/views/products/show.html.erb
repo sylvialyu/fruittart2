@@ -35,6 +35,20 @@
               <!--顯示有多少reviews-->
                 <%= @product.reviews.count + 15 %> reviews
               </span>
+              <!--點擊隱藏/展開reviews-->
+              <div id="comment" class="collapse">
+                <% @reviews.each do |review| %>
+                <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+                <!--  review.user.display_name  -->
+                  <p><%= review.body %>
+                <!-- Admin可刪除留言 -->
+                  <% if current_user && current_user.admin? %>
+                    <%= link_to("Delete", product_review_path(@product, review), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-xs btn-default pull-right") %>
+                  <% end %>
+                  </p>
+                <% end %>
+              </div>
+
 						</div>
 
             <div class="price">
@@ -50,13 +64,6 @@
               <% end %>
             </div>
 
-            <!--对商品评论以及评星-->
-            <!-- <div class="text-center">
-              <h3>综合评价</h3>
-              新鲜： <div class="star-freshness" data-score= <%= @avg_review %> ></div>
-              <%= link_to("Rate Now",new_product_review_path(@product), :class => "btn btn-lg btn-info") %>
-            </div> -->
-
             <div class="timeleft">
               <!-- 如果有倒計時   -->
               <% if @product.countdown.present?%>
@@ -69,7 +76,7 @@
             <!-- 购买数量 及 收藏功能 -->
             <div class="select row">
 
-            <div class="col-md-8">
+            <div class="col-md-7">
               <div class="btn-group" role="group" aria-label="...">
                 <%= link_to(content_tag(:i, "", class: "fa fa-minus btn btn-df"), downcount_product_path(@product), method: :post) %>
                   <button class="product-num"><%= @product.counts.count %></button>
@@ -84,21 +91,15 @@
                 </span>
               </div>
             </div>
-          </div>
 
-
-            <!-- 社群分享按鈕 -->
-            <!-- https://github.com/huacnlee/social-share-button -->
-            <div class="col-md-3 pull-right">
-              <%= social_share_button_tag(@product.title, :allow_sites => %w(wechat facebook email)) %>
-
-            <div class="col-md-3 quantity">
+            <div class="col-md-5 quantity">
               <div> Quantity: <%= @product.quantity %></div>
             </div>
-        </div>
+            </div>
+
 
         <!-- 加入购物车 & 一键下单 按钮 -->
-        <div class="row">
+        <div class="favorate row">
           <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
           <%= link_to("Add to Cart", add_to_cart_product_path(@product), method: :post, class: "buy button orange addcar", id: "end") %>
@@ -114,29 +115,34 @@
           ""
           <% end %>
         </div>
-
       </div>
 
       <!--对商品评论以及评星-->
-      <div class="row">
-        <!-- 如果已經評分過就不要出現評分區 -->
-        <% unless current_user && @product.find_review(current_user) %>
-
-          <%= simple_form_for([@product, @product.reviews.build]) do |f|%>
-            <div class="form-group">
-              <%= f.input :body, label: "Please tell us what you think ", input_html: { class: "form-control"} %>
+      <div class="social-group row">
+        <div class="col-md-6">
+            <div id="star-freshness">Rate Now </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-1">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
             </div>
-
-            <div class="form-actions pull-right">
-              <%= f.submit "Comment", disable_with: "Submiting...", class: "buy"%>
+            <div class="col-md-10 social">
+              <%= social_share_button_tag(@product.title, :allow_sites => %w(wechat facebook email)) %>
             </div>
-            <div class=" clearfix pull-left">
-              <div id="star-freshness">Rate Now： </div>
-            </div>
-          <% end %>
-
-        <% end %>
+          </div>
+        </div>
       </div>
+
+      <!--对商品评论以及评星-->
+      <!-- <div class="text-center">
+        <h3>综合评价</h3>
+        新鲜： <div class="star-freshness" data-score= <%= @avg_review %> ></div>
+        <%= link_to("Rate Now",new_product_review_path(@product), :class => "btn btn-lg btn-info") %>
+      </div> -->
+
+      <!-- 社群分享按鈕 -->
+      <!-- https://github.com/huacnlee/social-share-button -->
 
 
   </div> <!-- 商品描述部分结束 -->

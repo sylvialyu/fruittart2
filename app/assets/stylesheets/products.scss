@@ -88,7 +88,7 @@ a.add-to-cart:hover {
   text-transform: UPPERCASE;
 }
 
-.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select  {
+.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select, .favorate, .social-group  {
   margin-bottom: 1.8em;
 }
 
@@ -204,4 +204,33 @@ border: 1px solid #f96277;
 a.no-dec {
   text-decoration: none;
   color: #636262;
+}
+
+.comment {
+  border: 1px solid #dddddd;
+  margin-bottom: 5em;
+  border-top: none;
+}
+
+
+.typein-box {
+  padding: 2.5em;
+}
+
+.social-group {
+  i {
+    font-size: 1.5em;
+    color: #9b9b9b;
+  }
+  .social {
+    font-size: 1.5em;
+  }
+}
+
+.feedback {
+  padding: 2.5em;
+}
+
+.feedback-details {
+  line-height: 2.5em;
 }
