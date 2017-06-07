@@ -21,11 +21,16 @@
 
               <div class="item-cart col-md-3 col-md-offset-5 col-xs-3 col-xs-offset-5">
               <% if product.quantity.present? && product.quantity > 0 %>
+                <% if product.discount.present? %>
+                <b class="product-item-sale">Sale</b>
+                <% end %>
                 <%= link_to add_to_cart_product_path(product), class: "add-to-cart", :remote => true, :method => :post do %>
                   <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               <% end %>
               <% else %>
-                Sold Out
+                <% if product.quantity <= 0 %>
+                  <b class="product-item-sellout">Sold Out</b>
+                <% end %>
               <% end %>
             </div>
 
