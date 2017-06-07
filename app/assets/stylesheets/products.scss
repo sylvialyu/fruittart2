@@ -179,6 +179,7 @@ border: 1px solid #f96277;
 
 .description {
   border: 1px solid #dddddd;
+  border-top: none;
   margin-bottom: 5em;
 
   p {
@@ -198,4 +199,9 @@ border: 1px solid #f96277;
   .pacimg {
     padding: 1em;
   }
+}
+
+a.no-dec {
+  text-decoration: none;
+  color: #636262;
 }

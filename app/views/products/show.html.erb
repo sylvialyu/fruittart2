@@ -3,7 +3,7 @@
 
     <div class="col-md-12">
 
-    <!-- 商品圖片 -->
+    <!-- 页面上半部分，左侧商品圖片 -->
       <div class='col-xs-12 col-md-7 pull-left'>
         <div class="row product-box">
           <% if @product.photos.present? %>
@@ -23,7 +23,7 @@
         </div>
       </div>
 
-      <!-- 商品描述 -->
+      <!-- 页面上半部分，右侧商品描述 -->
       <div class="col-md-5 col-xs-12">
 						<h4 class="product-title"><%= @product.title %></h4>
 						<div class="rating">
@@ -35,20 +35,6 @@
               <!--顯示有多少reviews-->
                 <%= @product.reviews.count + 15 %> reviews
               </span>
-              <!--點擊隱藏/展開reviews-->
-              <div id="comment" class="collapse">
-                <% @reviews.each do |review| %>
-                <div class="star-freshness" data-score= <%= review.freshness %> ></div>
-                <!--  review.user.display_name  -->
-                  <p>Comment： <%= review.body %>
-                <!-- Admin可刪除留言 -->
-                  <% if current_user && current_user.admin? %>
-                    <%= link_to("Delete", product_review_path(@product, review), method: :delete, data: { confirm: "Are you sure?"}, class: "btn btn-sm pull-right") %>
-                  <% end %>
-                  </p>
-                <% end %>
-              </div>
-
 						</div>
 
             <div class="price">
@@ -80,7 +66,7 @@
               <% end %>
             </div>
 
-
+            <!-- 购买数量 及 收藏功能 -->
             <div class="select row">
 
             <div class="col-md-8">
@@ -98,6 +84,7 @@
                 </span>
               </div>
             </div>
+          </div>
 
 
             <!-- 社群分享按鈕 -->
@@ -110,6 +97,7 @@
             </div>
         </div>
 
+        <!-- 加入购物车 & 一键下单 按钮 -->
         <div class="row">
           <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
@@ -128,8 +116,8 @@
         </div>
 
       </div>
+
       <!--对商品评论以及评星-->
-      <hr>
       <div class="row">
         <!-- 如果已經評分過就不要出現評分區 -->
         <% unless current_user && @product.find_review(current_user) %>
@@ -150,14 +138,13 @@
         <% end %>
       </div>
 
-    </div>
 
-    </div>
-      </div>
+  </div> <!-- 商品描述部分结束 -->
+</div> <!-- 上半部分内容结束 -->
 
-      <%= render "details" %>
+  <%= render "bottom_half" %>
 
-
+	</div>
 	</div>
 
 
