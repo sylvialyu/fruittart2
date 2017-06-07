@@ -12,11 +12,8 @@ class ProductsController < ApplicationController
     @reviews = @product.reviews
       if @reviews.blank?
         @avg_review = 0
-        @avg_look = 0
-        @avg_price = 0
       else
         @avg_review = @reviews.average(:freshness)
-
       end
   end
 

@@ -2,10 +2,10 @@
     <div class="col-centered row">
       <ul class="nav nav-tabs nav-justified">
         <li class="active">
-          <a href="#tab_default_1" data-toggle="tab" class="no-dec">Package Info</a>
+          <a href="#tab_default_1" data-toggle="tab" class="no-dec">About Package</a>
         </li>
         <li>
-          <a href="#tab_default_2" data-toggle="tab" class="no-dec">Comment</a>
+          <a href="#tab_default_2" data-toggle="tab" class="no-dec">Comments</a>
         </li>
       </ul>
     </div>
@@ -29,7 +29,7 @@
             <div class="review-comment-form">
               <%= f.input :body, label: "Please tell us what you think", input_html: { class: "form-control"} %>
             </div>
-
+            <div id="star-freshness">Rate Now </div>
             <div class="form-actions pull-left">
               <%= f.submit "Comment", disable_with: "Submiting...", class: "btn btn-sm btn-default"%>
             </div>
@@ -39,21 +39,28 @@
 
           <hr>
 
-        <!--點擊隱藏/展開reviews-->
+        <!--reviews-->
         <div class="feedback">
-        <% @reviews.each do |review| %>
-        <div class="row feedback-details">
-          <div class="col-md-8">
-            <%= review.body %>
-          </div>
-          <!-- <div class="col-md-4">
+          <h3>Comments</h3>
+          <% @reviews.each do |review| %>
+            <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+            <p>
+            <% if review.user.present? %>
+              <%= review.user.display_name %>:
+            <% else %>
+              User:
+            <% end %>
+              <%= review.body %>
+            <!-- Admin可刪除留言 -->
+              <% if current_user && current_user.admin? %>
+              <% end %>
+            </p>
             <%= review.created_at %>
-          </div> -->
+            <hr>
+          <% end %>
         </div>
-        <div class="" data-score= <%= review.freshness %> ></div>
-        <!--  review.user.display_name  -->
-        <% end %>
-        </div>
+
+
       </div>
 
 

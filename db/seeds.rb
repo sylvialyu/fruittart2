@@ -21,7 +21,7 @@ comment_info = [
    ["期待新產品！"],
    ["I'm telling my friend about this"],
    ["不该睡前来看的，好饿啊！忍不住买了！"],
-   ["bought for my familt and they all love it!!"],
+   ["bought for my family and they all love it!!"],
    ["XDDDDD"]
  ]
 
