@@ -30,7 +30,7 @@
               <%= f.input :body, label: "Please tell us what you think", input_html: { class: "form-control"} %>
             </div>
             <div id="star-freshness">Rate Now </div>
-            <div class="form-actions pull-left">
+            <div class="form-actions pull-right">
               <%= f.submit "Comment", disable_with: "Submiting...", class: "btn btn-sm btn-default"%>
             </div>
           <% end %>
@@ -41,21 +41,23 @@
 
         <!--reviews-->
         <div class="feedback">
-          <h3>Comments</h3>
           <% @reviews.each do |review| %>
-            <div class="star-freshness" data-score= <%= review.freshness %> ></div>
-            <p>
-            <% if review.user.present? %>
-              <%= review.user.display_name %>:
-            <% else %>
-              User:
-            <% end %>
-              <%= review.body %>
+            <div class="star-rate">
+                <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+            </div>
+            <div class="feedback-detail">
+                <% if review.user.present? %>
+                  <%= review.user.display_name %>:
+                <% else %>
+                <% end %>
+                  <%= review.body %>
+            </div>
             <!-- Admin可刪除留言 -->
               <% if current_user && current_user.admin? %>
               <% end %>
-            </p>
-            <%= review.created_at %>
+            <div class="review-time">
+              <%= review.created_at %>
+            </div>
             <hr>
           <% end %>
         </div>
