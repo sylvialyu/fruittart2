@@ -9,6 +9,12 @@ class ProductsController < ApplicationController
     @product = Product.find_by_friendly_id!(params[:id])
     @photos = @product.photos.all
     @cart_items = current_cart.cart_items
+    @reviews = @product.reviews
+      if @reviews.blank?
+        @avg_review = 0
+      else
+        @avg_review = @reviews.average(:freshness)
+      end
   end
 
   def destroy

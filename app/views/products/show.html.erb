@@ -3,18 +3,18 @@
 
     <div class="col-md-12">
 
-    <!-- 商品圖片 -->
+    <!-- 页面上半部分，左侧商品圖片 -->
       <div class='col-xs-12 col-md-7 pull-left'>
         <div class="row product-box">
           <% if @product.photos.present? %>
           <!-- 显示大图尺寸 -->
           <div class="col-md-12">
-            <%= image_tag(@product.photos[1].avatar.large.url, class: 'main-image ') %>
+            <%= image_tag(@product.photos[1].avatar.large.url, class: 'main-image img') %>
           </div>
             <% @product.photos.each do |p| %>
               <!-- 显示小图尺寸 -->
               <div class="col-md-3 col-sm-6 col-xs-6 image-box">
-                <%= image_tag(p.avatar.large.url, class: 'list-image ') %>
+                <%= image_tag(p.avatar.large.url, class: 'list-image img') %>
               </div>
             <% end %>
           <% else %>
@@ -23,18 +23,37 @@
         </div>
       </div>
 
-      <!-- 商品描述 -->
+      <!-- 页面上半部分，右侧商品描述 -->
       <div class="col-md-5 col-xs-12">
 						<h4 class="product-title"><%= @product.title %></h4>
 						<div class="rating">
+              <span class="review-no" data-toggle="collapse" data-target="#comment">
+              <!--对商品评星-->
 							<div class="stars">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
+                  <div class="star-freshness" data-score= <%= @avg_review %> ></div>
 							</div>
-							<span class="review-no">41 reviews</span>
+              <!--顯示有多少reviews-->
+                <%= @product.reviews.count + 15 %> reviews
+              </span>
+              <!--點擊隱藏/展開reviews-->
+              <div id="comment" class="collapse">
+                <% @reviews.each do |review| %>
+                <div class="star-freshness" data-score= <%= review.freshness %> ></div>
+                 <p><% if review.user.present? %>
+                  <%= review.user.display_name %>:
+                  <% else %>
+                  User:
+                  <% end %>
+                  <%= review.body %>
+                <!-- Admin可刪除留言 -->
+                  <% if current_user && current_user.admin? %>
+                    <%= link_to("Delete", product_review_path(@product, review), method: :delete,
+                    data: { confirm: "Are you sure?"}, class: "btn btn-xs btn-default pull-right") %>
+                  <% end %>
+                  </p>
+                <% end %>
+              </div>
+
 						</div>
 
             <div class="price">
@@ -50,7 +69,6 @@
               <% end %>
             </div>
 
-
             <div class="timeleft">
               <!-- 如果有倒計時   -->
               <% if @product.countdown.present?%>
@@ -60,10 +78,10 @@
               <% end %>
             </div>
 
-
+            <!-- 购买数量 及 收藏功能 -->
             <div class="select row">
 
-            <div class="col-md-6">
+            <div class="col-md-7">
               <div class="btn-group" role="group" aria-label="...">
                 <%= link_to(content_tag(:i, "", class: "fa fa-minus btn btn-df"), downcount_product_path(@product), method: :post) %>
                   <button class="product-num"><%= @product.counts.count %></button>
@@ -79,16 +97,17 @@
               </div>
             </div>
 
-            <div class="col-md-6 quantity">
+            <div class="col-md-5 quantity">
               <div> Quantity: <%= @product.quantity %></div>
             </div>
+            </div>
 
-        </div>
 
-        <div class="row">
+        <!-- 加入购物车 & 一键下单 按钮 -->
+        <div class="favorate row">
           <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
-          <%= link_to("Add to Cart", add_to_cart_product_path(@product), method: :post, class: "buy") %>
+          <%= link_to("Add to Cart", add_to_cart_product_path(@product), method: :post, class: "buy button orange addcar", id: "end") %>
           <% else %>
           Sorry! It's sold out!
           <% end %>
@@ -97,23 +116,29 @@
         <div class="col-md-6 text-centered">
           <% if @product.quantity.present? && @product.quantity > 0 %>
           <%= link_to("Checkout", checkout_carts_path, method: :post, class: "buy") %>
-          <% else %>
-          ""
           <% end %>
         </div>
-
-      </div>
-    </div>
-
-    </div>
       </div>
 
-      <%= render "details" %>
+      <!--对商品评论以及评星-->
+      <div class="social-group row">
+            <div class="col-md-1">
+                <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-10 social">
+              <!-- 社群分享按鈕 -->
+              <!-- https://github.com/huacnlee/social-share-button -->
+              <%= social_share_button_tag(@product.title, :allow_sites => %w(wechat facebook email)) %>
+            </div>
+      </div>
+
+  </div> <!-- 商品描述部分结束 -->
+</div> <!-- 上半部分内容结束 -->
+
+  <%= render "bottom_half" %>
 
 	</div>
-
-
-
+	</div>
 
 
 
@@ -148,3 +173,5 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
+<script src="/assets/application.js"></script>

@@ -12,11 +12,13 @@
  *
  *= require_tree .
  *= require_self
+ *= require social-share-button
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import "social-share-button";
 
 
 @import url('//fonts.googleapis.com/css?family=Dancing+Script:700');
@@ -275,3 +277,38 @@ cursor: pointer;
 .result {
   height: 500px;
 }
+
+
+//不知為何無效
+.social-share-button {
+  .ssb-icon {
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.u-flyer{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 9999;
+}
+
+#msg{
+  position:fixed; 
+  top:300px; 
+  right:35px; 
+  z-index:10000; 
+  width:1px; 
+  height:52px; 
+  line-height:52px; 
+  font-size:20px; 
+  text-align:center; 
+  color:#fff; 
+  background:#360; 
+  display:none
+}
+

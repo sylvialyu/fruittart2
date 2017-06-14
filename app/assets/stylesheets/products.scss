@@ -88,7 +88,7 @@ a.add-to-cart:hover {
   text-transform: UPPERCASE;
 }
 
-.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select  {
+.product-title, .rating, .price, .timeleft, .quantity, .input-quantity, .select, .favorate, .social-group  {
   margin-bottom: 1.8em;
 }
 
@@ -106,10 +106,10 @@ a.add-to-cart:hover {
 
 #timer{
 text-align: center;
-font-size: 1.1em;
-background-color: #fff;
-color:#636262;
-border: 1px solid #9b9b9b;
+font-size: 1.3em;
+background-color: #f96277;
+color:#fff;
+border: 1px solid #f96277;
 }
 
 .btn-df {
@@ -179,6 +179,7 @@ border: 1px solid #9b9b9b;
 
 .description {
   border: 1px solid #dddddd;
+  border-top: none;
   margin-bottom: 5em;
 
   p {
@@ -198,4 +199,73 @@ border: 1px solid #9b9b9b;
   .pacimg {
     padding: 1em;
   }
+}
+
+
+a.no-dec {
+  text-decoration: none;
+  color: #636262;
+}
+
+.comment {
+  border: 1px solid #dddddd;
+  margin-bottom: 5em;
+  border-top: none;
+}
+
+
+.typein-box {
+  padding: 2.5em;
+}
+
+.social-group {
+  i {
+    font-size: 1.5em;
+    color: #9b9b9b;
+  }
+  .social {
+    font-size: 1.5em;
+  }
+}
+
+.feedback {
+  padding: 2.5em;
+}
+
+.feedback-details {
+  line-height: 2.5em;
+}
+
+.product-item-sellout {
+	position: absolute;
+	top: -190px;
+	left: 0%;
+  padding-right: 12px;
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	margin-left: -110px;
+	font-size: 16px;
+	background-color: rgba(0, 0, 0, .55);
+	border-radius: 50%;
+	color: #fff;
+}
+
+.product-item-sale {
+	position: absolute;
+	top: -290px;
+	left: -160%;
+  padding-right: 18px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	margin-left: -110px;
+	font-size: 16px;
+	background-color: #f96277;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.star-rate, .feedback-detail, .review-time {
+  line-height: 2.5em;
 }

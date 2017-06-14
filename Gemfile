@@ -52,6 +52,7 @@ gem 'omniauth' #授權
 gem 'omniauth-google-oauth2' #授權Google
 gem 'omniauth-facebook' #授權FB
 gem 'omniauth-github' #授權Github
+gem 'social-share-button'
 
 group :development, :test do
   gem 'pry' #用 binding.pry debug
