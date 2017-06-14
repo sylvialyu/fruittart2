@@ -2,25 +2,28 @@
 
 Sweetart：Sweet + Art 【 水果甜挞：甜品的艺术 】
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This site was made by sylvialyu & tim, using RoR
 
-Things you may want to cover:
+tim: mainly backend, sylvia: mainly frontend
 
-* Ruby version
+Site including basic shopping site functions,
 
-* System dependencies
+- Social Share Button
 
-* Configuration
+- OAuth, FB Google, Github login
 
-* Database creation
+- Discount
 
-* Database initialization
+- Search
 
-* How to run the test suite
+- Countdown
 
-* Services (job queues, cache servers, search engines, etc.)
+- Customer Service
 
-* Deployment instructions
+- Reviews
 
-* ...
+- Admin/Login
+
+- AWS S3
+
+
